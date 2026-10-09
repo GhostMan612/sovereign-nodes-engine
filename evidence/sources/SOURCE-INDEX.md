@@ -1,26 +1,21 @@
-# Phase 00 source ledger — seed
+# SNE Phase 00 source ledger — updated 2026-10-09
 
-Collected: 2026-10-09. No upstream source trees cloned. No engine builds run. Some source inspection used the connected GitHub repository reader. All Git refs must be pinned before formal acceptance.
+**Current evidence pins:** `SNE-REVISION-LEDGER.md`. Links in research dossiers target immutable Git commit revisions. Accessed via GitHub repository connector and supplemented by publicly documented README/license information. **No binaries built or tested.**
 
-| ID | Type | Location | Status |
-|---|---|---|---|
-| SRC-01 | Official upstream repo/readme | https://github.com/UZDoom/UZDoom | READ (README scope) |
-| SRC-02 | Official upstream repo/readme | https://github.com/ZDoom/gzdoom | READ (README scope) |
-| SRC-03 | Upstream experimental repo/readme | https://github.com/EricsonWillians/BiasedDoom | READ (README scope) |
-| SRC-04 | Official upstream repo/readme | https://github.com/chocolate-doom/chocolate-doom | READ (README scope) |
-| SRC-05 | User's project repo/README and AGENTS | https://github.com/GhostMan612/Sovereign-Nodes | READ (selected files) |
-| SRC-06 | User's project MAPINFO | https://github.com/GhostMan612/Sovereign-Nodes/blob/main/games/SovereignNodesFPS/game/MAPINFO.txt | READ |
-| SRC-07 | User's project GLDEFS | https://github.com/GhostMan612/Sovereign-Nodes/blob/main/games/SovereignNodesFPS/game/GLDEFS.txt | READ |
-| SRC-08 | User's project ZScript core | https://github.com/GhostMan612/Sovereign-Nodes/blob/main/games/SovereignNodesFPS/zscript/core.zs | READ (partial source) |
-| SRC-09 | User's project handoff script | https://github.com/GhostMan612/Sovereign-Nodes/blob/main/games/SovereignNodesFPS/zscript/sn_handoff.zs | READ (partial source) |
-| SRC-10 | User's project SESSION_HANDOFF | https://github.com/GhostMan612/Sovereign-Nodes/blob/main/SESSION_HANDOFF.md | READ (partial historical notes) |
-| SRC-11 | Windows Chocolate Doom legacy build guide | https://www.chocolate-doom.org/wiki/index.php/Building_Chocolate_Doom_on_Windows | REFERENCED, verify freshness |
+| Source ID | Dossier | Source read status |
+|---|---|---|
+| SRC-GAME-001 | `SNE-SRC-GAME-001.md` | selected real project source files READ |
+| SRC-GZDOOM-001 | `SNE-SRC-GZDOOM-001.md` | selected engine source paths READ/IDENTIFIED |
+| SRC-UZDOOM-001 | `SNE-SRC-UZDOOM-001.md` | CMake, ZScript paths, contributor policy, GPL file READ |
+| SRC-BIASEDDOOM-001 | `SNE-SRC-BIASEDDOOM-001.md` | model glTF implementation/header and CMake READ |
+| SRC-CLASSIC-001 | `SNE-SRC-CLASSIC-001.md` | Chocolate and original Doom setup/loading source READ |
 
-## Evidence quality definitions
+## Reliability rubric
 
-- **READ:** text reviewed at retrieval time; no guarantee file still matches later branch HEAD.
-- **PINNED:** SHA, raw file path, retrieval date recorded; no current source PINNED yet.
-- **EXECUTED:** exact local test reproduced with logs; none.
-- **PASS:** satisfied explicitly scoped verification criterion; none.
+- **SOURCE-OBSERVED** = text/code can be directly inspected at linked revision.
+- **DOCUMENTED-CLAIM** = upstream README/maintainer describes feature; not independently tested.
+- **HYPOTHESIS** = an architectural suggestion requiring prototype.
+- **NOT RUN** = compilation, gameplay, performance and security proof absent.
+- **REVIEW PENDING** = no independent verification/acceptance signed.
 
-Before promoting a claim from README to architecture fact, inspect pinned implementation and reproduce relevant tests.
+Never replace an evidence URL with a floating branch URL in a completed source dossier. Keep chat logs/transcripts out of the repository.

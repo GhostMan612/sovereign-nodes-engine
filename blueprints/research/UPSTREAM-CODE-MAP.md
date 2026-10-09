@@ -1,44 +1,37 @@
-# Upstream code reconnaissance — research map
+# Pinned upstream engine source map — 000A seed for 000B
 
-## Observation status
+**Date:** 2026-10-09
+**Status:** MULTIPLE SELECTED FILES READ, NO FULL SOURCE AUDIT, NO BUILD.
+**Exact revisions:** `evidence/sources/SNE-REVISION-LEDGER.md`.
 
-The candidate repositories' public descriptions and top-level layout were reviewed on 2026-10-09. **No pinned checkout, full file-by-file code audit, dependency build, or execution occurred**. Treat paths below as starting hypotheses unless source directly documents them.
+| Candidate | Verified subsystem location | Architecture note | Deeper inspection needed |
+|---|---|---|---|
+| GZDoom | `src/common/models/voxels.cpp`, `models_voxel.cpp`, `src/r_data/voxeldef.cpp` | Existing voxel sprite/model pipeline | Format support, mesh budget, profile/render costs |
+| GZDoom | `src/r_data/gldefs.cpp` | Lighting definition parser | Binding semantics, shadows, material pipeline |
+| GZDoom | `src/scripting/zscript/zcc_compile_doom.cpp` | ZScript compiler | Game v4.14 grammar and API parity |
+| GZDoom | `src/g_hub.cpp` | Hub state/transition source area | Not evidence of seamless dual-zone rendering |
+| UZDoom | `src/scripting/zscript/zcc_compile_doom.cpp` | ZScript compile subsystem retained | Version/API differences from GZDoom |
+| UZDoom | `src/d_main.cpp` | Resource/definition setup | MAPINFO/GLDEFS exact loader behavior |
+| UZDoom | `src/common/models/voxels.cpp` | Voxel source | Diff from GZDoom |
+| BiasedDoom | `src/common/models/model_gltf.cpp/.h` | `fastgltf`, conditional `NEODOOM_GLTF_SUPPORT` | Mesh/material/animation proof on supported GPU |
+| BiasedDoom | `CMakeLists.txt` | Conditional Python/glTF build config | build and security defaults |
+| Chocolate Doom | `src/doom/p_setup.c`, `p_maputl.c` | WAD/BSP/collision baseline | Reference, not modernization starting point |
+| Original Doom | `linuxdoom-1.10/p_setup.c` | Classic BSP/BLOCKMAP/REJECT | Reference only |
 
-### GZDoom — https://github.com/ZDoom/gzdoom
+## Verified language/build configuration
 
-- Published primary system: ZDoom-derived modding engine with OpenGL/Vulkan renderer and ZScript ecosystem.
-- Public tree uses CMake (`CMakeLists.txt`), license records and source modules (`src/`).
-- Search target in checkout: `src/` renderers, `src/common/models`, ZScript VM, archive/resource loading, ACS, map parser, GLDEFS light binding, save-game serialization.
-- Exact location/signatures of extension seams: **UNVERIFIED**, must be pinned to commit and inspected.
+- GZDoom: CMake minimum 3.16, C++17 (`CMakeLists.txt`).
+- UZDoom: CMake minimum 3.16, C++20 and `find_package(Python3 3.6 REQUIRED)` for project configuration; this does **not** mean Python mod scripting.
+- BiasedDoom: CMake minimum 3.16 and optional embedded Python/glTF feature toggles; glTF source compiled conditionally.
+- Chocolate Doom: CMake minimum 3.7.2, C99, SDL2 dependency checks.
+- Original Doom: historical Linux source, unsuitable as a modern source-port build baseline without extensive platform work.
 
-### UZDoom — https://github.com/UZDoom/UZDoom
+## Maintainer and licensing caveat
 
-- Published architecture: GZDoom descendant with OpenGL/Vulkan, dynamic lighting, 3D floors, modding support.
-- Published license: GPLv3-or-later; see actual `LICENSE` and third-party notices before redistribution.
-- Follow the project's current wiki for Windows/VS/CMake/dependencies; **do not hardcode stale versions**.
-- Policy question: determine contribution eligibility for AI-assisted changes separately from license eligibility for a private/local derivative.
+UZDoom's `CONTRIBUTING.md` expressly disallows AI-assisted upstream PRs (even AI-assisted comments). This is distinct from GPL permissions for SNE's independent derivative. Root license and per-directory asset exceptions remain in scope for `SNE-WO-000B`.
 
-### BiasedDoom — https://github.com/EricsonWillians/BiasedDoom
+## Next mapping tasks (work order 000B)
 
-- Published implementation path for glTF loader: `src/common/models/model_gltf.*`, using `fastgltf` (README statement; verify actual symbols on pinned revision).
-- Published features: `.gltf/.glb`, skeletal animation/GPU skinning paths, post-processing, procedural missions, opt-in CPython, ZScript/ACS currently supported.
-- Published roadmap: author intends to deprecate ZScript; **not proof deprecation occurred**.
-- Security question: confirm Python code permissions, filesystem/network access and app distribution consequences on a pinned build.
-- Probe: compare changes against GZDoom ancestor before porting parts; licensing and dependency compatibility must be reviewed.
+Pin actual renderer/backend selection logic and interfaces; map-level transition and save serialization paths; diff fork architecture and dependency graph; inspect relevant CMake subdirectories and third-party notices. Only then propose source modifications.
 
-### Chocolate Doom — https://github.com/chocolate-doom/chocolate-doom
-
-- Published philosophy: reproduce vanilla DOS behavior including bugs, saves and demo compatibility.
-- Build system can use Autotools; Windows wiki describes MSYS2 and SDL dependencies, but documentation may be historical.
-- Good architecture-reading source, **not** a candidate for a low-effort ZScript-preserving fork.
-
-### Original Doom — https://github.com/id-Software/DOOM
-
-- Reference for fixed-timestep simulation, WAD, BSP, sectors, visibility and collision concepts.
-- Do not use original rendering code as evidence of modern model/shader support.
-
-## Mandatory source-inspection worksheet
-
-For EACH shortlisted engine capture: exact repo URL; commit SHA; license and packaged dependency licenses; compiler/CMake versions; renderer selection logic; model import classes; voxel loader; ZScript API/runtime; GLDEFS/map parsing; world changes; save serialization; procedural generation; test frameworks; third-party tooling; effort estimate; commit/path/symbol evidence.
-
-Store reviewed findings in `evidence/sources/` and promote only confirmed statements into ADR-SNE-002.
+See `evidence/sources/SNE-SRC-{GZDOOM,UZDOOM,BIASEDDOOM,CLASSIC}-001.md` for links and exact SHA references.

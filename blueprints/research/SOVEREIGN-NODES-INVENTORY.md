@@ -1,36 +1,46 @@
-# Existing Sovereign Nodes implementation — read-only source inventory
+# Sovereign Nodes FPS — source inventory (SNE-WO-000A)
 
-**Source:** https://github.com/GhostMan612/Sovereign-Nodes  
-**Inspection:** GitHub connector file reads, 2026-10-09. **Commit SHA not pinned; content may change.**  
-**State:** PARTIALLY VERIFIED SOURCE; RUNTIME NOT TESTED.
+**Pinned game SHA:** `44034e97fd22129f919a18cadceb84466ef1bcd3`
+**Review:** 2026-10-09 · GitHub source inspection only · **NOT RUNTIME TESTED**
+**Full file evidence:** `evidence/sources/SNE-SRC-GAME-001.md`
 
-## Game split
+## Product boundary
 
-The upstream game README and AGENTS distinguish two separate products:
+- `games/SovereignNodes/` is the **Godot 4** hub and game suite.
+- `games/SovereignNodesFPS/` is a **separate ZDoom/GZDoom-based FPS**, packaged as a `.pk3`. Launch is an external process, not an embedded Godot scene.
+- Shared lore/data lives separately. Do not copy identifiable family data or licensed IWADs into this project.
 
-- `games/SovereignNodes/`: Godot 4 isometric hub/minigames.
-- `games/SovereignNodesFPS/`: standalone ZDoom/GZDoom-family FPS distributed as `.pk3`, separate from the Godot runtime, with a stated ZDaemon target. Do not assume features available in one runtime work in the other.
+## Existing FPS contract inventory
 
-## Confirmed files and observed contracts
-
-| File | Read-only observation | Required parity check |
+| ID | Observed source | Compatibility contract (runtime pending) |
 |---|---|---|
-| `games/SovereignNodesFPS/game/MAPINFO.txt` | Declares `version "4.14"`, fragments `zscript/core.zs`, `zscript/sn_handoff.zs`, `zscript/hud.zs`; defines MAP01 GapNode → MAP02 Breach → MAP03 Warren; clusters 1/2/3. | All fragments load and exactly those maps boot/transition, no IWAD fallback |
-| `games/SovereignNodesFPS/game/GLDEFS.txt` | Defines ELEC, ORESHA, TOOLA pointlights with sprite-frame bindings `ELECA0`, `ORESHAA0`, `TOOLAA0`, and `globalfog`. | Correct packaging path, bind and observed emitted light in scene |
-| `games/SovereignNodesFPS/zscript/core.zs` | Declares `SNConst` sprite/frame symbols and gameplay classes. Source comments document historical failures with invalid fields and IWAD fallback. | Compile/load custom classes and sprites, prove functional interaction |
-| `games/SovereignNodesFPS/zscript/sn_handoff.zs` | Implements a declared Godot→Doom handoff protocol with `HANDOFF_SCHEMA_VERSION = 1`; comments discuss OS temp path and scalar parsing. | Handoff consumer actually receives fresh validated synthetic payload, rejects invalid schema |
-| `games/SovereignNodesFPS/zscript/hud.zs` | File referenced by MAPINFO; contents not reviewed in this pass. | HUD appears, state values tested |
-| `games/SovereignNodesFPS/maps/SovereignNodes_MAP01_GapNode.wad` | Existing named map file (listing); binary internals not reviewed. | Package loads MAP01, custom markers confirm identity |
-| `games/SovereignNodesFPS/maps/SovereignNodes_MAP02_Breach.wad` | Existing named map file (listing); binary internals not reviewed. | MAP01→MAP02 transition |
-| `games/SovereignNodesFPS/maps/SovereignNodes_MAP03_Warren.wad` | Existing named map file (listing); binary internals not reviewed. | MAP02→MAP03 transition and endpoint handling |
+| G01 | `game/MAPINFO.txt` version `4.14` | Engine accepts version directive and map/fragments declarations |
+| G02 | `MAPINFO.txt` fragments | `zscript/core.zs`, `zscript/sn_handoff.zs`, `zscript/hud.zs` all load |
+| G03 | MAPINFO map chain | MAP01 GapNode → MAP02 Breach → MAP03 Warren, with correct level identity |
+| G04 | `game/GLDEFS.txt` | Lights ELEC/ ORESHA/ TOOLA bound to frames `ELECA0`, `ORESHAA0`, `TOOLAA0`; `globalfog` recognized |
+| G05 | `zscript/core.zs` | Gameplay actors, inventory, altar, threats, weapon functionality |
+| G06 | `zscript/hud.zs` | `SNStatusBar`, custom counters, scoreboard, handoff text |
+| G07 | `zscript/doomednum.txt` | Custom DoomEdNum 9033–9036, 9040–9041 actors resolvable |
+| G08 | `tools/build_pk3.py` | Definitions placed where loader reads them, validated sprite frames/fragment coverage |
+| G09 | `tools/build_maps.py`, `tools/validate_wads.py` | Generated WAD valid under project's map generator/validator constraints |
+| G10 | `src/world/fps_launcher.gd` (Godot side) | External executable discovery, IWAD/PK3 selection, launch failure reports |
+| G11 | `src/world/fps_launcher.gd` + `sn_handoff.zs` | Shared OS temp-path protocol, v1 JSON schema, run context visible in HUD |
+| G12 | `RULES.md` | No secrets, sensitive genealogy, licensed IWADs; explicit paths and project boundaries |
 
-## Warnings from project documentation (not validated runtime conclusions)
+The three map files appear as `maps/SovereignNodes_MAP01_GapNode.wad`, `maps/SovereignNodes_MAP02_Breach.wad`, and `maps/SovereignNodes_MAP03_Warren.wad`. Their *contents were not inspected* in this pass.
 
-- `SESSION_HANDOFF.md` describes previous missing reads, map generator width errors, definitions packaged below `game/`, and ZScript compile errors. These are **historical project-reported findings**, not proof that current revision passes.
-- `MAPINFO.txt` and GLDEFS comments describe load-order and light-binding pitfalls; the package's verification cases must catch them.
-- The Doom-side handoff reader exists as source, but the behavior is not declared PASS until an actual Godot→Doom end-to-end proof is captured.
-- The game repository's shell/verification discipline is operator policy; preserve local change-control requirements during audit.
+## Source-reviewed functional details
 
-## Unresolved
+- `FpsLauncher` resolves `SOVEREIGN_GZDOOM` / `GZDOOM_EXE`, `DOOM2_WAD` / `DOOMWAD`, and a locally built PK3. Process startup uses an external executable rather than Godot scene loading.
+- Schema constants agree in source (`HANDOFF_SCHEMA := 1`; `HANDOFF_SCHEMA_VERSION = 1`). Both sides consult TEMP/TMP/TMPDIR and `SovereignNodes/fps_handoff.json`. Sender also writes a Godot user path.
+- Consumer `ScanRaw` is custom scalar scanning rather than a general JSON parser. It deliberately tolerates some missing/version-skew fields. This is **not** a cryptographically authenticated or safely bounded Mantle Bridge.
+- The build script contains static cross-language contract checks; the checks have **not been run** by this research.
+- `validate_wads.py`'s `dirofs == 12` invariant applies to this generator layout only, not the universal WAD format.
 
-Pin source commit; review build scripts/PK3 manifests; inspect handoff producer and spec, data generator, HUD and WAD binary metadata; confirm ZDaemon-specific limitations; benchmark. No original game file is embedded in this package.
+## Test obligation
+
+Every G01–G12 item needs source-specific checks, a packaging validation and/or a live runtime test. Test cases should catch the dangerous **vanilla IWAD fallback** (engine starts but ignores all custom content). No results are declared PASS.
+
+## Remaining file enumeration
+
+Before accepting 000A, inspect map binaries or recorded WAD manifests, the complete class/call graph, script compilation and asset archives. Review target engine ZDaemon limitations as a separate lane. See `blueprints/research/SNE-000A-TIER-A-COMPAT.md`.
