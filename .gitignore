@@ -1,0 +1,28 @@
+# Local and build outputs
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+build/
+dist/
+out/
+.cache/
+*.log
+.env
+.env.*
+!.env.example
+# Do not commit proprietary game data or secrets
+*.wad
+*.pk3
+*.pk7
+*.ipk3
+*.exe
+*.dll
+*.so
+*.dylib
+*.key
+*.pem
+# retain placeholder files
+!.gitkeep
