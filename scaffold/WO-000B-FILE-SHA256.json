@@ -1,0 +1,219 @@
+{
+  "package": "SNE-WO-000B-ENGINE-AUDIT-0004",
+  "version": "0.4.0",
+  "base_commit": "369722fcd0839447cd5ecf5b78aa1ca7d8e2645c",
+  "manifest_policy": "Each file sha256 and size applies to bytes inside overlay ZIP; ledger excludes itself. REPLACE expected_old_git_blob_sha1 refers to published base tree where available.",
+  "file_count_excluding_this_ledger": 30,
+  "entries": [
+    {
+      "path": "sovereign-nodes-engine/WO-000B-INSTALL.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "fa626b85e9ec20965c6422e3b24ddb3293a79580773a10f2c9e8917e85c981fe",
+      "size_bytes": 2153
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/acceptance/SNE-ACC-000B.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "99c819167e76cd997c73bf61f19eec4f0914c8a1ba2168469dd08bcf55026f0e",
+      "size_bytes": 904
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/evidence/SNE-EVD-000B.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "bc1c86b4d9a1866d03323c6e96e5653d66071c524f01758dfbf831cd51c9f711",
+      "size_bytes": 2130
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/reconciliation/SNE-REC-000B.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "a5fd7518bfc3d7bc283b1a54fda76ab96a5006894a8e7871b16925c483cfb15e",
+      "size_bytes": 982
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/verification/SNE-VER-000B.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "e60ee08d487257f34e64657d89d21e07a0d4e4efc2f9a89b8f0454b41b1344b1",
+      "size_bytes": 1646
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/work-orders/SNE-WO-000B.md",
+      "action": "REPLACE",
+      "expected_old_git_blob_sha1": "62e438eb39df95286307c67d187582c5d72ac237",
+      "sha256": "2820260855116d8de488529955ee1e9542b949aba43cce9fb2bfcb36044be379",
+      "size_bytes": 2863
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/diagrams/SNE-000B-ENGINE-SEAMS.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "23f877492b722ad862e0e0b2610cdb8d874c37f2f40c6ecfd33416a402f3be39",
+      "size_bytes": 868
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/CANDIDATE-MATRIX.md",
+      "action": "REPLACE",
+      "expected_old_git_blob_sha1": "1d48f723738f38a36f9a249945d725210e42cba8",
+      "sha256": "50ec22d2702f74121a7719abab68bb084a06f44a73cd998504929038c0d74f45",
+      "size_bytes": 1805
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/DEPENDENCY-LICENSE-MATRIX.md",
+      "action": "REPLACE",
+      "expected_old_git_blob_sha1": "f35748ad729ba6ab011d27200a0b393b247a8c14",
+      "sha256": "98b79a587cf945be751fcd62e6e18d1ce688ce9e115ec4a9993063eeca10b2f2",
+      "size_bytes": 3477
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/RESEARCH-QUEUE.md",
+      "action": "REPLACE",
+      "expected_old_git_blob_sha1": "1f68f3433f69e478f55b5c4ff4afeae48300598c",
+      "sha256": "cd7846778aa1630a58efee4e9f970bcd61afbf6361bffe5968c64e4339602960",
+      "size_bytes": 1947
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/SNE-000B-COMPILER-BUILD-MATRIX.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "c7125e2fd3a192825335efc3fbef613ad5f283c09b48ffbf8ef7bf17d0a293dd",
+      "size_bytes": 3029
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/SNE-000B-ENGINE-CODE-MAP.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "6e92b1a0be40adae974f671f07bbaec53d3749725f40edf4af124b2040dbb883",
+      "size_bytes": 4448
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/SNE-000B-EXTENSION-SEAMS.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "09fbf872334d440c68093bcacadb62f8b0525b9472648597205175a2267f26c3",
+      "size_bytes": 2768
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/SNE-000B-MAINTENANCE-RISK.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "032244abfe95897e26a804e7cb4f2801b7a52605843a249fdcddba99da112f79",
+      "size_bytes": 2318
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/SNE-000B-TEST-GATES.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "2948a9d70db9a07e762c15605c90880cb081b53f1cf75bbe1374ac7cfdc0fc67",
+      "size_bytes": 2497
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/UPSTREAM-CODE-MAP.md",
+      "action": "REPLACE",
+      "expected_old_git_blob_sha1": "9f86a3bc0dfddfd55b18164ce55dc04ced2ea6e2",
+      "sha256": "dd7315249b169c8466b1041faa4e3d81d670cbd8fe16ff6b48672cb8d272c88d",
+      "size_bytes": 2595
+    },
+    {
+      "path": "sovereign-nodes-engine/docs/WO-000B-START-HERE.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "8de9b337e5d6c6b07e1a51cb972b34f42114f0f1eca98e966074ad691fb1e72d",
+      "size_bytes": 2802
+    },
+    {
+      "path": "sovereign-nodes-engine/evidence/sources/SNE-SOURCE-PINS-000B.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "0f8fb3208f162a1525a3fe3b8a61003cf3b6c5f2d4ee5275e26e7fb4c67eacfd",
+      "size_bytes": 7381
+    },
+    {
+      "path": "sovereign-nodes-engine/evidence/sources/SNE-SRC-BIASEDDOOM-002.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "4a31375e9877727a1366d879a059cc81d319124cd4e16233c5497151c6fddf6c",
+      "size_bytes": 3913
+    },
+    {
+      "path": "sovereign-nodes-engine/evidence/sources/SNE-SRC-GZDOOM-002.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "d80723d452991ada1cbf0a11945349e5e3cbada3f8e72cffafdc34b710e580f2",
+      "size_bytes": 2912
+    },
+    {
+      "path": "sovereign-nodes-engine/evidence/sources/SNE-SRC-UZDOOM-002.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "1a1b39e8ba5eb32dc55639d5cb4f1d559a7831f6f0808f452cc0de7ef351009e",
+      "size_bytes": 3582
+    },
+    {
+      "path": "sovereign-nodes-engine/evidence/sources/SOURCE-INDEX.md",
+      "action": "REPLACE",
+      "expected_old_git_blob_sha1": "0d5ea140953cca02e6a6903f06dd4aa51b58fb23",
+      "sha256": "c8e09d7db1731dff9e64897e2fdadcd60d01cd93d4a706f0bfdff3adc44923d9",
+      "size_bytes": 1345
+    },
+    {
+      "path": "sovereign-nodes-engine/governance/WO-000B-OPEN-RISKS.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "4ad3a9fa375acd5cc5738c264d1112a908e96b684cc01e9a3e7149adc12c6cc1",
+      "size_bytes": 1308
+    },
+    {
+      "path": "sovereign-nodes-engine/governance/WO-000B-REVIEW-FINDINGS.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "772541939b7bcf061119171cf0245fab5a27b94c395158ff15d18243b33432d6",
+      "size_bytes": 1984
+    },
+    {
+      "path": "sovereign-nodes-engine/registry/PHASE-00-ARTIFACT-INDEX.md",
+      "action": "REPLACE",
+      "expected_old_git_blob_sha1": "2c4de6f0754035a3ab1a9bef9aae7fddc5d3f6e2",
+      "sha256": "bfdfd7f16f5e763479915e5dab61fecd2cd58c45a3bb1cb87e535e3f89fc9016",
+      "size_bytes": 1618
+    },
+    {
+      "path": "sovereign-nodes-engine/scaffold/WO-000A-CHECKSUM-RECONCILIATION.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "ec095ba5191f6b4d518ab7843cd6c6762f2581c11d2f65641d9477fc5e3503dd",
+      "size_bytes": 2396
+    },
+    {
+      "path": "sovereign-nodes-engine/scaffold/WO-000A-COMMITTED-SHA256.json",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "949b045c958ebc2b8f43cd84a5dfb9da03ddcb511c3afd022a6427423248bbec",
+      "size_bytes": 12149
+    },
+    {
+      "path": "sovereign-nodes-engine/scaffold/WO-000B-BUILD-VERIFICATION.json",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "e283f2735d48b64a932a93cfb35bfa3aa621d095cdc770a68022b2968ad43b87",
+      "size_bytes": 741
+    },
+    {
+      "path": "sovereign-nodes-engine/scaffold/WO-000B-CHANGELOG.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "537b589aa84f00912bb5465d2ad70dc3a3bf289f23038172e2ef594a087b663c",
+      "size_bytes": 870
+    },
+    {
+      "path": "sovereign-nodes-engine/scaffold/WO-000B-MANIFEST.md",
+      "action": "ADD",
+      "expected_old_git_blob_sha1": null,
+      "sha256": "39cb32d83b3f13d2e77a25c3abaef88490331e57b543bdc0206973b4cac5c8d1",
+      "size_bytes": 2725
+    }
+  ]
+}

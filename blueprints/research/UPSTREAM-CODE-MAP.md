@@ -1,37 +1,38 @@
-# Pinned upstream engine source map — 000A seed for 000B
+# Upstream code map — v0.4.0 selected-source audit
 
-**Date:** 2026-10-09
-**Status:** MULTIPLE SELECTED FILES READ, NO FULL SOURCE AUDIT, NO BUILD.
-**Exact revisions:** `evidence/sources/SNE-REVISION-LEDGER.md`.
+**Status:** PATH/SYMBOL-VERIFIED IN SELECTED FILES; complete source tree not cloned, call graph not exhaustive; compile/runtime still NOT RUN.
 
-| Candidate | Verified subsystem location | Architecture note | Deeper inspection needed |
-|---|---|---|---|
-| GZDoom | `src/common/models/voxels.cpp`, `models_voxel.cpp`, `src/r_data/voxeldef.cpp` | Existing voxel sprite/model pipeline | Format support, mesh budget, profile/render costs |
-| GZDoom | `src/r_data/gldefs.cpp` | Lighting definition parser | Binding semantics, shadows, material pipeline |
-| GZDoom | `src/scripting/zscript/zcc_compile_doom.cpp` | ZScript compiler | Game v4.14 grammar and API parity |
-| GZDoom | `src/g_hub.cpp` | Hub state/transition source area | Not evidence of seamless dual-zone rendering |
-| UZDoom | `src/scripting/zscript/zcc_compile_doom.cpp` | ZScript compile subsystem retained | Version/API differences from GZDoom |
-| UZDoom | `src/d_main.cpp` | Resource/definition setup | MAPINFO/GLDEFS exact loader behavior |
-| UZDoom | `src/common/models/voxels.cpp` | Voxel source | Diff from GZDoom |
-| BiasedDoom | `src/common/models/model_gltf.cpp/.h` | `fastgltf`, conditional `NEODOOM_GLTF_SUPPORT` | Mesh/material/animation proof on supported GPU |
-| BiasedDoom | `CMakeLists.txt` | Conditional Python/glTF build config | build and security defaults |
-| Chocolate Doom | `src/doom/p_setup.c`, `p_maputl.c` | WAD/BSP/collision baseline | Reference, not modernization starting point |
-| Original Doom | `linuxdoom-1.10/p_setup.c` | Classic BSP/BLOCKMAP/REJECT | Reference only |
+Detailed immutable URLs live in `evidence/sources/SNE-SOURCE-PINS-000B.md`. The technical assessment lives in `SNE-000B-ENGINE-CODE-MAP.md`.
 
-## Verified language/build configuration
+## GZDoom
 
-- GZDoom: CMake minimum 3.16, C++17 (`CMakeLists.txt`).
-- UZDoom: CMake minimum 3.16, C++20 and `find_package(Python3 3.6 REQUIRED)` for project configuration; this does **not** mean Python mod scripting.
-- BiasedDoom: CMake minimum 3.16 and optional embedded Python/glTF feature toggles; glTF source compiled conditionally.
-- Chocolate Doom: CMake minimum 3.7.2, C99, SDL2 dependency checks.
-- Original Doom: historical Linux source, unsuitable as a modern source-port build baseline without extensive platform work.
+- CMake >=3.16, C++17 confirmed in root `CMakeLists.txt`.
+- Voxel load: `src/common/models/voxels.cpp`; sprite associations and `VOXELDEF`: `src/r_data/voxeldef.cpp`; model implementation: `src/common/models/models_voxel.cpp`.
+- Actor lights: `src/r_data/gldefs.cpp`, `AddLightDefaults`/`AddLightAssociation` calls/declarations.
+- Actor scripting: `src/scripting/thingdef.cpp`; scripting compiler family in `src/scripting/zscript/`.
+- Hub/intermission state: `src/g_hub.cpp` (`G_LeavingHub`, `CLUSTER_HUB`) is **not** a simultaneous world streaming engine.
 
-## Maintainer and licensing caveat
+## UZDoom
 
-UZDoom's `CONTRIBUTING.md` expressly disallows AI-assisted upstream PRs (even AI-assisted comments). This is distinct from GPL permissions for SNE's independent derivative. Root license and per-directory asset exceptions remain in scope for `SNE-WO-000B`.
+- CMake >=3.16 and C++20, optional release LTO, `find_package(Python3 3.6 REQUIRED)` as BUILD dependency.
+- Actor and ZScript compiler paths: `src/scripting/thingdef.cpp`, `src/scripting/zscript/zcc_compile_doom.cpp`.
+- Voxel and lights: `src/common/models/voxels.cpp`, `src/r_data/gldefs.cpp`.
+- Hub/intermission: `src/g_hub.cpp`.
+- `CONTRIBUTING.md` bans AI-assisted/generated upstream PR code and AI-generated art; does not itself cancel the GPL fork license.
 
-## Next mapping tasks (work order 000B)
+## BiasedDoom
 
-Pin actual renderer/backend selection logic and interfaces; map-level transition and save serialization paths; diff fork architecture and dependency graph; inspect relevant CMake subdirectories and third-party notices. Only then propose source modifications.
+- CMake >=3.16, C++17; opt-in/conditional CPython and fastgltf options.
+- `src/common/models/model_gltf.h/.cpp` has type definitions and `fastgltf` parser source behind `NEODOOM_GLTF_SUPPORT`; exact enablement/registration must be traced to build.
+- `vcpkg.json` declares optional features including `gltf-support` and `vcpkg-python`.
+- Documentation recommends external-texture `.gltf` workflow due to partial `.glb` embedded image limitations; test rather than assume.
+- ZScript deprecation is a stated future intent, NOT a verified current removal.
 
-See `evidence/sources/SNE-SRC-{GZDOOM,UZDOOM,BIASEDDOOM,CLASSIC}-001.md` for links and exact SHA references.
+## Classic references
+
+- Chocolate Doom: `src/doom/p_setup.c` and C99/SDL2 CMake configuration; appropriate for concept study, not a drop-in ZScript host.
+- Original Doom: `linuxdoom-1.10/p_setup.c`; note historical source header uses original license language even though root README later mentions GPL-2.0 licensing; exact code provenance matters.
+
+## Unresolved before foundation decision
+
+Whole-tree dependency manifest, source-to-runtime registration, glTF memory hardening, ZScript game boot, Windows build, GPU performance, release asset rights, maintainer update strategy. All require Phase 00 follow-up and/or Phase 01 authorization.

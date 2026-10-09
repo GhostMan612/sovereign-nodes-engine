@@ -1,0 +1,246 @@
+{
+  "artifact": "WO-000A-PUBLISHED-GIT-BLOB-RECONSTRUCTION",
+  "source_zip": "SNE-WO-000A-Research-v0.3.0.zip",
+  "published_commit": "369722fcd0839447cd5ecf5b78aa1ca7d8e2645c",
+  "modified_files_cross_checked_with_github_blob_sha1": [
+    "WO-000A-INSTALL.md",
+    "artifact-chain/evidence/SNE-EVD-000A.md",
+    "blueprints/research/SOVEREIGN-NODES-INVENTORY.md",
+    "blueprints/research/UPSTREAM-CODE-MAP.md",
+    "docs/WO-000A-START-HERE.md",
+    "evidence/sources/SNE-SRC-BIASEDDOOM-001.md",
+    "evidence/sources/SNE-SRC-CLASSIC-001.md",
+    "evidence/sources/SNE-SRC-GAME-001.md",
+    "evidence/sources/SNE-SRC-GZDOOM-001.md",
+    "evidence/sources/SNE-SRC-UZDOOM-001.md",
+    "governance/WO-000A-REVIEW-FINDINGS.md"
+  ],
+  "normalization": "rstrip spaces and tabs on every Markdown line; LF bytes",
+  "count": 28,
+  "files": [
+    {
+      "path": "WO-000A-INSTALL.md",
+      "committed_sha256": "7156585b0bb12870f43a270834888a4beb32937d755f1245b0daaac22c04deef",
+      "committed_git_blob_sha1": "af3e295868186bc734d0f582984c02df8c74e60d",
+      "size_bytes": 1768,
+      "original_package_sha256": "d5e35d1f0168ef207e4db23a7b198d342e3dd1dbfff52424ce1bc726834a8075",
+      "changed_after_install": true
+    },
+    {
+      "path": "artifact-chain/acceptance/SNE-ACC-000A.md",
+      "committed_sha256": "ba9adabbce310914354a0295e683b6ea88d345155566eae76d78f4c5b2da7974",
+      "committed_git_blob_sha1": "ad557778630151e32b2559fcc1e133a907f7bf28",
+      "size_bytes": 619,
+      "original_package_sha256": "ba9adabbce310914354a0295e683b6ea88d345155566eae76d78f4c5b2da7974",
+      "changed_after_install": false
+    },
+    {
+      "path": "artifact-chain/evidence/SNE-EVD-000A.md",
+      "committed_sha256": "f4b7563296a096befd9287b9ecda90161e396a5c6150988306dd3e17525635b7",
+      "committed_git_blob_sha1": "0df2871f0bd10b8079e7cf5601815550465ed3a4",
+      "size_bytes": 1365,
+      "original_package_sha256": "02beb95ed9dee9e92255c869e5cba36e4100119176e93ef9730fccddd4833584",
+      "changed_after_install": true
+    },
+    {
+      "path": "artifact-chain/reconciliation/SNE-REC-000A.md",
+      "committed_sha256": "9e19ecb41597f62c0335acd8a5e11fb80be09316a9e48a0c7b543988ef3104fd",
+      "committed_git_blob_sha1": "e05ea65fee041a8e2a44e32483e9627ddc263c09",
+      "size_bytes": 1253,
+      "original_package_sha256": "9e19ecb41597f62c0335acd8a5e11fb80be09316a9e48a0c7b543988ef3104fd",
+      "changed_after_install": false
+    },
+    {
+      "path": "artifact-chain/verification/SNE-VER-000A.md",
+      "committed_sha256": "f4093d88408875f174953a560516ded2fb9e8a3bf9e6eca60bf7e18dd678bd1c",
+      "committed_git_blob_sha1": "12d6dbbb6b889c924d728655ebed02c5a4e32d8e",
+      "size_bytes": 1139,
+      "original_package_sha256": "f4093d88408875f174953a560516ded2fb9e8a3bf9e6eca60bf7e18dd678bd1c",
+      "changed_after_install": false
+    },
+    {
+      "path": "artifact-chain/work-orders/SNE-WO-000A.md",
+      "committed_sha256": "7d8905f7ddfe30dc266624d4732e835861c649a30d7abe83ce3971a22d54435d",
+      "committed_git_blob_sha1": "99341e79849eeb177e393c8f78047764a8da050a",
+      "size_bytes": 2118,
+      "original_package_sha256": "7d8905f7ddfe30dc266624d4732e835861c649a30d7abe83ce3971a22d54435d",
+      "changed_after_install": false
+    },
+    {
+      "path": "blueprints/architecture/SNE-RESEARCH-ARCH-000A.md",
+      "committed_sha256": "816f6e5bc983baacaed2b731033a5c8addb0ddd8a2b25066c97be3f97a0c0a92",
+      "committed_git_blob_sha1": "c707af6c3b8ce329d3a0a61dd59c064a13d6c809",
+      "size_bytes": 1296,
+      "original_package_sha256": "816f6e5bc983baacaed2b731033a5c8addb0ddd8a2b25066c97be3f97a0c0a92",
+      "changed_after_install": false
+    },
+    {
+      "path": "blueprints/diagrams/SNE-000A-RESEARCH-FLOW.md",
+      "committed_sha256": "69a6029b473d9a4686bc33d999c5e38e3161462df5e802bba35a3902718c88e5",
+      "committed_git_blob_sha1": "4edd9927f5b0a0238cf8c367ec4fee97f0e451d3",
+      "size_bytes": 604,
+      "original_package_sha256": "69a6029b473d9a4686bc33d999c5e38e3161462df5e802bba35a3902718c88e5",
+      "changed_after_install": false
+    },
+    {
+      "path": "blueprints/research/CANDIDATE-MATRIX.md",
+      "committed_sha256": "77a347d727ef4da0954213753c6ee84cba46fb55200ec8e11cf8635c33c2f3fa",
+      "committed_git_blob_sha1": "1d48f723738f38a36f9a249945d725210e42cba8",
+      "size_bytes": 1902,
+      "original_package_sha256": "77a347d727ef4da0954213753c6ee84cba46fb55200ec8e11cf8635c33c2f3fa",
+      "changed_after_install": false
+    },
+    {
+      "path": "blueprints/research/RESEARCH-QUEUE.md",
+      "committed_sha256": "e38650ec1caa0d4fcaf9e191acc1c319c49fd3a428a13623c10b1e7867782ebb",
+      "committed_git_blob_sha1": "1f68f3433f69e478f55b5c4ff4afeae48300598c",
+      "size_bytes": 1591,
+      "original_package_sha256": "e38650ec1caa0d4fcaf9e191acc1c319c49fd3a428a13623c10b1e7867782ebb",
+      "changed_after_install": false
+    },
+    {
+      "path": "blueprints/research/SNE-000A-RESEARCH-GAPS.md",
+      "committed_sha256": "e7c322802cf8ce2491285b2e2a5e7dccc374d0f400093e18b0d34f80f5cb5fd6",
+      "committed_git_blob_sha1": "baf3e73cd88eba38de2c8677f18d80caab1151a9",
+      "size_bytes": 1366,
+      "original_package_sha256": "e7c322802cf8ce2491285b2e2a5e7dccc374d0f400093e18b0d34f80f5cb5fd6",
+      "changed_after_install": false
+    },
+    {
+      "path": "blueprints/research/SNE-000A-REUSE-VS-REWRITE.md",
+      "committed_sha256": "12972a8a730bdba6f7bdefb80596fbb6c966148406783deb207a63775b3c31c2",
+      "committed_git_blob_sha1": "f0a26bd4f3f81441b743151028d3875a3d9042a7",
+      "size_bytes": 2112,
+      "original_package_sha256": "12972a8a730bdba6f7bdefb80596fbb6c966148406783deb207a63775b3c31c2",
+      "changed_after_install": false
+    },
+    {
+      "path": "blueprints/research/SNE-000A-TIER-A-COMPAT.md",
+      "committed_sha256": "0e07fdfb857e33c80a59cdabd302445b2b14a86890d5769cd901af68210804fd",
+      "committed_git_blob_sha1": "02770a23e8e7450e55d1ab57fa1911b629b79c40",
+      "size_bytes": 2410,
+      "original_package_sha256": "0e07fdfb857e33c80a59cdabd302445b2b14a86890d5769cd901af68210804fd",
+      "changed_after_install": false
+    },
+    {
+      "path": "blueprints/research/SOVEREIGN-NODES-INVENTORY.md",
+      "committed_sha256": "3d6e62d7d4f1da3c3cf4a2c558a368dd5fa98fa75a275cd9f2d6dab4b4b1a580",
+      "committed_git_blob_sha1": "46e37d2a177cb961354730dca74226e3ec9b49c2",
+      "size_bytes": 3732,
+      "original_package_sha256": "1e1be99a1092f1518494a75314f56778fd816b84f65bae67c90225435be49bdf",
+      "changed_after_install": true
+    },
+    {
+      "path": "blueprints/research/UPSTREAM-CODE-MAP.md",
+      "committed_sha256": "0331fa0340c0c8254e89738625d9522214102e193bc83bd97a7e51caf94ef627",
+      "committed_git_blob_sha1": "9f86a3bc0dfddfd55b18164ce55dc04ced2ea6e2",
+      "size_bytes": 2903,
+      "original_package_sha256": "4c86f06962de6abd4c505b9a6c6182950b7e95d9ecf688dba5b1bf3defb254c8",
+      "changed_after_install": true
+    },
+    {
+      "path": "docs/WO-000A-START-HERE.md",
+      "committed_sha256": "6a7a822f790fd34f9136efa8e378b6ec8aafb25ff4d52e2d9c90885ae4b933b5",
+      "committed_git_blob_sha1": "d9bf484cf7498ebd14b7e5e2247cf6172d2a9b4f",
+      "size_bytes": 2424,
+      "original_package_sha256": "ac06d5ad2c72fc3571bf4c286497aef71289bde2db3c3a32793418d2a21263b9",
+      "changed_after_install": true
+    },
+    {
+      "path": "evidence/sources/SNE-REVISION-LEDGER.md",
+      "committed_sha256": "3d6550d97a1668abbaa21bd4abef001b06242d6b185b2ceccf6fe333a77e4e93",
+      "committed_git_blob_sha1": "52e0bb8902cf184b5d858a8f1424c95227dd6304",
+      "size_bytes": 1567,
+      "original_package_sha256": "3d6550d97a1668abbaa21bd4abef001b06242d6b185b2ceccf6fe333a77e4e93",
+      "changed_after_install": false
+    },
+    {
+      "path": "evidence/sources/SNE-SRC-BIASEDDOOM-001.md",
+      "committed_sha256": "a143c25154cec01a3c36f7b063ef9b8ee18331ccaae55149d90a757060d8b279",
+      "committed_git_blob_sha1": "c3f2d2a6da13a0ac5cf775fbc7bf28781ecfc807",
+      "size_bytes": 2209,
+      "original_package_sha256": "d6de2e788dff59d8446f16ba8dc45d073f8e8312914d9a8086d70a95d09458b6",
+      "changed_after_install": true
+    },
+    {
+      "path": "evidence/sources/SNE-SRC-CLASSIC-001.md",
+      "committed_sha256": "1633cad49d08061be297a684e3c5ee279a5886687efc00a40f60aaf5e3318339",
+      "committed_git_blob_sha1": "f3ad83bced5124f3bb4aeb9632209e1f3f247d9b",
+      "size_bytes": 2491,
+      "original_package_sha256": "1297010f2c5ac5283bcee2027db2b7349dfada914963611b39248987634c09cf",
+      "changed_after_install": true
+    },
+    {
+      "path": "evidence/sources/SNE-SRC-GAME-001.md",
+      "committed_sha256": "99e1b8b47585047818150258df655105f760382a49df9559c0093bb0635935de",
+      "committed_git_blob_sha1": "5c6a451e5d26acae52c25a50ad45472f36631d62",
+      "size_bytes": 5306,
+      "original_package_sha256": "f1f8ec4080671ff9a24bc828088499ddf8cba3a3b4d9eafc30244412d62776de",
+      "changed_after_install": true
+    },
+    {
+      "path": "evidence/sources/SNE-SRC-GZDOOM-001.md",
+      "committed_sha256": "30d9bb555bc8e95ef33fb8e2a4a74e07a28ac7fa69ae61b56b73273eb0b200ec",
+      "committed_git_blob_sha1": "276e2cd42560e7890448d6113b7b266a86aa4a14",
+      "size_bytes": 2333,
+      "original_package_sha256": "34e9efa126c02d9b36fc36e01b6c6c1c2e839e43797354b2a28fdef29a5f20a1",
+      "changed_after_install": true
+    },
+    {
+      "path": "evidence/sources/SNE-SRC-UZDOOM-001.md",
+      "committed_sha256": "088c9eeab6eb33ec0279ceb20d7202923c52c46ae186dfc343c5ef00919af4c0",
+      "committed_git_blob_sha1": "ba00f6e9c6736fbb90423a8338d7a952420c8f09",
+      "size_bytes": 2474,
+      "original_package_sha256": "f320b1de6937603893393c1851876816e81a768013b2e2b92cd3d2b69376427b",
+      "changed_after_install": true
+    },
+    {
+      "path": "evidence/sources/SOURCE-INDEX.md",
+      "committed_sha256": "c9631fd0ac6f699cf66d0e044f43fd094815c2a67d7449a89382411f7820f0c1",
+      "committed_git_blob_sha1": "0d5ea140953cca02e6a6903f06dd4aa51b58fb23",
+      "size_bytes": 1414,
+      "original_package_sha256": "c9631fd0ac6f699cf66d0e044f43fd094815c2a67d7449a89382411f7820f0c1",
+      "changed_after_install": false
+    },
+    {
+      "path": "governance/WO-000A-REVIEW-FINDINGS.md",
+      "committed_sha256": "c46159983da2f3fa3388a2689539b4fd01c7fbc1cc64b9563cfcfd5384ead299",
+      "committed_git_blob_sha1": "64030149106e5e2824140b3f8ac9885b56d72e74",
+      "size_bytes": 2057,
+      "original_package_sha256": "b434cd366778e19ba19421a7f9451ccdbbfad139aec9a35bc716ff3fd6caace9",
+      "changed_after_install": true
+    },
+    {
+      "path": "registry/PHASE-00-ARTIFACT-INDEX.md",
+      "committed_sha256": "b02331234c4d540c9af65ca0e4d25a5110e05acd08b23c828de2647fa64c61e7",
+      "committed_git_blob_sha1": "2c4de6f0754035a3ab1a9bef9aae7fddc5d3f6e2",
+      "size_bytes": 1294,
+      "original_package_sha256": "b02331234c4d540c9af65ca0e4d25a5110e05acd08b23c828de2647fa64c61e7",
+      "changed_after_install": false
+    },
+    {
+      "path": "scaffold/WO-000A-CHANGELOG.md",
+      "committed_sha256": "142dda62b3778666e82f153aa66c039dbb66bcd0db86c244654673189b280a13",
+      "committed_git_blob_sha1": "f8637ce240ac476c0b769bd8fd66a37021d8187b",
+      "size_bytes": 934,
+      "original_package_sha256": "142dda62b3778666e82f153aa66c039dbb66bcd0db86c244654673189b280a13",
+      "changed_after_install": false
+    },
+    {
+      "path": "scaffold/WO-000A-FILE-SHA256.json",
+      "committed_sha256": "e143ad71c8b9f9c354f149e56398845e86343cbbdd55be07d885b2b9b240888c",
+      "committed_git_blob_sha1": "b3c1b6f17f69cf88cde84192f106d5e1a3a6c7ce",
+      "size_bytes": 7534,
+      "original_package_sha256": "e143ad71c8b9f9c354f149e56398845e86343cbbdd55be07d885b2b9b240888c",
+      "changed_after_install": false
+    },
+    {
+      "path": "scaffold/WO-000A-MANIFEST.md",
+      "committed_sha256": "d30c9a63942b71c5bdd9fd6d6766309cf36b7a1eaa0c86ce1a895563d8519124",
+      "committed_git_blob_sha1": "4fa125efa5471266499fb6bdeeccb94113b2871f",
+      "size_bytes": 3400,
+      "original_package_sha256": "d30c9a63942b71c5bdd9fd6d6766309cf36b7a1eaa0c86ce1a895563d8519124",
+      "changed_after_install": false
+    }
+  ]
+}

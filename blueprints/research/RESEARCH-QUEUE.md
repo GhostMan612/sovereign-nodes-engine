@@ -1,18 +1,21 @@
-# SNE Research Queue — v0.3.0
+# SNE Phase 00 research queue — v0.4.0
 
-**Date:** 2026-10-09. Source pins recorded; no builds, gameplay runs, or benchmarks. Phase 00 remains OPEN.
+Date: 2026-10-09. Research statuses distinguish source observations, full audits, operator benchmarks and independent acceptance.
 
-| ID | Priority | Research item | Source status | Next step |
+| ID | Priority | Research question | Status | Next action |
 |---|---|---|---|---|
-| R00-01 | P0 | Pin candidate and game source revisions | SOURCE PINNED (7 repos) | Reconfirm at next audit / update on intentional pin change |
-| R00-02 | P0 | Inventory game contracts | SOURCE REVIEW PARTIAL | Inspect binaries and complete actor/call paths |
-| R00-03 | P0 | License/dependency audit | ROOT LICENSES PARTIAL | Third-party/asset file-by-file review, WO-B |
-| R00-04 | P0 | Candidate ZScript and 4.14 compatibility | CODE PATH IDENTIFIED | Build/runtime comparison after authorization |
-| R00-05 | P0 | UZDoom upstream AI contributions policy | SOURCE VERIFIED | Architect fork strategy distinct from upstream PRs |
-| R00-06 | P1 | Voxel and glTF code seams | SOURCES IDENTIFIED | Interface/diff audit, optional model prototype |
-| R00-07 | P1 | Intel UHD 620 benchmark | NOT RUN | Operator approval and repeatable capture |
-| R00-08 | P1 | Map transitions / saves / persistence | SOURCE PARTIAL | Trace g_hub and gameplay state behavior |
-| R00-09 | P0 | Handoff and Mantle boundary security | RISK IDENTIFIED | Define v2 safe synthetic snapshot limits |
-| R00-10 | P1 | Upstream fork maintenance | OPEN | Release history, dependency load, patch-surface analysis |
+| R00-01 | P0 | Pin upstream/source revisions | SOURCE-COMPLETE FOR AUDITED REVISIONS | refresh when selecting release/branch |
+| R00-02 | P0 | Current Doom gameplay interfaces | SOURCE-PARTIAL | exhaustive map and classes/validator coverage, game test |
+| R00-03 | P0 | GPL + all per-file/assets and dependencies | PARTIAL | enumerate bundled asset notices and full SBOM |
+| R00-04 | P0 | Actual ZScript/MAPINFO compatibility | NOT RUN | target-machine Tier-A fixtures |
+| R00-05 | P0 | UZDoom policy and C++ toolchain | SOURCE-PARTIAL | record build, legal and downstream maintenance decision |
+| R00-06 | P1 | Voxel/GLDEFS/glTF source seams | SELECTED SOURCES VERIFIED | full registration call graph; BiasedDoom GLB proof |
+| R00-07 | P1 | Intel UHD 620 graphics benchmark | NOT RUN | separate operator-authorized test work order |
+| R00-08 | P1 | Hub state / world continuity | SOURCE-PARTIAL | practical persistence tests, streaming gap |
+| R00-09 | P0 | Handoff and optional Mantle bridge security | SOURCE-PARTIAL | test JSON boolean `hasParadox`, no real data, snapshot threats |
+| R00-10 | P1 | Fork update/merge maintenance cost | PROPOSAL ONLY | pinned diffs, patch series and CI effort |
+| R00-11 | P0 | WP-000A checksum discrepancy | RECONCILED IN DOCS | inspect committed-source hash report; do not rewrite package manifest |
+| R00-12 | P1 | BiasedDoom conditional glTF/runtime registration | OPEN | inspect CMake macro mappings and actual plugin registration |
+| R00-13 | P1 | UZDoom/C++20 Windows build dependencies | OPEN | planned reproducible build env and operator approval |
 
-Primary read: `docs/WO-000A-START-HERE.md`. Work order 000A is not accepted merely because source pins exist. 000B deep engine audit remains in the queue; no engine decision scored.
+**Gate:** Source observed != compiled != played != accepted. WO-000B does not close Phase 00.

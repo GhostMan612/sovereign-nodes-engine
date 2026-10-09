@@ -1,0 +1,23 @@
+{
+  "package": "SNE-WO-000B-ENGINE-AUDIT-0004",
+  "version": "0.4.0",
+  "generated_at_date": "2026-10-09",
+  "required_repo_base_commit": "369722fcd0839447cd5ecf5b78aa1ca7d8e2645c",
+  "verification_scope": "ZIP and documentation packaging only; engine tests NOT RUN",
+  "expected_archive_file_count": 31,
+  "result": "PASS \u2014 PACKAGE INTEGRITY ONLY",
+  "checks": {
+    "zip_crc": "PASS",
+    "utf8": "PASS",
+    "lf_only": "PASS",
+    "no_trailing_whitespace": "PASS",
+    "path_security": "PASS",
+    "allowed_extensions": "PASS",
+    "manifest_exact_members": "PASS",
+    "sha256_matches": "PASS"
+  },
+  "engine_build": "NOT RUN",
+  "runtime_compatibility": "NOT RUN",
+  "gpu_benchmark": "NOT RUN",
+  "independent_review": "NOT MET"
+}

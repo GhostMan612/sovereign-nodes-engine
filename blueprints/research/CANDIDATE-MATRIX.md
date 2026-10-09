@@ -1,24 +1,19 @@
-# Engine candidates — pinned-source preliminary matrix
+# Phase 00 candidate matrix — v0.4.0 evidence update
 
-**No winner chosen. No scores until runtime and legal gates pass.** Revision details: `evidence/sources/SNE-REVISION-LEDGER.md`.
+**Status:** SOURCE CODE RESEARCH ONLY / foundation DECISION STILL PENDING. No candidate build/benchmark/compatibility PASS.
 
-| Candidate | Source observed | Main strength | Main constraint | Lane |
+| Candidate | Source strength | Production suitability hypothesis | Observed risk | Next gate |
 |---|---|---|---|---|
-| GZDoom | C++17 CMake; voxel files; ZScript compiler; GLDEFS parser | High compatibility reference; minimal porting | Future upstream and exact runtime baseline need measurement | PRODUCTION CANDIDATE |
-| UZDoom | C++20 CMake; Python3 build dependency; ZScript/voxel source | Active GZDoom-family direction | No AI-assisted upstream PRs; asset-specific license exceptions | PRODUCTION CANDIDATE WITH GOVERNANCE RISK |
-| BiasedDoom | Conditional `model_gltf.cpp` with fastgltf; Python/glTF flags | Modern animation/materials experiment | Experimental scope; ZScript roadmap; security/performance | EXPERIMENTAL CANDIDATE |
-| Chocolate Doom | C99/SDL2, WAD/BSP/collision source | Readable original algorithms | Lacks modern ZScript expectations | REFERENCE ONLY |
-| Original Doom | BSP/sector/BLOCKMAP reference in historical Linux code | Design archaeology | No modern port/engine integration | REFERENCE ONLY |
+| GZDoom | Voxel/GLDEFS/ZScript/hub paths directly inspected; C++17 CMake | First production-baseline candidate | compiler/dependency details, modern glTF extensibility, measured GPU cost | native build + Tier-A pass |
+| UZDoom | Same core systems at inspected revision; C++20, optional LTO | Second production-baseline candidate | upstream AI-code PR prohibition, build system differences, release asset rights | native build + Tier-A pass |
+| BiasedDoom | `model_gltf` and CMake options inspected; fastgltf/optional CPython confirmed | Experimental rendering/model reference | ZScript deprecation intent, conditional codepaths, glTF embed-texture limitations, security/perf | glTF and ZScript runtime proof |
+| Chocolate Doom | Original 2.5D logic and map loader, C99/SDL | Education/reference | no drop-in ZScript/high-end renderer | optional conceptual review |
+| Original Doom | 1990s reference implementation | Education/reference | lacks modern assets/script/render systems | historical only |
 
-## Decision model (unscored)
+## Scoring hold
 
-- Sovereign Nodes Tier-A parity — 30 points
-- Build reproducibility/merge effort — 20 points
-- Real UHD 620 benchmarks — 15 points
-- Lighting/voxel/glTF extensibility — 15 points
-- Licensing and team contribution governance — 10 points
-- World/handoff architecture — 10 points
+Keep weighted scoring at **NOT SCORED** until operator-authorized Tier-A tests and GPU benchmarks exist. Published features are not benchmark scores. Reference rubric: 30% Tier-A, 20% maintainability/build, 15% low-end performance, 15% extensibility, 10% licensing/policy, 10% world/handoff feasibility.
 
-**Hard stops:** Tier-A parity failure, unresolved redistribution licensing, unusable measured performance, or unsafe Mantle boundary. No conclusion from README feature lists alone.
+## Provisional result
 
-Root GPL text is not a complete third-party/asset-license review. UZDoom policy controls contributions *to their upstream*, not blanket restrictions on license-compliant SNE independent fork development.
+**GZDoom / UZDoom shortlist remains intact**; BiasedDoom merits a separate experimental comparison. Revisit after C/D work orders. ADR-SNE-002 is not adopted.

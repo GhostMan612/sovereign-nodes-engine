@@ -1,21 +1,18 @@
-# SNE Phase 00 source ledger — updated 2026-10-09
+# Phase 00 source index — v0.4.0
 
-**Current evidence pins:** `SNE-REVISION-LEDGER.md`. Links in research dossiers target immutable Git commit revisions. Accessed via GitHub repository connector and supplemented by publicly documented README/license information. **No binaries built or tested.**
+**Source protocol:** immutable GitHub commit URL + path + observation type. The older SRC-01…11 records remain historical references; follow WO-000A pin ledger and the newly recorded WO-000B ledger for exact revision identity.
 
-| Source ID | Dossier | Source read status |
+| Source ID | Record | Review level |
 |---|---|---|
-| SRC-GAME-001 | `SNE-SRC-GAME-001.md` | selected real project source files READ |
-| SRC-GZDOOM-001 | `SNE-SRC-GZDOOM-001.md` | selected engine source paths READ/IDENTIFIED |
-| SRC-UZDOOM-001 | `SNE-SRC-UZDOOM-001.md` | CMake, ZScript paths, contributor policy, GPL file READ |
-| SRC-BIASEDDOOM-001 | `SNE-SRC-BIASEDDOOM-001.md` | model glTF implementation/header and CMake READ |
-| SRC-CLASSIC-001 | `SNE-SRC-CLASSIC-001.md` | Chocolate and original Doom setup/loading source READ |
+| SNE-GAME-001 | `SNE-SRC-GAME-001.md` | Selected current game source, no runtime |
+| SNE-GZ-001 | `SNE-SRC-GZDOOM-001.md` | Initial GZDoom source map |
+| SNE-GZ-002 | `SNE-SRC-GZDOOM-002.md` | Pinned voxel/GLDEFS/ZScript/hub file reads |
+| SNE-UZ-001 | `SNE-SRC-UZDOOM-001.md` | Initial UZDoom source map |
+| SNE-UZ-002 | `SNE-SRC-UZDOOM-002.md` | Pinned actor/voxel/light/policy/licensing reads |
+| SNE-BD-001 | `SNE-SRC-BIASEDDOOM-001.md` | Initial BiasedDoom source map |
+| SNE-BD-002 | `SNE-SRC-BIASEDDOOM-002.md` | Pinned fastgltf/option/docs reads |
+| SNE-CLASSIC-001 | `SNE-SRC-CLASSIC-001.md` | Historical Chocolate/id Doom sources |
+| SNE-REV-P00A | `SNE-REVISION-LEDGER.md` | Pinned first source reconnaissance |
+| SNE-REV-P00B | `SNE-SOURCE-PINS-000B.md` | Immutable selected source links, 2026-10-09 |
 
-## Reliability rubric
-
-- **SOURCE-OBSERVED** = text/code can be directly inspected at linked revision.
-- **DOCUMENTED-CLAIM** = upstream README/maintainer describes feature; not independently tested.
-- **HYPOTHESIS** = an architectural suggestion requiring prototype.
-- **NOT RUN** = compilation, gameplay, performance and security proof absent.
-- **REVIEW PENDING** = no independent verification/acceptance signed.
-
-Never replace an evidence URL with a floating branch URL in a completed source dossier. Keep chat logs/transcripts out of the repository.
+**Coverage:** Not exhaustive; runtime, benchmarks, full dependency/asset legal clearance and upstream contribution eligibility are separate. Direct links are retained in each record, not giant raw source dumps.
