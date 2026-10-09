@@ -1,0 +1,212 @@
+{
+  "package": "SNE-P00-FOUNDATION-0002",
+  "version": "0.2.0",
+  "base": "SNE-SCAFFOLD-0001 v0.1.0",
+  "created": "2026-10-09",
+  "items": [
+    {
+      "path": "sovereign-nodes-engine/PHASE-00-INSTALL.md",
+      "action": "ADD",
+      "bytes": 2470,
+      "sha256": "1ac5ba29bd9944ec3477ba4483c1457cfac20e04180e05f4c33d4b66b160186e"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/acceptance/SNE-ACC-000.md",
+      "action": "ADD",
+      "bytes": 375,
+      "sha256": "ce4e4096f18f4e727393e2e302a60ecd729e1f9b826a26982c5eb18dc42d0045"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/blueprints/SNE-BP-000.md",
+      "action": "ADD",
+      "bytes": 436,
+      "sha256": "a480e93ccc4e9fd04c93727ce15ba9acfb7121220a96537648416622c3650d4f"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/decisions/SNE-DEC-000.md",
+      "action": "ADD",
+      "bytes": 415,
+      "sha256": "f9ae3347df178e9b1f9552562180fb748ea3ab957b6c77014f94b38d8f59451b"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/evidence/SNE-EVD-000.md",
+      "action": "ADD",
+      "bytes": 1892,
+      "sha256": "57e84c14d95f5abf7eb5e1f06a64944bcd4ae7b19e91db80eae61ab50df7f392"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/intake/SNE-INT-000.md",
+      "action": "ADD",
+      "bytes": 783,
+      "sha256": "fa43fc5599ddd5f47279c1aea43198ac50afa19d9522e12109084be4ebeef119"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/reconciliation/SNE-REC-000.md",
+      "action": "ADD",
+      "bytes": 666,
+      "sha256": "fff7f7fe20c3b35828d25024bf1386848a459bfec24e9b676712130a784c3692"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/verification/SNE-VER-000.md",
+      "action": "ADD",
+      "bytes": 442,
+      "sha256": "5401c858b501766541d572544bb3f1c2f088fd31fc429357345c56249bdb6304"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/work-orders/SNE-WO-000A.md",
+      "action": "ADD",
+      "bytes": 1134,
+      "sha256": "e4c24dfe464197ebde8d7ae0eecfe7fea4839d4dc85d7cc18f8d630aecf29747"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/work-orders/SNE-WO-000B.md",
+      "action": "ADD",
+      "bytes": 1122,
+      "sha256": "2bf00b326059cc4fc2bdaafbb3f9a42d9de86a60754c36e976d68244c2cdbc93"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/work-orders/SNE-WO-000C.md",
+      "action": "ADD",
+      "bytes": 1091,
+      "sha256": "cd0e09283bd6183a520fb06b89b114366f19ee978ed90f31c8188c35453ddf5c"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/work-orders/SNE-WO-000D.md",
+      "action": "ADD",
+      "bytes": 1103,
+      "sha256": "92745bb313998909941bb14be4533813a2903cc0a49805cf7ba71e97e4f7bdfd"
+    },
+    {
+      "path": "sovereign-nodes-engine/artifact-chain/work-orders/SNE-WO-000E.md",
+      "action": "ADD",
+      "bytes": 1107,
+      "sha256": "4c5635975ba396356a10cde195b9a21ef276a91c532071c3a1ae9e83c7acf77f"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md",
+      "action": "ADD",
+      "bytes": 1724,
+      "sha256": "2dc8623119669267beb0c184874a6c551eb1367b0445f56af0600e188fbc5707"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/interfaces/IF-SNE-001-GAME-COMPAT.md",
+      "action": "ADD",
+      "bytes": 1019,
+      "sha256": "551e886b95d51585f5a0a64d476b6d68d0f7138b399645ba5cc90e7fa0689d6a"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/interfaces/IF-SNE-002-MANTLE-SNAPSHOT.md",
+      "action": "ADD",
+      "bytes": 940,
+      "sha256": "0497da67f9fbb9887b43d3f64c4d20f68d522335e426bc666da9625fa715f9c9"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/interfaces/IF-SNE-003-WORLD-TRANSITION.md",
+      "action": "ADD",
+      "bytes": 886,
+      "sha256": "09863ea34a97d0abe1cece6c3499b44d6e823ede1d48a32e08275e3886951046"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/phases/PHASE-00-FOUNDATION.md",
+      "action": "REPLACE",
+      "bytes": 4839,
+      "sha256": "cc4d6a137decd409db551caa1f835c7862f02f351ab626ff88dfed40e9a2e7f7"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/CANDIDATE-MATRIX.md",
+      "action": "ADD",
+      "bytes": 2702,
+      "sha256": "35919f5d88cb59169f4c0b77b8092ba7f696de978d4c6b2b14efd19f04f1ce35"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/COMPATIBILITY-TEST-MATRIX.md",
+      "action": "ADD",
+      "bytes": 2211,
+      "sha256": "b0d08f99844542d908f6663af7318cc912b8e08ddbaef7cad11ad878c6522a48"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/DEPENDENCY-LICENSE-MATRIX.md",
+      "action": "ADD",
+      "bytes": 2157,
+      "sha256": "dd290a790ad6ed08cf6a0df8474a4f34c3b010beb6d1d4ff6acf73029b1b0f72"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/HARDWARE-BENCHMARK-PLAN.md",
+      "action": "ADD",
+      "bytes": 2252,
+      "sha256": "2419df3ed0e6ff3ac99f95e6bd22af5dc0b08a11859366b6520b77b4265e72bd"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/RESEARCH-QUEUE.md",
+      "action": "ADD",
+      "bytes": 1579,
+      "sha256": "747254fe1dc2f673cba7247a0f8627c1f574320b3c7b0ab03344bdbf649d4c28"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/SECURITY-BOUNDARIES.md",
+      "action": "ADD",
+      "bytes": 1643,
+      "sha256": "9cce30ea2697a61442e1f109f933560d6f1c1b96ea8ed19a77c2cff1ef69bfea"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/SOVEREIGN-NODES-INVENTORY.md",
+      "action": "ADD",
+      "bytes": 3526,
+      "sha256": "8610b538217d0697c44ab79f0f6f556e8909fab09950f5b5fda2104c0654ac19"
+    },
+    {
+      "path": "sovereign-nodes-engine/blueprints/research/UPSTREAM-CODE-MAP.md",
+      "action": "ADD",
+      "bytes": 3287,
+      "sha256": "d07386ed9f3a6202906504e80faa67c8c97854fee78c7d69d285f336247f5619"
+    },
+    {
+      "path": "sovereign-nodes-engine/docs/PHASE-00-START-HERE.md",
+      "action": "ADD",
+      "bytes": 1060,
+      "sha256": "21ccaeae9e480cf9b52b3cb53681994b3a9c6d28aaa6ce999d881951699ba239"
+    },
+    {
+      "path": "sovereign-nodes-engine/evidence/sources/SOURCE-INDEX.md",
+      "action": "ADD",
+      "bytes": 2259,
+      "sha256": "c6bb9867b1cd8856da4bd378bf066b9ca3adba81597b453a8eac6e981b263917"
+    },
+    {
+      "path": "sovereign-nodes-engine/governance/PHASE-00-REVIEW-GATES.md",
+      "action": "ADD",
+      "bytes": 1128,
+      "sha256": "44c2103ea7775131f84dd7df14b843e979a36884dd182405e6af5e8a6d786f88"
+    },
+    {
+      "path": "sovereign-nodes-engine/governance/PHASE-00-RISKS.md",
+      "action": "ADD",
+      "bytes": 1509,
+      "sha256": "dd574d2ec1ebef6eb5a8c2a6783aeb5a26a3675b59a1df9df849f87067669c38"
+    },
+    {
+      "path": "sovereign-nodes-engine/registry/PHASE-00-ARTIFACT-INDEX.md",
+      "action": "ADD",
+      "bytes": 869,
+      "sha256": "7ba2c58c1a83c5b1d973d0a3998ab811f7d79f7d1af7caa68d2068e23689240e"
+    },
+    {
+      "path": "sovereign-nodes-engine/scaffold/PHASE-00-CHANGELOG.md",
+      "action": "ADD",
+      "bytes": 736,
+      "sha256": "a31bf6b06c654e1328680493dadcffa1cc4b20b6fe077c68c750257afe9fa669"
+    },
+    {
+      "path": "sovereign-nodes-engine/verification/PHASE-00-VERIFICATION-PLAN.md",
+      "action": "ADD",
+      "bytes": 1142,
+      "sha256": "4d1f454fe1f07c68b9917960e24c43ab656725c0dae1ceea17a067d120ae2c67"
+    },
+    {
+      "path": "sovereign-nodes-engine/scaffold/PHASE-00-MANIFEST.md",
+      "action": "ADD",
+      "bytes": 3264,
+      "sha256": "5d5b7e2749b09fec16051352cbc7ee1658e4dfc0f9d6ae98c3b91b17ecb1fc57"
+    }
+  ]
+}
