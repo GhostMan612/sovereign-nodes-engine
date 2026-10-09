@@ -1,0 +1,15 @@
+{
+  "schema": "SNE-REVIEW-000D/1",
+  "status": "NOT_REVIEWED",
+  "reviewer_alias": null,
+  "independent_from_author": null,
+  "reviewed_at_utc": null,
+  "source_pins_verified": null,
+  "windows_recipe_reviewed": null,
+  "dependency_license_reviewed": null,
+  "benchmark_method_reviewed": null,
+  "test_evidence_present": false,
+  "accepted_scope": null,
+  "defect_ids": [],
+  "operator_decision": null
+}

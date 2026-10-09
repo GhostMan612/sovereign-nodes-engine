@@ -1,0 +1,20 @@
+{
+  "schema": "SNE-DEP-000D/1",
+  "status": "UNREVIEWED",
+  "component_name": null,
+  "component_version": null,
+  "candidate": null,
+  "origin": null,
+  "source_url": null,
+  "source_commit_sha40": null,
+  "download_sha256": null,
+  "spdx_license": null,
+  "license_file_url": null,
+  "copyright_notice": null,
+  "vcpkg_triplet_or_vendor_path": null,
+  "linkage": "UNKNOWN",
+  "redistribution_requirements": null,
+  "asset_rights_review": null,
+  "vulnerability_review_date": null,
+  "reviewer": null
+}

@@ -1,0 +1,332 @@
+{
+  "schema": "SNE-PACKAGE-SHA256/2",
+  "package": "SNE-WO-000D-v0.6.0",
+  "baseline_git_sha40": "706db57a4fbabd701244dd9e4674a59f7ab044f3",
+  "root_inside_zip": "sovereign-nodes-engine/",
+  "hash_algorithm": "sha256",
+  "hashes_are_of": "uncompressed utf-8 member bytes",
+  "self_hash_policy": "manifest self hash omitted",
+  "counts": {
+    "total_files": 45,
+    "replace": 7,
+    "add": 38
+  },
+  "files": [
+    {
+      "action": "ADD",
+      "path": "WO-000D-INSTALL.md",
+      "sha256": "bf7dbe300af06c4a286fbac3e3177a13be42b02b24276d1892fad16142ea0c9f",
+      "bytes": 4406,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "artifact-chain/acceptance/SNE-ACC-000D.md",
+      "sha256": "eaca770299a042d8504cf9c99b96dbaece8968a3d35fa4a07fe7a410f83de8c6",
+      "bytes": 1241,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "artifact-chain/evidence/SNE-EVD-000D.md",
+      "sha256": "6427573ed57735b7983b51da7e987995b410643711f8e508f22142bf8fe09a03",
+      "bytes": 1535,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "artifact-chain/reconciliation/SNE-REC-000D.md",
+      "sha256": "b3c564416cf4bd89ba296135490dff95e2172d55a2c3ed96b66797abe4294adb",
+      "bytes": 1178,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "artifact-chain/verification/SNE-VER-000D.md",
+      "sha256": "ed14300158f9793195c9a4aca11ce842f50550b78f535f572135e2bb64e1d4f8",
+      "bytes": 1533,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "REPLACE",
+      "path": "artifact-chain/work-orders/SNE-WO-000D.md",
+      "sha256": "aba23a86a20d3c832e0369baa625108a0771ddc4666a6f5b16182fb3ad26829b",
+      "bytes": 4241,
+      "expected_preimage_git_blob_sha1": "05e503642f58372edb49c53abf13aebec15497a9"
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/architecture/SNE-000D-EXECUTION-BOUNDARY.md",
+      "sha256": "e89ea4ef74a4006f9b86490fcedd5b98c44aa3ec9d5e9899c07cce0567e18989",
+      "bytes": 1931,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/diagrams/SNE-000D-REPRODUCIBILITY-FLOW.md",
+      "sha256": "9a1a0f0f282d51961994c89fc7fe6330f7210d56cc874e3c2703a47df659076a",
+      "bytes": 806,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "REPLACE",
+      "path": "blueprints/research/DEPENDENCY-LICENSE-MATRIX.md",
+      "sha256": "9f4dce23dba01914c065ec5c8c75152ffd5ef8ab01e332ef902b3dfdf7616754",
+      "bytes": 2583,
+      "expected_preimage_git_blob_sha1": "7fb7ced7137abef48b7ff4e155928db830e316a2"
+    },
+    {
+      "action": "REPLACE",
+      "path": "blueprints/research/HARDWARE-BENCHMARK-PLAN.md",
+      "sha256": "0226173f558fdbc8bd57ba1da83f7ada0d1ade5c05ea3b8abb3086313d156d73",
+      "bytes": 4250,
+      "expected_preimage_git_blob_sha1": "5eaccfd6b76672e0a84753d0029a215f002d9527"
+    },
+    {
+      "action": "REPLACE",
+      "path": "blueprints/research/RESEARCH-QUEUE.md",
+      "sha256": "df7672d7cbf2e64c3984bbdf76c01dbf953a91ff0875d5312e7c3abeaff6c49c",
+      "bytes": 2533,
+      "expected_preimage_git_blob_sha1": "591ade874fe37b3a53967d182e6cfe29a7398f49"
+    },
+    {
+      "action": "REPLACE",
+      "path": "blueprints/research/SNE-000B-COMPILER-BUILD-MATRIX.md",
+      "sha256": "029586460e4802186d31b8f584b012b7820931156efe2ee4aac7a750058e01a8",
+      "bytes": 2327,
+      "expected_preimage_git_blob_sha1": "cf52770e61f8b6ee243d32b605521ddbb4f0e0c6"
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-ARTIFACT-PROVENANCE.md",
+      "sha256": "abead9cd4cfe66e2a972182a521f6ffc6124ea6739812c0ea949abc90c44a919",
+      "bytes": 1779,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-BUILD-FAILURE-TAXONOMY.md",
+      "sha256": "ae620fe95f696196f7141488ecc2f5d059d3d29a172eb064bfc7cb515232b49c",
+      "bytes": 2410,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-BUILD-LANE-MATRIX.md",
+      "sha256": "069f8c67982a45ddf5627f166d57599cd87472ec9e05338751cd4f4fbc0e3868",
+      "bytes": 2422,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-CMAKE-OPTIONS.md",
+      "sha256": "179ba38f20e0e9ac9f4df43681d604095b5fbddd70397c7ed2533db72d6fbff5",
+      "bytes": 2305,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-COMPILER-TOOLCHAIN.md",
+      "sha256": "559be07f9d8bd159a890cd950942d2eb777fa1aeb18609efa596b87bdabb3770",
+      "bytes": 1858,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-DEPENDENCY-LOCK-PROTOCOL.md",
+      "sha256": "6897a71fd4c548a928448a52c206e38a4e404ca4998d74b45e635964f90b0dd2",
+      "bytes": 2420,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-HARDWARE-CAPTURE.md",
+      "sha256": "21429b86d4bf60620013f8aad378bbd44f454f8cdbc16a593d4fb808819f039c",
+      "bytes": 1775,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-MEASUREMENT-SOP.md",
+      "sha256": "1eba9831e1424faee87c325f3dea81500812a53d7f2d41fc4532a697f6a17b87",
+      "bytes": 2771,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-OPEN-QUESTIONS.md",
+      "sha256": "f339987ed28603faa5ff453422daef08fac03ccefdbb90aee819cf4620314f34",
+      "bytes": 1697,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-PERFORMANCE-DECISION-GATES.md",
+      "sha256": "3b57fc97111adc55aead2fd52edfb59370a5457964a8c1ab07753c4cc67899e0",
+      "bytes": 2103,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-REPRO-BUILD-COMMANDS.md",
+      "sha256": "cc56ced7abb0729b47468544aab40409d3c870c545f3228f590edd722c4e8901",
+      "bytes": 3484,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-TEST-SCENES.md",
+      "sha256": "4516219f4c9e90d74e30054207af5d15c5b2a58fcaf86c4dfb3ccc8daf52600e",
+      "bytes": 2215,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-THREAT-LICENSE-CHECKLIST.md",
+      "sha256": "a93b187ba4beb3a0baa0a2f191b93905d12dfa796624283cf405f4919eccc4ee",
+      "bytes": 1691,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000D-WINDOWS-ENV-INVENTORY.md",
+      "sha256": "1fd4157d36181ae29fa5cc1dc3ed70892bcb6d82922f82a6dfea5f61a846acd8",
+      "bytes": 2758,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "docs/WO-000D-START-HERE.md",
+      "sha256": "c6b1f3f0cf1c2af4794b7aceacdde6b4ef13cd64cb26f461ef7fb13582bf7a41",
+      "bytes": 1782,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "evidence/sources/SNE-000D-PIN-LEDGER.md",
+      "sha256": "765f604e01aa3c07695268a5b2b6c15acbe7b2dadcad4ccda0b01aac8099f772",
+      "bytes": 3734,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "evidence/sources/SNE-SRC-BIASEDDOOM-004.md",
+      "sha256": "c638707a4dc497ee879878f780aa72d457f7be73abc4be03f55c9fd5e88d9059",
+      "bytes": 1790,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "evidence/sources/SNE-SRC-GZDOOM-004.md",
+      "sha256": "7e5e10712a807a4d5df8fc13b248a5d1397950f5e0c29adf6530a4c04922cab0",
+      "bytes": 1240,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "evidence/sources/SNE-SRC-UZDOOM-004.md",
+      "sha256": "0e51cc77907cdb48d1c33a697e0bb98e9b7c17c9fd00ecafe66f64901264d3fd",
+      "bytes": 1437,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "REPLACE",
+      "path": "evidence/sources/SOURCE-INDEX.md",
+      "sha256": "6f2bebc0897701e7ab515a765cd6849ffd33e14014a0b5f4732c557c42d27f62",
+      "bytes": 1376,
+      "expected_preimage_git_blob_sha1": "81dc31193a275d21c86081d8ca50a683e3d74160"
+    },
+    {
+      "action": "ADD",
+      "path": "governance/WO-000D-REVIEW-FINDINGS.md",
+      "sha256": "e7eb732d7fba0d3166d437b175a2f644ab8f47cdb5e24869cb6469f802299bac",
+      "bytes": 1754,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "governance/WO-000D-RISK-REGISTER.md",
+      "sha256": "bfc82e72ab9328f2f7c88d87925ee6c6c41b05e92c48de27b9537f2af3c7e355",
+      "bytes": 1688,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "REPLACE",
+      "path": "registry/PHASE-00-ARTIFACT-INDEX.md",
+      "sha256": "58623781f9b286cf2986b8997bc5fed8330039a0a8fe9b914b9abfaad3df01d8",
+      "bytes": 1840,
+      "expected_preimage_git_blob_sha1": "df40ab6935a428073b2799129e8ae0d200e610fc"
+    },
+    {
+      "action": "ADD",
+      "path": "scaffold/WO-000D-BUILD-VERIFICATION.json",
+      "sha256": "5edb24d8c64aa2fe687bc21fc0fd450219e713b0a4def6afbf6eada83141712e",
+      "bytes": 972,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "scaffold/WO-000D-CHANGELOG.md",
+      "sha256": "f1b56689273b1c943e82cee8de66cbc50183f5e6e3badfcfcea5cb8f9c672924",
+      "bytes": 1529,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "scaffold/WO-000D-MANIFEST.md",
+      "sha256": "1130e2067c9bd31b898adb9026fa69c6e34eecafd498339b36661bf8bae1df64",
+      "bytes": 4247,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "templates/SNE-000D-BUILD-RECORD.json",
+      "sha256": "3a318695840cbe6de4458424d33ece90714f8f40c2a292cbb33ea10465ac7645",
+      "bytes": 686,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "templates/SNE-000D-DEPENDENCY-RECORD.json",
+      "sha256": "d9d408e6e59f663743cdf9e31aaad192799c39930f67299bdb9c79bd6e21ffef",
+      "bytes": 504,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "templates/SNE-000D-HARDWARE-RECORD.json",
+      "sha256": "20076987c702e46d86cf38d225b3cdae4cf96a0ef8d34e5922916a4500b59218",
+      "bytes": 981,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "templates/SNE-000D-README.md",
+      "sha256": "b103c1a5696e34a858ff114e6d8ebad35b7784162fa66d7049112e46c02af51b",
+      "bytes": 1292,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "templates/SNE-000D-REVIEW-RECORD.json",
+      "sha256": "329a253128be47cf877f3ed659a25be11b81675d679273ea0ac6db162103cc04",
+      "bytes": 404,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "templates/SNE-000D-RUN-RECORD.json",
+      "sha256": "25870eb266cd86cce891344c592b26548408bab5f8544e49d6edc62822da8d3c",
+      "bytes": 1193,
+      "expected_preimage_git_blob_sha1": null
+    },
+    {
+      "action": "ADD",
+      "path": "scaffold/WO-000D-FILE-SHA256.json",
+      "sha256": null,
+      "bytes": null,
+      "expected_preimage_git_blob_sha1": null,
+      "self_reference": "intentionally omitted"
+    }
+  ]
+}

@@ -1,20 +1,17 @@
-# Phase 00 source index — v0.5.0
+# Phase 00 source index — v0.6.0
 
-Sources are pinned by exact commit and file, with category SOURCE-OBSERVED vs DOC-CLAIM. A source link is not runtime acceptance. Earlier WO-A and WO-B ledgers remain authoritative historical records.
+Review states are source-specific and **not build/runtime results**. Earlier WO-A/B/C pin records stay historical, not overwritten by recent document status.
 
-| Source record | Coverage | Status |
+| Source ledger or record | Scope | Current classification |
 |---|---|---|
-| `SNE-SRC-GAME-001.md` | game source inventory, WO-A | PINNED SOURCE |
-| `SNE-SRC-GAME-003.md` | MAPINFO, GLDEFS, sprites, map/hand-off crosscheck, WO-C | PINNED SOURCE |
-| `SNE-SRC-GZDOOM-001.md` / `-002.md` | candidate code/voxel/GLDEFS/ZScript, WO-A/B | PINNED SOURCE |
-| `SNE-SRC-GZDOOM-003.md` | sprite prefix decoding, voxeldef and transitions, WO-C | PINNED SOURCE |
-| `SNE-SRC-UZDOOM-001.md` / `-002.md` | candidate actor/voxels/policy, WO-A/B | PINNED SOURCE |
-| `SNE-SRC-UZDOOM-003.md` | compatibility call paths, WO-C | PINNED SOURCE |
-| `SNE-SRC-BIASEDDOOM-001.md` / `-002.md` | models/build feature options, WO-A/B | PINNED SOURCE |
-| `SNE-SRC-BIASEDDOOM-003.md` | glTF external textures, Python security, WO-C | PINNED SOURCE + DOC CLAIMS |
-| `SNE-SRC-CLASSIC-001.md` | historical Doom/Chocolate Doom | PINNED SOURCE |
-| `SNE-REVISION-LEDGER.md` | WO-A revision pins | HISTORICAL |
-| `SNE-SOURCE-PINS-000B.md` | WO-B revision pins | HISTORICAL |
-| `SNE-000C-PIN-LEDGER.md` | WO-C latest review scope | PINNED SOURCE |
+| `SNE-REVISION-LEDGER.md`, `SNE-SRC-*-001.md` | initial game and engine reconnaissance | PINNED SELECTED SOURCE |
+| `SNE-SOURCE-PINS-000B.md`, `SNE-SRC-*-002.md` | engine architecture, licenses, glTF/voxels | PINNED SELECTED SOURCE |
+| `SNE-000C-PIN-LEDGER.md`, `SNE-SRC-*-003.md` | game compatibility, world and rendering hazards | PINNED SELECTED SOURCE |
+| `SNE-000D-PIN-LEDGER.md` | native Windows root CMake/manifest/README source pins | PINNED SOURCE / READ-ONLY |
+| `SNE-SRC-GZDOOM-004.md` | GZ C++17/vcpkg features and dependencies | SOURCE-OBSERVED |
+| `SNE-SRC-UZDOOM-004.md` | UZ C++20, updater, LTO, build Python | SOURCE-OBSERVED |
+| `SNE-SRC-BIASEDDOOM-004.md` | BD C++17, glTF/fastgltf, optional unsandboxed Python | SOURCE-OBSERVED |
 
-See per-record immutable GitHub URLs for repeatability. No binaries compiled, no device tested, no Windows driver checked, no IWAD copied, no third-party licensing approved.
+## Missing evidence
+
+Actual local Windows tool inventory; complete upstream dependency subtree and effective licenses; source binary and resource hashes; valid official IWAD test provenance; C-001…C-008 pass; Intel UHD 620 frame-time traces; independently approved distribution plan and ADR. **No engine candidate recommended as accepted foundation.**

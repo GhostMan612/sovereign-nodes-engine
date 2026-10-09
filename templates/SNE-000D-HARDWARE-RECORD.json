@@ -1,0 +1,48 @@
+{
+  "schema": "SNE-HW-000D/1",
+  "status": "NOT_RUN",
+  "captured_at_utc": null,
+  "operator_alias": null,
+  "os": {
+    "edition": "Windows 11 Pro (reported, not independently verified)",
+    "build": null,
+    "architecture": null
+  },
+  "cpu": {
+    "reported": "Intel Core i5-8365U",
+    "actual_model": null,
+    "logical_processors": null
+  },
+  "gpu": {
+    "reported": "Intel UHD 620",
+    "device_id": null,
+    "driver_version": null,
+    "driver_date": null,
+    "backends_observed": null
+  },
+  "memory": {
+    "reported_gib": 16,
+    "verified_gib": null,
+    "channels": null,
+    "speed_mt_s": null
+  },
+  "bios_version": null,
+  "power": {
+    "ac_connected": null,
+    "mode": null,
+    "adapter_wattage": null
+  },
+  "tools": {
+    "visual_studio": null,
+    "msvc": null,
+    "windows_sdk": null,
+    "cmake": null,
+    "ninja": null,
+    "python": null,
+    "vcpkg_checkout_sha": null
+  },
+  "captures": {
+    "diagnostic_sha256": null
+  },
+  "signoff": null
+}

@@ -1,25 +1,29 @@
-# SNE Phase 00 research queue — v0.5.0
+# SNE Phase 00 research queue — v0.6.0
 
-**Date:** 2026-10-09. Evidence states are specific; blueprint completion does not equal runtime acceptance.
+Research documentation is not a local build, runtime PASS or legal acceptance. Pinned baseline SNE `706db57`.
 
-| ID | Priority | Question | Status after WO-000C source/spec pass | Next authoritative proof |
+| ID | Priority | Question | Current evidence state | Blocker to acceptance |
 |---|---|---|---|---|
-| R00-01 | P0 | Pin revisions | SOURCE-COMPLETE FOR LISTED REVISIONS | refresh if baseline/release changes |
-| R00-02 | P0 | Game interfaces | SOURCE-ADVANCED / NOT EXHAUSTIVE | verify class symbol inventory in local full repo |
-| R00-03 | P0 | GPL/component/asset licensing | PARTIAL | complete dependency/asset SBOM and review |
-| R00-04 | P0 | ZScript/MAPINFO compatibility | TESTS SPECCED / NOT RUN | per-candidate engine runtime proof |
-| R00-05 | P0 | UZDoom source/policy | SOURCE-OBSERVED | verify operator fork/patch policy and build |
-| R00-06 | P1 | Voxel and glTF extension | SOURCE-OBSERVED / PROBES SPECCED | model/texture registration runtime tests |
-| R00-07 | P1 | UHD 620 | BENCHMARK PLAN EXPANDED / NOT RUN | operator three-run captures |
-| R00-08 | P1 | World continuity | FOUR-STAGE DESIGN / NOT TESTED | map-state save/load and hub proof |
-| R00-09 | P0 | Handoff + Mantle security | SOURCE CONCERNS DOCUMENTED | boolean, schema, replay, bounds tests |
-| R00-10 | P1 | Fork maintenance cost | RESEARCH ONLY | executable diff/update exercise later |
-| R00-11 | P0 | WO-000A checksum | DOCUMENTED RECONCILIATION IN WO-B | operator independent checksum verification |
-| R00-12 | P1 | BiasedDoom conditional glTF | SOURCE-OBSERVED / NOT RUN | glTF/GLB fixture probe |
-| R00-13 | P1 | UZDoom C++20 toolchain | SOURCE-OBSERVED / NOT RUN | authorized Windows build |
-| R00-14 | P0 | Sprite prefix/name mismatch | HIGH-RISK SOURCE FINDING | compare packed sprite decode/actor state in engine |
-| R00-15 | P0 | Godot→Doom boolean and schema handling | HIGH-RISK SOURCE FINDING | synthetic JSON truth-table test |
-| R00-16 | P1 | Performance profile budgets | WRITTEN / NOT MEASURED | UHD 620 standardized run |
-| R00-17 | P1 | ZDaemon compatibility separation | SPECIFIED / NOT TESTED | native ZDaemon test lane |
+| R00-01 | P0 | Upstream revisions | SOURCE PINNED | refresh before foundation selection |
+| R00-02 | P0 | Existing game interfaces | SOURCE PARTIAL | comprehensive runtime and archive inventory |
+| R00-03 | P0 | Licenses/assets/third-party | PARTIAL | full transitive SBOM and distribution review |
+| R00-04 | P0 | MAPINFO/ZScript parity | TEST SPEC / NOT RUN | C-001…C-008 operator traces |
+| R00-05 | P0 | UZDoom policy | SOURCE VERIFIED | independent fork/update policy review |
+| R00-06 | P1 | Voxel/glTF seams | SOURCE VERIFIED SELECTIVELY | fixtures/compiled flags/runtime |
+| R00-07 | P1 | Intel UHD 620 | v0.6.0 SOP AND SCHEMAS / NOT RUN | device measurements |
+| R00-08 | P1 | World continuity | MODEL PROPOSED / NOT RUN | save/transition tests |
+| R00-09 | P0 | Handoff security | SOURCE CONCERNS / NOT RUN | synthetic booleans/version/tamper cases |
+| R00-10 | P1 | Fork maintenance | ANALYSIS ONLY | update/rebase trial after authorization |
+| R00-11 | P1 | WO-A checksums | DOCUMENTED RECONCILIATION | operator review of historical ledger |
+| R00-12 | P1 | BiasedDoom glTF/Python | SOURCE OPTIONS VERIFIED | compile/runtime/security tests |
+| R00-13 | P1 | UZDoom Windows C++20 | BUILD MATRIX / NOT RUN | exact toolchain and compile |
+| R00-14 | P0 | Sprite prefix mapping | HIGH-RISK SOURCE FINDING | actual PK3 runtime proof |
+| R00-15 | P0 | Godot→Doom boolean | HIGH-RISK SOURCE FINDING | synthetic JSON truth table |
+| R00-16 | P1 | Performance budgets | v0.6.0 CAPTURE SOP / NOT MEASURED | 3-run data and temperature stability |
+| R00-17 | P1 | ZDaemon capability | SEPARATE LANE / NOT RUN | native dedicated multiplayer test |
+| R00-18 | P0 | Native Windows tool inventory | PROCEDURE / NOT EXECUTED | operator records MSVC/SDK/CMake and paths |
+| R00-19 | P0 | Dependency lock and artifact identities | PROCEDURE / NOT EXECUTED | exact signed-off bill of materials |
+| R00-20 | P1 | LTO/updater/embedded Python variance | SOURCE OPTIONS OBSERVED | controlled configure flag and binary proof |
+| R00-21 | P1 | Benchmark metric correctness | SCHEMA AND QA GATES PREPARED | real frame-trace validation |
 
-**Progression:** WO-000C blueprint review → operator acceptance of test plan → separately authorize measurement/build work → WO-000D hardware/build plan → WO-000E foundation ADR review. Do not promote source findings to PASS.
+WO-000D advances G4/G5 **planning**, not execution. Next: WO-000E independent architecture review and conditional ADR; operator remains decision owner.

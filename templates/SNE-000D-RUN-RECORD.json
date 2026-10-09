@@ -1,0 +1,53 @@
+{
+  "schema": "SNE-RUN-000D/1",
+  "status": "NOT_RUN",
+  "test_id": null,
+  "scene_id": null,
+  "repetition_index": null,
+  "warmup_complete": null,
+  "engine_build_record_id": null,
+  "game_source_sha40": null,
+  "game_pk3_sha256": null,
+  "lawful_iwad_sha256": null,
+  "environment_record_id": null,
+  "renderer_backend": null,
+  "display": {
+    "width_px": null,
+    "height_px": null,
+    "vsync": null,
+    "fps_cap": null,
+    "fov": null
+  },
+  "profile": null,
+  "visible_dynamic_light_count": null,
+  "model_count": null,
+  "route_seed": null,
+  "capture": {
+    "tool": null,
+    "version": null,
+    "duration_s": null,
+    "valid_frames": null,
+    "raw_frametime_sha256": null,
+    "dropped_frame_handling": null,
+    "percentile_method": null,
+    "one_percent_low_method": null
+  },
+  "metrics": {
+    "mean_fps": null,
+    "one_percent_low_fps": null,
+    "p50_ms": null,
+    "p95_ms": null,
+    "p99_ms": null,
+    "worst_frame_ms": null,
+    "peak_ram_mib": null,
+    "cold_start_ms": null,
+    "map_transition_ms": null
+  },
+  "stability": {
+    "crash_count": null,
+    "custom_map_proven": null,
+    "c001_c008_accepted": null
+  },
+  "tester": null,
+  "reviewer": null
+}

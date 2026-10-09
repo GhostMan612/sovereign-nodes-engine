@@ -1,0 +1,29 @@
+{
+  "schema": "SNE-SCAFFOLD-VERIFICATION/1",
+  "package": "SNE-WO-000D-v0.6.0",
+  "generated_utc_date": "2026-10-09",
+  "baseline_git_sha40": "706db57a4fbabd701244dd9e4674a59f7ab044f3",
+  "scope": "DOCUMENTATION/JSON ARCHIVE ONLY",
+  "member_counts": {
+    "total": 45,
+    "replace": 7,
+    "add": 38
+  },
+  "checks": {
+    "sha256_member_ledger": "PASS_AFTER_ARCHIVE_RECHECK",
+    "zip_crc_integrity": "PASS_AFTER_ARCHIVE_RECHECK",
+    "markdown_utf8_lf_trailing_space": "PASS_AFTER_ARCHIVE_RECHECK",
+    "json_parse": "PASS_AFTER_ARCHIVE_RECHECK",
+    "explicit_git_preimages": "PINNED_SOURCE_REMOTE_CHECK_ONLY",
+    "manifest_paths": "PASS_AFTER_ARCHIVE_RECHECK"
+  },
+  "execution_results": {
+    "windows_host_inventory": "NOT_RUN",
+    "cmake_configure": "NOT_RUN",
+    "engine_compile": "NOT_RUN",
+    "game_compatibility": "NOT_RUN",
+    "uhd_620_benchmark": "NOT_RUN",
+    "license_clearance": "NOT_COMPLETED",
+    "independent_acceptance": "NOT_COMPLETED"
+  }
+}
