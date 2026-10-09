@@ -1,0 +1,35 @@
+{
+  "base_commit": "edc274f320cbd891c1f7fcef80f308562c0067ef",
+  "contents": "Markdown and JSON, research specification only",
+  "expected_add": 31,
+  "expected_files": 39,
+  "expected_replace": 8,
+  "generated_at_utc": "2026-10-09",
+  "note": "These package checks are asserted only after generator re-opens and validates the finished archive. They are not an engine test result.",
+  "package": "SNE-WO-000C-Compatibility-Feasibility-v0.5.0.zip",
+  "package_gate_results": {
+    "all_files_trailing_whitespace_free": true,
+    "checksum_entries": 38,
+    "checksum_ledger_self_excluded": true,
+    "extension_whitelist": true,
+    "lf_only": true,
+    "no_executables": true,
+    "no_unlisted_files": true,
+    "paths_rooted": true,
+    "roundtrip_digests_match": true,
+    "utf8": true,
+    "zip_testzip_passed": true
+  },
+  "preimage_source": "GitHub connector file SHA at pinned base commit",
+  "preimage_verified_paths": 8,
+  "technical_gate_results": {
+    "engine_build": "NOT RUN",
+    "engine_selected": false,
+    "independent_acceptance": "NOT ACCEPTED",
+    "map_playthrough": "NOT RUN",
+    "model_gltf_voxel": "NOT RUN",
+    "uhd620_benchmarks": "NOT RUN",
+    "zscript_compilation": "NOT RUN"
+  },
+  "version": "0.5.0"
+}

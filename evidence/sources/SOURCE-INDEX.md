@@ -1,18 +1,20 @@
-# Phase 00 source index — v0.4.0
+# Phase 00 source index — v0.5.0
 
-**Source protocol:** immutable GitHub commit URL + path + observation type. The older SRC-01…11 records remain historical references; follow WO-000A pin ledger and the newly recorded WO-000B ledger for exact revision identity.
+Sources are pinned by exact commit and file, with category SOURCE-OBSERVED vs DOC-CLAIM. A source link is not runtime acceptance. Earlier WO-A and WO-B ledgers remain authoritative historical records.
 
-| Source ID | Record | Review level |
+| Source record | Coverage | Status |
 |---|---|---|
-| SNE-GAME-001 | `SNE-SRC-GAME-001.md` | Selected current game source, no runtime |
-| SNE-GZ-001 | `SNE-SRC-GZDOOM-001.md` | Initial GZDoom source map |
-| SNE-GZ-002 | `SNE-SRC-GZDOOM-002.md` | Pinned voxel/GLDEFS/ZScript/hub file reads |
-| SNE-UZ-001 | `SNE-SRC-UZDOOM-001.md` | Initial UZDoom source map |
-| SNE-UZ-002 | `SNE-SRC-UZDOOM-002.md` | Pinned actor/voxel/light/policy/licensing reads |
-| SNE-BD-001 | `SNE-SRC-BIASEDDOOM-001.md` | Initial BiasedDoom source map |
-| SNE-BD-002 | `SNE-SRC-BIASEDDOOM-002.md` | Pinned fastgltf/option/docs reads |
-| SNE-CLASSIC-001 | `SNE-SRC-CLASSIC-001.md` | Historical Chocolate/id Doom sources |
-| SNE-REV-P00A | `SNE-REVISION-LEDGER.md` | Pinned first source reconnaissance |
-| SNE-REV-P00B | `SNE-SOURCE-PINS-000B.md` | Immutable selected source links, 2026-10-09 |
+| `SNE-SRC-GAME-001.md` | game source inventory, WO-A | PINNED SOURCE |
+| `SNE-SRC-GAME-003.md` | MAPINFO, GLDEFS, sprites, map/hand-off crosscheck, WO-C | PINNED SOURCE |
+| `SNE-SRC-GZDOOM-001.md` / `-002.md` | candidate code/voxel/GLDEFS/ZScript, WO-A/B | PINNED SOURCE |
+| `SNE-SRC-GZDOOM-003.md` | sprite prefix decoding, voxeldef and transitions, WO-C | PINNED SOURCE |
+| `SNE-SRC-UZDOOM-001.md` / `-002.md` | candidate actor/voxels/policy, WO-A/B | PINNED SOURCE |
+| `SNE-SRC-UZDOOM-003.md` | compatibility call paths, WO-C | PINNED SOURCE |
+| `SNE-SRC-BIASEDDOOM-001.md` / `-002.md` | models/build feature options, WO-A/B | PINNED SOURCE |
+| `SNE-SRC-BIASEDDOOM-003.md` | glTF external textures, Python security, WO-C | PINNED SOURCE + DOC CLAIMS |
+| `SNE-SRC-CLASSIC-001.md` | historical Doom/Chocolate Doom | PINNED SOURCE |
+| `SNE-REVISION-LEDGER.md` | WO-A revision pins | HISTORICAL |
+| `SNE-SOURCE-PINS-000B.md` | WO-B revision pins | HISTORICAL |
+| `SNE-000C-PIN-LEDGER.md` | WO-C latest review scope | PINNED SOURCE |
 
-**Coverage:** Not exhaustive; runtime, benchmarks, full dependency/asset legal clearance and upstream contribution eligibility are separate. Direct links are retained in each record, not giant raw source dumps.
+See per-record immutable GitHub URLs for repeatability. No binaries compiled, no device tested, no Windows driver checked, no IWAD copied, no third-party licensing approved.

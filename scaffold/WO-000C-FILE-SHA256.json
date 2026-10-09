@@ -1,0 +1,278 @@
+{
+  "add_count": 31,
+  "file_count": 39,
+  "format": "sne-v0.5.0-overlay-sha256-v1",
+  "members": [
+    {
+      "action": "ADD",
+      "path": "WO-000C-INSTALL.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "c7b80e7ea65bdf5f4d3bad28e892ffdf125fc1e3e426cc9eafb4177264623fcc",
+      "size_bytes": 4077
+    },
+    {
+      "action": "ADD",
+      "path": "artifact-chain/acceptance/SNE-ACC-000C.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "9e24ab852917b039878aac91184c311a2c5bd6e68533ae33a51010b1c2cb0eec",
+      "size_bytes": 1252
+    },
+    {
+      "action": "ADD",
+      "path": "artifact-chain/evidence/SNE-EVD-000C.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "9b733e678e5c1513f174debf9bf3e08862f4975da46c53e3872115df9971b0b1",
+      "size_bytes": 2566
+    },
+    {
+      "action": "ADD",
+      "path": "artifact-chain/reconciliation/SNE-REC-000C.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "b0394dcf42bbc9efb8f021e8c3dd8041df8c7835801c6a418a5fbda8e4e7d1e2",
+      "size_bytes": 1081
+    },
+    {
+      "action": "ADD",
+      "path": "artifact-chain/verification/SNE-VER-000C.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "29d9962398b762aa28a177706a7ffc8449eadc8d2b80675f4f5f3481df8f289b",
+      "size_bytes": 1890
+    },
+    {
+      "action": "REPLACE",
+      "path": "artifact-chain/work-orders/SNE-WO-000C.md",
+      "preimage_git_blob_sha1": "e3f22e093a1b334bade00561033f373b3ac1dd05",
+      "sha256": "3fdac0d6a853cde0ed94a883a17451ccdf0c75ba7136ab00c3fe446d5f11c9bb",
+      "size_bytes": 3568
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/architecture/SNE-000C-ARCHITECTURE.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "e3d4938512ccfbae07dabe439f84381bad82dfe87cc1e4df2b7af9d20f1aef39",
+      "size_bytes": 2610
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/diagrams/SNE-000C-TRACE-FLOW.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "278cf5db5be494d44e79f900e0bf339160f0580c828d03b34e5cc60b4117b83f",
+      "size_bytes": 806
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/diagrams/SNE-000C-ZONE-FLOW.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "dccaba7122b0c26aebdafb8f5dccf3f3e9f2c1e1dbe733b4f24fb6136f4e7aeb",
+      "size_bytes": 581
+    },
+    {
+      "action": "REPLACE",
+      "path": "blueprints/interfaces/IF-SNE-001-GAME-COMPAT.md",
+      "preimage_git_blob_sha1": "32a64c5039338b48acbfd86269eb37db74692b82",
+      "sha256": "2dac2333bcffb72b36290c7b0a3c69597358c7c9f2f3dc55cc2704bd3886019a",
+      "size_bytes": 2377
+    },
+    {
+      "action": "REPLACE",
+      "path": "blueprints/interfaces/IF-SNE-003-WORLD-TRANSITION.md",
+      "preimage_git_blob_sha1": "bf406eb8f7968fe5d33078296ca3e838998f182f",
+      "sha256": "4820068802e14baf0d66b6959a567ce10add7a818dec75aa7407492f0daea1ad",
+      "size_bytes": 2364
+    },
+    {
+      "action": "REPLACE",
+      "path": "blueprints/research/COMPATIBILITY-TEST-MATRIX.md",
+      "preimage_git_blob_sha1": "da6a3fccc91a2bab7bf1136b6b26547cddbd6ddc",
+      "sha256": "fdb466aaa698e9e7488af9f4bfcd5353644400bb87cffd7e83f0a85a069475bb",
+      "size_bytes": 4304
+    },
+    {
+      "action": "REPLACE",
+      "path": "blueprints/research/HARDWARE-BENCHMARK-PLAN.md",
+      "preimage_git_blob_sha1": "242137205c51457bfea177b85a8dea16c1706317",
+      "sha256": "2bad7260125d1d1988008f995aeed6540eef85f599a3f6ef37541e16fde9dea3",
+      "size_bytes": 3085
+    },
+    {
+      "action": "REPLACE",
+      "path": "blueprints/research/RESEARCH-QUEUE.md",
+      "preimage_git_blob_sha1": "b33527252e9dd3f09d0d0a9d24789ba200233c3a",
+      "sha256": "b14d66b281dcddb4e4843f93c5e002550337cd283861540afa35f3589012b921",
+      "size_bytes": 2333
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-EFFORT-ESTIMATES.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "24bd26ee3fe6710520cb5d518bcfbeaed16c9cda6bd025cb820e0852b68c8b49",
+      "size_bytes": 1730
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-ENGINE-LANES.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "5772cfa85d6d6f41cbd4302e53c689fc229def22f50afc10c2fbf5381e495802",
+      "size_bytes": 2407
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-FEATURE-TRACE.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "f88923935918582ad661ef208a76e8683d34dc0a9ff257909baceb1a57f9241b",
+      "size_bytes": 3185
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-HANDOFF-HARDENING.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "c5c819fff3f4e635f63d5ecca61bfbb9d029995cf919d4f99995c56478f1ac95",
+      "size_bytes": 3839
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-LIGHTING-BUDGET.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "1dc918b824c1917e2a1256e8b3f8c17fb0aeaa3a46d0e65cd9b4eff176b90032",
+      "size_bytes": 2562
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-OPEN-QUESTIONS.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "02f0ec075097cbaab40223e4120365f1881865d04abba8ec89eaa070fa4731dc",
+      "size_bytes": 2020
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-PERFORMANCE-PROFILES.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "cb97e2fca4e6ce464beac5235950499ef19f101f2033d9fb92162e5f7003adc3",
+      "size_bytes": 2390
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-TEST-CASE-CATALOG.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "26942daf7feb725bb6a5abe45396505c7f3cec4e45629cca0b05b5c096bc1fc0",
+      "size_bytes": 12695
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-VOXEL-GLTF.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "717872573c0cb4f263220ab6066cd2d6cd66b97e7ab6934c54badf667e9edb23",
+      "size_bytes": 3400
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-WORLD-CONTINUITY.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "42cc3b96152901b4320ed2a01f5f205261ab711871ed86bed3b2257fd3b0759f",
+      "size_bytes": 2848
+    },
+    {
+      "action": "ADD",
+      "path": "blueprints/research/SNE-000C-ZSCRIPT-PACKAGING.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "e0603439570eb4155c877b8dad649aa7de8abe4c67d35b997b99bad16b7aed4e",
+      "size_bytes": 3632
+    },
+    {
+      "action": "ADD",
+      "path": "docs/WO-000C-START-HERE.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "e5cfd1e1b47afad889c024ce4dc0aa32927a0295a73980b0d4b6df2a3d4b32a5",
+      "size_bytes": 2366
+    },
+    {
+      "action": "ADD",
+      "path": "evidence/sources/SNE-000C-PIN-LEDGER.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "d326eeb9f5e18ecf95ecb1081612a0fc96d5d053d9a82b29718960e9f002e6c0",
+      "size_bytes": 7238
+    },
+    {
+      "action": "ADD",
+      "path": "evidence/sources/SNE-SRC-BIASEDDOOM-003.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "b59bf92525dbdd01dceb8251dd762a382bfbc0158255e85cb8bdb330104dc200",
+      "size_bytes": 2782
+    },
+    {
+      "action": "ADD",
+      "path": "evidence/sources/SNE-SRC-GAME-003.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "6658cb9933765b88422226a16ed5fe9d5171d56ecb89783edde2afc1e84a3b2e",
+      "size_bytes": 3125
+    },
+    {
+      "action": "ADD",
+      "path": "evidence/sources/SNE-SRC-GZDOOM-003.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "f25b8312ad1a65ebe1aded8a7037c5cbcdd9f68a300786291ed347f01a2bb49b",
+      "size_bytes": 2127
+    },
+    {
+      "action": "ADD",
+      "path": "evidence/sources/SNE-SRC-UZDOOM-003.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "05bbbd3e482ac5cad85029b8b0e7ba52978c8685b2d19db0bacd7acb4edcbbdc",
+      "size_bytes": 1924
+    },
+    {
+      "action": "REPLACE",
+      "path": "evidence/sources/SOURCE-INDEX.md",
+      "preimage_git_blob_sha1": "c25e7ed3d3d91e22ba78f209fe2a2e460c073476",
+      "sha256": "1fcc407c8009332d931cc38ae1650776ed4b4522691b38830656de5eea4f1ce9",
+      "size_bytes": 1498
+    },
+    {
+      "action": "ADD",
+      "path": "governance/WO-000C-REVIEW-FINDINGS.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "da8bc4ed38d396cf5c022e5d795fa78d529ff490b2b7dabf0a4832a7fd1e1aff",
+      "size_bytes": 2165
+    },
+    {
+      "action": "ADD",
+      "path": "governance/WO-000C-RISK-REGISTER.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "196b177f511e6ded2154a8791988365c688d4a8def66fd8dadc798b3cd313780",
+      "size_bytes": 2487
+    },
+    {
+      "action": "REPLACE",
+      "path": "registry/PHASE-00-ARTIFACT-INDEX.md",
+      "preimage_git_blob_sha1": "3ae0ce3f3eccdea724a82d16355d6be87dc8fa31",
+      "sha256": "471e8d48f7117155677143d8e0a6cf9823fab9346e5d4693601c2ec9032a3054",
+      "size_bytes": 1893
+    },
+    {
+      "action": "ADD",
+      "path": "scaffold/WO-000C-BUILD-VERIFICATION.json",
+      "preimage_git_blob_sha1": null,
+      "sha256": "5fdb58b39cf380af0514a9ac58e6bf1d9ca79e596ba6f30df80d4a696a5fbca3",
+      "size_bytes": 1236
+    },
+    {
+      "action": "ADD",
+      "path": "scaffold/WO-000C-CHANGELOG.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "83906259e906e5d7c071b4f311494b4a543df1bfeaa40b866e582bf5f81e8231",
+      "size_bytes": 1186
+    },
+    {
+      "action": "ADD",
+      "path": "scaffold/WO-000C-MANIFEST.md",
+      "preimage_git_blob_sha1": null,
+      "sha256": "acb1244df00170c9592c3178038699d7347b9a4cd080af973d34e6370c4e8330",
+      "size_bytes": 4125
+    }
+  ],
+  "package": "SNE-WO-000C-Compatibility-Feasibility-v0.5.0.zip",
+  "replace_count": 8,
+  "required_base_sha": "edc274f320cbd891c1f7fcef80f308562c0067ef",
+  "self_excluded": "scaffold/WO-000C-FILE-SHA256.json",
+  "sha256_scope": "uncompressed member bytes, UTF-8 LF"
+}
