@@ -1,0 +1,350 @@
+{
+  "schema": "SNE-OVERLAY-CHECKSUM-v1",
+  "work_order": "SNE-WO-000F",
+  "version": "0.8.0",
+  "base_git_commit": "1644fb80c3e2803dd19465292423832e8fdf8e24",
+  "root": "sovereign-nodes-engine/",
+  "ledger_self_excluded": true,
+  "file_count_total": 49,
+  "file_count_hashed": 48,
+  "add_count": 43,
+  "replace_count": 6,
+  "files": [
+    {
+      "path": "WO-000F-INSTALL.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "b307b1cc01799629c7f6c7530c65cb05e57596fa35c58a6abfa2b5c5caea6ef6",
+      "byte_length": 4991
+    },
+    {
+      "path": "artifact-chain/acceptance/SNE-ACC-000F.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "7a2eb25f1fc92acd951b76bb54fb83ef23e5936fca77298976ea4018a9856643",
+      "byte_length": 1580
+    },
+    {
+      "path": "artifact-chain/evidence/SNE-EVD-000F.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "b1f894f10361d90f628a0d15eb586707ada3d4879443b16dd35ef654a45f6b2c",
+      "byte_length": 1905
+    },
+    {
+      "path": "artifact-chain/reconciliation/SNE-REC-000F.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "464bf9e21a7711430f68bcd2393f493d7528ffafea10fb3ee2d4766e04ea0af0",
+      "byte_length": 1427
+    },
+    {
+      "path": "artifact-chain/verification/SNE-VER-000F.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "77eedc8e86f4b8179b47e05ed5f2796ed03ef613b5589451ec23db221f19cec5",
+      "byte_length": 1664
+    },
+    {
+      "path": "artifact-chain/work-orders/SNE-WO-000F.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "47822d1a0fdd709d64c048ea208d61bca1b691c6d2de886c1136cef077739edc",
+      "byte_length": 3981
+    },
+    {
+      "path": "blueprints/architecture/SNE-000F-CLOSURE-ARCHITECTURE.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "8eac46470457099345e53d4ac80978fa43fe768f341f41159e413791a17d9e33",
+      "byte_length": 2722
+    },
+    {
+      "path": "blueprints/diagrams/SNE-000F-EVIDENCE-FLOW.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "284df0a0626dbef2c406d598665c10912c170607a47341c6a9d1b6cd6b496150",
+      "byte_length": 1108
+    },
+    {
+      "path": "blueprints/phases/PHASE-00-FOUNDATION.md",
+      "action": "REPLACE",
+      "expected_git_blob_sha1": "74ff7bcae725b76f0ec72c95090fe63810649fd8",
+      "sha256": "2025dc758084a0c15c7a98e894fa692aa37f5659d21929c6825bdecdc80af692",
+      "byte_length": 4120
+    },
+    {
+      "path": "blueprints/research/RESEARCH-QUEUE.md",
+      "action": "REPLACE",
+      "expected_git_blob_sha1": "1ec3f56214a96a0c236db445f028606e6360efb6",
+      "sha256": "0d4dc03318811fd13d97b5ba870604a70a5214f5fb0b6325aa9d5d42136dffac",
+      "byte_length": 2944
+    },
+    {
+      "path": "blueprints/research/SNE-000E-EVIDENCE-GAP-MATRIX.md",
+      "action": "REPLACE",
+      "expected_git_blob_sha1": "38652ac622199fc8ec811199e7a1fd6879e9aa23",
+      "sha256": "eb89a615b359bbeb35a518a4dc11873b0f096a58b89af1246a06dbb0f4848538",
+      "byte_length": 2682
+    },
+    {
+      "path": "blueprints/verification/AGENTS.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "d34352a902d81f96a7869dcca756e81dc9ec990119db04afc1c752c8ac06a37c",
+      "byte_length": 1237
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-ADMISSION-CHECKLIST.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "b2efaad072962b44bd58c847a65bc0e1d14a97521bf36528d9a8d6c9beddad8d",
+      "byte_length": 2064
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-BASELINE-IDENTITY.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "25e436a29c6bb61843bd66a8d5e30d85ef74b602637e19d17758612eef9480cc",
+      "byte_length": 2489
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-BUILD-ENTRY-GATE.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "c0cdbb6729304c4946627a525859daf46dec4a0f068d02f055814d299993723e",
+      "byte_length": 2767
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-CASE-TO-GATE-TRACE.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "4d4580528aa4e1edbbad91876dac0f82fd7b1b62a5ca9c3c9ffa3530ef3fe36c",
+      "byte_length": 3304
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-FALSE-POSITIVE-CONTROLS.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "43cfdf3c9786df3e09b2532edd5be04bdd051304f5623892c77ef899d3f94356",
+      "byte_length": 1851
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-FIXTURE-ISOLATION.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "4089f1d5abf7f7f8156c737e68907fd433dd9ec5610fa5eefc1336e29253590d",
+      "byte_length": 2550
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-HANDOFF-TESTS.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "c73a6344038291788d77a32a70965e6ff40fa2d7407f2325736b0166c4b34c61",
+      "byte_length": 3256
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-HARDWARE-TRIAL-MATRIX.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "fcbb7dfc09add729d3a552c06e63ebf19600fd13a161385604d44d9f4bf9bbc6",
+      "byte_length": 2248
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-MAINTENANCE-LEGAL.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "ff25f77c89e93f58af4323866bddd417947ecb1b76c6b2493ae66762ebd52796",
+      "byte_length": 2322
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-PK3-AND-WAD-GATES.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "0823e4f98d62cee4f2f6369de704712eee395c64d6f2f29496151fede7bec72c",
+      "byte_length": 2838
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-RESULT-REGISTER.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "867ae4853ab376e9a3ea54006d1e099e940cd05745792363a08fb64c62e883b1",
+      "byte_length": 1513
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-RESULT-SEMANTICS.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "1bf58f8f63ced1a37bda1d27f262a6b20562cd4599a14d160c55cf18138ca755",
+      "byte_length": 2321
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-REVIEW-ROLES.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "7b96f9a8777b0c89126e99bbf75b35055486c6f552aacc35708f033be40c08e8",
+      "byte_length": 2021
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-SPRITE-TESTS.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "b1a26370355d8ed9098e74d43e62d2bc5b6d8c24ad93e26795ce4946672f8f26",
+      "byte_length": 3069
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-STOP-ROLLBACK.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "216672f80500771f04c3e7324c2e9c9dbf448c1f8106b209bc1b3237866abe5d",
+      "byte_length": 2054
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-SUBWORKORDER-ORDER.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "254c8adebeb24cad17cacf22ba0030c23a254cc37e8c7fe77e5e2df50528d49b",
+      "byte_length": 2564
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-WINDOWS-INVENTORY.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "d99f69c7421280acb5b5b5a922c02887b34ca855ba345cf4e2185add1895a17e",
+      "byte_length": 1960
+    },
+    {
+      "path": "docs/WO-000F-START-HERE.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "b93958f3bff1a8fcad67bae0a609ee78a5defd007bca472c13cea915f1819e24",
+      "byte_length": 2132
+    },
+    {
+      "path": "evidence/sources/SNE-000F-SOURCE-SNAPSHOT.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "c07ce67f17a9fcd5c087b76db48e2ddc09c2089ff962ea15ac36355b6f40d3f4",
+      "byte_length": 4343
+    },
+    {
+      "path": "evidence/sources/SNE-SRC-GAME-005.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "1462165a17aae7d272e254afb72f30c894e8a3511ff795ba115e087da4fedf2f",
+      "byte_length": 2918
+    },
+    {
+      "path": "evidence/sources/SOURCE-INDEX.md",
+      "action": "REPLACE",
+      "expected_git_blob_sha1": "38cf7e54191fec6cc2f90e8d03e0cb3b2cfefee5",
+      "sha256": "841b9308208e550080b55c7c01414055f7491ad7a160f6e47eeb8b8f06430354",
+      "byte_length": 1696
+    },
+    {
+      "path": "governance/PHASE-00-REVIEW-GATES.md",
+      "action": "REPLACE",
+      "expected_git_blob_sha1": "44b7b7e4db668d47949fcddcb410c7d33c6681bd",
+      "sha256": "f56348aa026ca6108ab3fbbc19a3a4656d4c10dea071599f962f233255175b1f",
+      "byte_length": 3972
+    },
+    {
+      "path": "governance/WO-000F-AUTHORIZATION-MATRIX.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "90b199a22221cc233d6e1596175ae640c4143397618a6fd532ac04d55d6e66ad",
+      "byte_length": 2394
+    },
+    {
+      "path": "governance/WO-000F-INDEPENDENT-REVIEW-HANDOFF.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "6c9ed9eeea05ca3e01cc17b0af70e7cff4c3f48a4690906a8949e2b36905395c",
+      "byte_length": 2500
+    },
+    {
+      "path": "governance/WO-000F-REVIEW-FINDINGS.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "ecbf671ec7f724c90a5703b400de8e43f4821c811cb9836933ed975060e179bf",
+      "byte_length": 1984
+    },
+    {
+      "path": "governance/WO-000F-RISK-REGISTER.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "7e00716b9264ad04e92333a1c61641d38effa82a71c2695ec3368268350079fa",
+      "byte_length": 1937
+    },
+    {
+      "path": "registry/PHASE-00-ARTIFACT-INDEX.md",
+      "action": "REPLACE",
+      "expected_git_blob_sha1": "026233993a221065e248062d8bde1478fd6d5b31",
+      "sha256": "e73e8c023b7c786dec01ddf73b8c416abc5e046223df5ee798ee82ac19822937",
+      "byte_length": 2385
+    },
+    {
+      "path": "scaffold/WO-000F-BUILD-VERIFICATION.json",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "0b79b54b08e57a08741d89c63b1b321d7e6c8ccfdd8e8dd92f5cc42941a98fdc",
+      "byte_length": 1169
+    },
+    {
+      "path": "scaffold/WO-000F-CHANGELOG.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "83d2512004370db7af127d86b3af6c871e4efd2ce93b02cf821d98297ce8330e",
+      "byte_length": 940
+    },
+    {
+      "path": "scaffold/WO-000F-MANIFEST.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "36b9b8b937f6da373526fe879d64cd39b7215114ab25aa32fe43ba057a36aba2",
+      "byte_length": 4530
+    },
+    {
+      "path": "templates/SNE-000F-AUTHORIZATION.json",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "a86e1a086e1c9039f336ca53bcc0d36d7df6a599b2b4f6b1dd2d6e3ef1ae8276",
+      "byte_length": 596
+    },
+    {
+      "path": "templates/SNE-000F-CASE-RESULT.json",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "b2ac76e1d7de93a3b39565f28a6b595acca3f23824a2782239ec33c5f1bdd441",
+      "byte_length": 818
+    },
+    {
+      "path": "templates/SNE-000F-DEFECT-DISPOSITION.json",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "5e4b5257229e25d57e5e6f29d0ad12a0e3b3f922c234c846895ac086598361eb",
+      "byte_length": 555
+    },
+    {
+      "path": "templates/SNE-000F-GATE-LEDGER.json",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "05f44aef1308ebe5be167877ce5052f3af565c92be6d4ad0c3dc87903ffb8b76",
+      "byte_length": 1911
+    },
+    {
+      "path": "templates/SNE-000F-README.md",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "720fca597b9ce1245d6f6e8d46892eba4f92688ff8dec955b767c12f46a34f19",
+      "byte_length": 1152
+    },
+    {
+      "path": "templates/SNE-000F-REVIEW-RESULT.json",
+      "action": "ADD",
+      "expected_git_blob_sha1": null,
+      "sha256": "6ac2d039f6dc785d192ae7092dcbcfe5261a96ae8b66832d74e35a2aab6a6a1d",
+      "byte_length": 469
+    }
+  ]
+}

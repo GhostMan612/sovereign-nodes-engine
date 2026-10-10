@@ -1,23 +1,33 @@
-# Phase 00 — Artifact register v0.7.0
+# Phase 00 — Artifact registry v0.8.0 (WO-000F)
 
-| Item | Location | Publication and acceptance distinction |
+Source publication and technical acceptance are separate states. This registry is forward-looking: WO-F is authored but its local Git publication is **PENDING** until the operator commits and pushes.
+
+| Work order | Artifact | Git publication | Technical/reviewer acceptance |
+|---|---|---|---|
+| A | `artifact-chain/work-orders/SNE-WO-000A.md` | `369722f` | PENDING |
+| B | `artifact-chain/work-orders/SNE-WO-000B.md` | `edc274f` | PENDING |
+| C | `artifact-chain/work-orders/SNE-WO-000C.md` | `706db57` | PENDING; C-001…C-015 NOT RUN |
+| D | `artifact-chain/work-orders/SNE-WO-000D.md` | `1f21e4c` | PENDING; Windows/UHD runs NOT RUN |
+| E | `artifact-chain/work-orders/SNE-WO-000E.md` | `1644fb8` | PENDING; G7 review not completed |
+| F | `artifact-chain/work-orders/SNE-WO-000F.md` | v0.8.0 PREPARED / NOT YET COMMITTED | PREPARED; execution NOT AUTHORIZED |
+
+## WO-000F documents
+
+| Material | Path | State |
 |---|---|---|
-| WO-000A | `artifact-chain/work-orders/SNE-WO-000A.md` | published `369722f`; formal acceptance PENDING |
-| WO-000B | `artifact-chain/work-orders/SNE-WO-000B.md` | published `edc274f`; formal acceptance PENDING |
-| WO-000C | `artifact-chain/work-orders/SNE-WO-000C.md` | published `706db57`; formal acceptance PENDING |
-| WO-000D | `artifact-chain/work-orders/SNE-WO-000D.md` | published `1f21e4c`; formal acceptance PENDING |
-| WO-000E | `artifact-chain/work-orders/SNE-WO-000E.md` | v0.7.0 PREPARED, not yet installed/published |
-| Foundation ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | HOLD; no selected engine |
-| Candidate comparison | `blueprints/research/CANDIDATE-MATRIX.md` | qualitative; no runtime score |
-| Claim and gap audit | `blueprints/research/SNE-000E-CLAIM-AUDIT.md`; `SNE-000E-EVIDENCE-GAP-MATRIX.md` | authored audit; independent audit PENDING |
-| Red-team findings | `governance/WO-000E-RED-TEAM-FINDINGS.md` | AUTHOR RED-TEAM, not independent |
-| Reviewer protocol | `governance/WO-000E-INDEPENDENT-REVIEW-PROTOCOL.md` | prepared, reviewer not appointed |
-| WO-E evidence | `artifact-chain/evidence/SNE-EVD-000E.md` | source only |
-| WO-E acceptance | `artifact-chain/acceptance/SNE-ACC-000E.md` | PENDING |
-| WO-E verification | `artifact-chain/verification/SNE-VER-000E.md` | ZIP/document validation, NOT runtime |
-| WO-E source pins | `evidence/sources/SNE-000E-FOUNDATION-PIN-LEDGER.md` | immutable historical scope |
-| WO-C compatibility suite | `blueprints/research/SNE-000C-TEST-CASE-CATALOG.md` | 15 scenarios, NOT RUN |
-| WO-D Windows and UHD capture | `blueprints/research/SNE-000D-REPRO-BUILD-COMMANDS.md`; `HARDWARE-BENCHMARK-PLAN.md` | gated protocols, NOT RUN |
-| All P00 gates | `governance/PHASE-00-REVIEW-GATES.md` | OPEN |
+| Getting started | `docs/WO-000F-START-HERE.md` | AUTHOR PACKAGE |
+| Case-to-gate trace | `blueprints/verification/SNE-000F-CASE-TO-GATE-TRACE.md` | TEST BLUEPRINT |
+| Fixture isolation | `blueprints/verification/SNE-000F-FIXTURE-ISOLATION.md` | TEST BLUEPRINT |
+| Critical sprite/handoff cases | `blueprints/verification/SNE-000F-SPRITE-TESTS.md`; `SNE-000F-HANDOFF-TESTS.md` | UNEXECUTED |
+| Source snapshot | `evidence/sources/SNE-000F-SOURCE-SNAPSHOT.md` | PINNED SOURCE |
+| Evidence and proposed results | `artifact-chain/evidence/SNE-EVD-000F.md`; `blueprints/verification/SNE-000F-RESULT-REGISTER.md` | NO RUNS |
+| Review and authority | `governance/WO-000F-INDEPENDENT-REVIEW-HANDOFF.md`; `WO-000F-AUTHORIZATION-MATRIX.md` | PENDING |
+| Template records | `templates/SNE-000F-*.json` | BLANK |
+| Documentation acceptance | `artifact-chain/acceptance/SNE-ACC-000F.md` | NOT ACCEPTED |
+| ZIP checks | `artifact-chain/verification/SNE-VER-000F.md` | PACKAGE ONLY |
+| Reconciliation | `artifact-chain/reconciliation/SNE-REC-000F.md` | PENDING LOCAL REVIEW |
+| Pending foundation ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | **HOLD** / not modified by WO-F |
 
-Publication is not technical proof. Update WO-E publication SHA only after the operator commits and pushes locally.
+## Next required change
+
+After operator local commit/push, record actual full SHA in a **future** reconciliation update. Never guess a future Git commit; do not retroactively edit SHA manifests from published overlays.

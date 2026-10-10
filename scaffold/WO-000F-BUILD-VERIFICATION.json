@@ -1,0 +1,26 @@
+{
+  "artifact": "SNE-WO-000F-v0.8.0",
+  "generated_utc_date": "2026-10-09",
+  "baseline_git_sha": "1644fb80c3e2803dd19465292423832e8fdf8e24",
+  "category": "DOCUMENTATION_ONLY",
+  "expected_total_files": 49,
+  "expected_add_files": 43,
+  "expected_replace_files": 6,
+  "tests": {
+    "zip_crc": "PASS",
+    "member_names_unique_casefold_and_no_traversal": "PASS",
+    "root_and_doc_only_extensions": "PASS",
+    "utf8_lf_terminal_newline_no_trailing_whitespace": "PASS",
+    "all_json_parses": "PASS",
+    "manifest_actions_match_files": "PASS",
+    "all_checksum_ledger_members_match_sha256": "PASS",
+    "preimage_blob_sha_from_connected_github_source": "RECORDED_NOT_LOCAL_RECHECKED",
+    "linked_primary_source_claims_all_independently_reviewed": "NOT COMPLETED",
+    "native_engine_build": "NOT RUN",
+    "custom_game_parity": "NOT RUN",
+    "uhd620_frame_capture": "NOT RUN",
+    "independent_architecture_signoff": "PENDING",
+    "foundation_adr": "HOLD"
+  },
+  "note": "This report attests validation of ZIP/document bytes by package generator, not device/engine evidence. The local operator must check Git baseline, conflicts and staged diff independently."
+}

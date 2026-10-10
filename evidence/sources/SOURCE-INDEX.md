@@ -1,20 +1,23 @@
-# Phase 00 — Source and synthesis index v0.7.0
+# SNE-P00 — Source index v0.8.0
 
-Previous per-work-order pinned source ledgers remain authoritative; WO-E cites their exact upstream observations and reuses pins without claiming fresh builds. One pinned project SHA is the source of truth for each reviewed version.
+All historical WO-A…WO-E source records retain their original pinned scope; no historical checksum or source memo is overwritten by this overlay. Research findings cite source text, not native gameplay success.
 
-| Ledger | Description | Source class |
+| Ledger | Scope | Classification |
 |---|---|---|
-| `SNE-REVISION-LEDGER.md` and `SNE-SRC-*-001.md` | WO-A initial upstream/game reconnaissance | SELECTED SOURCE |
-| `SNE-SOURCE-PINS-000B.md` and `SNE-SRC-*-002.md` | WO-B model, voxel, scripting, rights | SELECTED SOURCE |
-| `SNE-000C-PIN-LEDGER.md` and `SNE-SRC-*-003.md` | WO-C game frame, handoff, levels and glTF | SOURCE/DOC CLAIMS SEPARATED |
-| `SNE-000D-PIN-LEDGER.md` and `SNE-SRC-*-004.md` | WO-D CMake, dependencies, Windows build | SOURCE-OBSERVED |
-| `SNE-000E-FOUNDATION-PIN-LEDGER.md` | WO-E synthesis and immutable cross-reference | SYNTHESIS, NOT A NEW BUILD |
+| `SNE-REVISION-LEDGER.md`, `SNE-SRC-*-001.md` | Initial research | SELECTED PINNED TEXT |
+| `SNE-SOURCE-PINS-000B.md`, `SNE-SRC-*-002.md` | Candidate engine code paths | SELECTED PINNED TEXT |
+| `SNE-000C-PIN-LEDGER.md`, `SNE-SRC-*-003.md` | Game sprite, handoff, lighting and model concerns | SOURCE/DOC/INFERENCE SPLIT |
+| `SNE-000D-PIN-LEDGER.md`, `SNE-SRC-*-004.md` | Build and package manifests | SELECTED SOURCE |
+| `SNE-000E-FOUNDATION-PIN-LEDGER.md` | A–D red-team synthesis | SYNTHESIS ONLY |
+| `SNE-000F-SOURCE-SNAPSHOT.md` | Published SNE baseline `1644fb8`, game and upstream source pins | PINNED DOCUMENT AND SOURCE |
+| `SNE-SRC-GAME-005.md` | Game MAPINFO, GLDEFS, handoff, build packaging and validator-path discrepancy | SOURCE CHECK / RUNTIME NOT RUN |
 
-## Evidence categories
+## Classification discipline
 
-- `SRC`: path and immutable commit prove the **text** being discussed.
-- `UPSTREAM-DOC`: upstream author describes a feature, but a runtime proof is still necessary.
-- `INFERENCE`: our hypothesis requires falsifiable C-series or device test.
-- `RUN`: only a genuine separately authorized run, with exact binaries, fixture hash, logs/trace and signoff.
+- `SOURCE-OBSERVED`: content from immutable commit and path was inspected; does not imply correct behavior.
+- `UPSTREAM-DOC`: claim from upstream documentation; validate before depending on it.
+- `INFERENCE`: source-based risk or hypothesis, test needed.
+- `TEST-SPECIFIED`: precise setup/oracle/negative control, no execution.
+- `RUN`: only separately authorized local run with hashes, real logs/trace and tester signoff.
 
-**Absent as of this packet:** locally measured frame times; actual compiler/configure/build results; C-001…C-015 runtime outputs; complete asset rights; independent review; operator foundation adoption. Refer to `blueprints/research/SNE-000E-EVIDENCE-GAP-MATRIX.md`.
+**No author of WO-F recorded local MSVC setup, engine build, game launch, frame trace, license clearance or independent reviewer approval.** `ADR-SNE-002` remains HOLD.

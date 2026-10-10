@@ -1,0 +1,21 @@
+{
+  "schema": "SNE-P00-F-AUTH-v1",
+  "scope_id": null,
+  "category": null,
+  "operator_approved": false,
+  "operator_signature_private_record": null,
+  "approved_agent_or_person": null,
+  "issue_date": null,
+  "expires_at": null,
+  "source_repository_and_sha": null,
+  "approved_device": null,
+  "approved_read_paths": [],
+  "approved_write_paths": [],
+  "network_access_allowed": false,
+  "install_or_dependency_mutation_allowed": false,
+  "allowed_commands_or_tasks": [],
+  "raw_data_retention_location_private": null,
+  "stop_conditions": [],
+  "revoked": false,
+  "state": "NOT AUTHORIZED"
+}

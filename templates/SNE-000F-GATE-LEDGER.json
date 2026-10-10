@@ -1,0 +1,75 @@
+{
+  "schema": "SNE-P00-F-GATES-v1",
+  "planning_baseline_sha": "1644fb80c3e2803dd19465292423832e8fdf8e24",
+  "engine_foundation_selected": false,
+  "adr_status": "HOLD",
+  "independent_reviewer_appointed": false,
+  "gates": [
+    {
+      "gate_id": "P00-G1",
+      "technical_state": "OPEN",
+      "evidence_ids": [],
+      "independent_review_id": null,
+      "operator_acceptance": null,
+      "decision_date": null
+    },
+    {
+      "gate_id": "P00-G2",
+      "technical_state": "OPEN",
+      "evidence_ids": [],
+      "independent_review_id": null,
+      "operator_acceptance": null,
+      "decision_date": null
+    },
+    {
+      "gate_id": "P00-G3",
+      "technical_state": "OPEN",
+      "evidence_ids": [],
+      "independent_review_id": null,
+      "operator_acceptance": null,
+      "decision_date": null
+    },
+    {
+      "gate_id": "P00-G4",
+      "technical_state": "OPEN",
+      "evidence_ids": [],
+      "independent_review_id": null,
+      "operator_acceptance": null,
+      "decision_date": null
+    },
+    {
+      "gate_id": "P00-G5",
+      "technical_state": "OPEN",
+      "evidence_ids": [],
+      "independent_review_id": null,
+      "operator_acceptance": null,
+      "decision_date": null
+    },
+    {
+      "gate_id": "P00-G6",
+      "technical_state": "OPEN",
+      "evidence_ids": [],
+      "independent_review_id": null,
+      "operator_acceptance": null,
+      "decision_date": null
+    },
+    {
+      "gate_id": "P00-G7",
+      "technical_state": "OPEN",
+      "evidence_ids": [],
+      "independent_review_id": null,
+      "operator_acceptance": null,
+      "decision_date": null
+    },
+    {
+      "gate_id": "P00-G8",
+      "technical_state": "OPEN",
+      "evidence_ids": [],
+      "independent_review_id": null,
+      "operator_acceptance": null,
+      "decision_date": null
+    }
+  ],
+  "phase01_implementation_authorized": false,
+  "operator_signature_private_ref": null
+}

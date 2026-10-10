@@ -1,0 +1,19 @@
+{
+  "schema": "SNE-P00-F-DEFECT-v1",
+  "defect_id": null,
+  "source_hypothesis": null,
+  "original_artifact_sha256": null,
+  "disposable_fixture_sha256": null,
+  "controlled_variable": null,
+  "candidate_1_identity": null,
+  "candidate_2_identity": null,
+  "original_observation": null,
+  "fixture_observation": null,
+  "negative_control_observation": null,
+  "probable_cause": "UNDETERMINED",
+  "root_cause_independently_verified": false,
+  "repair_work_order_id": null,
+  "reviewer_record_id": null,
+  "operator_decision": null,
+  "result": "NOT RUN"
+}

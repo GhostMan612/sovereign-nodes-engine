@@ -1,22 +1,23 @@
-# WO-E — Evidence gap matrix and owners
+# WO-E evidence gap matrix — cross-referenced for WO-F readiness
 
-| Gate | Available research artifact | Missing decisive proof | Suggested next evidence record | Role |
+This is a maintained synthesis originally authored in WO-E and updated by WO-F. **No gap has been closed by authoring a plan.** Requirements below point to a future operator-controlled task, not to automatic permission.
+
+| Gate | Existing blueprint | Missing decisive proof | WO-F readiness work | Responsible role |
 |---|---|---|---|---|
-| G1 Source | WO-A/B/C/D pinned Git source files | independent spot check, fresh candidate refs at test start | `SNE-000E-REVIEW-RECORD.json` | independent reviewer |
-| G2 Rights | `DEPENDENCY-LICENSE-MATRIX.md` | transitive SBOM, bundled notices, assets, proprietary IWAD rights | WO-D dependency record and asset notice list | legal/license reviewer |
-| G3 Parity | WO-C 15-case test catalog | game executable output C-001…C-008 by candidate | WO-E compatibility proof template | device operator |
-| G4 Build | WO-D command and CMake matrix | installed compiler/SDK, controlled compilation, hash evidence | WO-D build + hardware templates | device operator |
-| G5 Performance | WO-D run plan and lighting profiles | three controlled UHD 620 traces, p95/p99/1% low | WO-D run template and raw trace hash | device operator |
-| G6 Security | WO-C handoff and WO-D threat checklist | corrupt/stale boolean/replay, Python isolation and Mantle threat review | signed tester + reviewer notes | security reviewer |
-| G7 Independence | WO-C/D author findings and this WO-E audit | third party source/error review and dissent resolution | WO-E independent review template | independent reviewer |
-| G8 ADR | conditional recommendation and alternatives | operator-approved engine, accepted risks and rollback | operator ADR form | operator |
+| G1 provenance | WO-A–E source pins, claim audit | external reviewer spot-check and current SHA crosswalk | `SNE-000F-BASELINE-IDENTITY.md`, `SNE-000F-SOURCE-SNAPSHOT.md` | independent reviewer |
+| G2 rights | dependency/license matrix | transitive SBOM, game-data and bundled asset rights | `SNE-000F-MAINTENANCE-LEGAL.md` | qualified rights reviewer |
+| G3 parity | 15-case WO-C catalog | per-candidate C-001…C-008 run results, negative controls | `SNE-000F-CASE-TO-GATE-TRACE.md`, `SNE-000F-PK3-AND-WAD-GATES.md` | authorized operator/tester |
+| G4 build | WO-D CMake/build prototypes | Windows compiler/SDK/configure/build binary and resource hashes | `SNE-000F-BUILD-ENTRY-GATE.md` | operator |
+| G5 performance | WO-D measurement SOP | UHD 620 real comparable frame traces and approved thresholds | `SNE-000F-HARDWARE-TRIAL-MATRIX.md` | operator |
+| G6 security | WO-C handoff analysis and Python warnings | true/false, schema, stale, path, replay, sensitive-data negative tests | `SNE-000F-HANDOFF-TESTS.md` | tester + security reviewer |
+| G7 independence | WO-E reviewer handoff | independent, documented dissent and resolution | `SNE-000F-REVIEW-ROLES.md` | reviewer separate from author |
+| G8 decision | ADR-SNE-002 HOLD, scorecard unscored | completed G1–G7 plus signed operator selection/rollback | `SNE-000F-ADMISSION-CHECKLIST.md` | operator |
 
-## First critical probes
+## Priority blockers to resolve before attributing failures to any engine
 
-1. Sprite identity and GLDEFS attachments on the exact packed project, not an invented sprites-only demo.
-2. `hasParadox` JSON boolean truth table with schema/missing/stale controls and no sensitive data.
-3. GZDoom/UZDoom custom MAP01 marker plus ZScript HUD actor chain.
-4. Same-source game content, dependency and build configurations for comparison; no vendor logo/art packaging assumptions.
-5. Actual UHD 620 performance and thermals only after parity.
+- `F-D01`: sprite frame strings `ORESHAA0` and `TOOLAA0` require actual frame/GLDEFS runtime discrimination against archive alias behavior; source alone does not prove failure.
+- `F-D02`: Godot `hasParadox` JSON booleans versus Doom `ScanInt` requires a synthetic true/false truth table; source alone does not prove observed output.
+- `F-D03`: `tools/validate_pk3.py` is referenced in pinned game source commentary, yet lookup of that path at pinned game revision did not find a file. Reviewer must locate actual check or classify stale documentation.
+- `F-D04`: no candidate can be credited with speed if custom MAP01 is not positively identified as GapNode with unique proof.
 
-**Every row still contains a missing proof.** No honest ADR can be adopted on this matrix alone.
+All engine builds, gameplay tests, hardware tests, licenses and independent review remain `NOT RUN` or `OPEN` until independent primary evidence exists.

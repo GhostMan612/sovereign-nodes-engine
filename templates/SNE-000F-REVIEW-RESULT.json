@@ -1,0 +1,17 @@
+{
+  "schema": "SNE-P00-F-REVIEW-v1",
+  "review_id": null,
+  "reviewer_id_private_ref": null,
+  "independent_from_author": null,
+  "review_date": null,
+  "source_or_result_ids": [],
+  "scope_and_sampling_method": null,
+  "reproduced_primary_source_urls": [],
+  "supported_claim_ids": [],
+  "rejected_claim_ids": [],
+  "unresolved_claim_ids": [],
+  "objections_and_dissent": [],
+  "requested_changes": [],
+  "review_decision": "PENDING",
+  "operator_disposition": null
+}

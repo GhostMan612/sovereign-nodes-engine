@@ -1,29 +1,34 @@
-# SNE Phase 00 research queue — WO-000E v0.7.0
+# SNE-P00 Research and closure queue — WO-000F v0.8.0
 
-All engine runtime, target build, legal clearance and performance gates remain **UNVERIFIED/NOT RUN**. The work-order publication history is not an acceptance record.
+**Source-review state only; no local engine tests, device measurements or legal clearance were performed by WO-000F.** Historic A–E records remain unchanged.
 
-| ID | Priority | Required proof | Research state | Next owner role |
+| ID | Priority | Proof needed | State | Proposed closure lane |
 |---|---|---|---|---|
-| R00-01 | P0 | pinned upstream game and engine source revision | selected pins VERIFIED | reviewer re-pin before execution |
-| R00-02 | P0 | exhaustive game content/parser and actor inventory | PARTIAL source review | game maintainer/tester |
-| R00-03 | P0 | transitive dependency and game-data/asset rights SBOM | PARTIAL | license reviewer |
-| R00-04 | P0 | C-001…C-008 native per-engine game parity | NOT RUN | operator-controlled test |
-| R00-05 | P0 | UZDoom upstream policy vs independent GPL fork | source-policy OBSERVED | legal/maintenance reviewer |
-| R00-06 | P1 | actor-preserving voxel/glTF output and integration | source seams inspected; NOT RUN | rendering tester |
-| R00-07 | P0 | 3-run UHD 620 trace per baseline/profile | NOT RUN | device operator |
-| R00-08 | P1 | W1–W4 world continuity and save/transition state | DESIGN ONLY | gameplay tester |
-| R00-09 | P0 | synthetic boolean and schema / path / replay handoff | suspected defects; NOT RUN | handoff/security tester |
-| R00-10 | P1 | fork maintenance and controlled update trial | MODEL ONLY | maintainer |
-| R00-11 | P1 | WO-A committed checksum independent validation | documented, not reviewed | independent reviewer |
-| R00-12 | P1 | BiasedDoom GLTF ON, textures, skeletal animation | source and docs reviewed; NOT RUN | graphics tester |
-| R00-13 | P0 | Windows compiler/SDK actual versions and successful build | NOT RUN | device operator |
-| R00-14 | P0 | actual long sprite naming and GLDEFS association | HIGH-RISK HYPOTHESIS | gameplay tester |
-| R00-15 | P0 | JSON `hasParadox` true/false wire behavior | HIGH-RISK HYPOTHESIS | gameplay tester |
-| R00-16 | P1 | postFX, light workload and fallback frame times | SOP ONLY | device operator |
-| R00-17 | P1 | separate ZDaemon feature and networking lane | NOT RUN | multiplayer tester |
-| R00-18 | P0 | dependency hashes, binary provenance and resource packages | NOT RUN | build/asset reviewer |
-| R00-19 | P0 | independent review of A–E and documented dissent | REQUESTED / NOT COMPLETED | independent reviewer |
-| R00-20 | P0 | operator chooses foundation with recorded gates | **HOLD** | operator |
-| R00-21 | P0 | explicit authorization for any source/build/benchmark | **NOT GRANTED** | operator |
+| R00-01 | P0 | Immutable game/upstream pins checked by independent reviewer | SOURCE PINNED / RECHECK PENDING | F-00 |
+| R00-02 | P0 | Actual packaged game classes/lumps exhaustive audit | PARTIAL | F-02 |
+| R00-03 | P0 | Transitive library and asset-rights SBOM | PARTIAL / NOT CLEARED | F-06 |
+| R00-04 | P0 | C-001…C-008 per candidate with negative controls | NOT RUN | F-04 |
+| R00-05 | P0 | UZDoom policy and maintainable downstream workflow | SOURCE OBSERVED / OWNER REVIEW PENDING | F-06 |
+| R00-06 | P1 | Voxels, glTF/GLB animation runtime and parity | NOT RUN | F-05 |
+| R00-07 | P0 | Three-run UHD 620 P0 traces | NOT RUN | F-05 |
+| R00-08 | P1 | Logical zone save/revisit/state semantics | NOT RUN | F-05 |
+| R00-09 | P0 | Boolean/schema/stale handoff threat tests | NOT RUN | F-02/F-04 |
+| R00-10 | P1 | Fork conflict/update trial | NOT RUN | F-06 |
+| R00-11 | P1 | WO-A checksum independent review | DOCUMENTED / REVIEW PENDING | F-00 |
+| R00-12 | P1 | BiasedDoom glTF ON and Python OFF proof | NOT RUN | F-05 |
+| R00-13 | P0 | Windows MSVC/CMake/SDK actual compiler build | NOT RUN | F-03 |
+| R00-14 | P0 | Sprite identity `ORESHAA0`, `TOOLAA0`, GLDEFS | HIGH-RISK SOURCE HYPOTHESIS | F-02 |
+| R00-15 | P0 | Godot boolean `hasParadox` vs ZScript `ScanInt` | HIGH-RISK SOURCE HYPOTHESIS | F-02 |
+| R00-16 | P1 | GPU dynamic-light/postFX/fallback frame times | NOT RUN | F-05 |
+| R00-17 | P1 | ZDaemon separately pinned and tested | NOT RUN | SEPARATE LANE |
+| R00-18 | P0 | Dependency, binary/resource and game artifact hashes | NOT RUN | F-03/F-06 |
+| R00-19 | P0 | Independent A–F reviewer dissent and resolution | NOT COMPLETED | F-00/F-07 |
+| R00-20 | P0 | Operator evidence-backed foundation choice | **HOLD** | F-07 |
+| R00-21 | P0 | Explicit work-category authorization before local testing | **NOT GRANTED** | F-01 |
+| R00-22 | P0 | Verify actual `validate_pk3.py` path; source comments reference it, direct pinned path lookup failed | DISCREPANCY / NOT PROVEN | F-00/F-02 |
+| R00-23 | P0 | Baseline identity (original PK3, control engine and lawful IWAD) before diagnosis | NOT CAPTURED | F-02 |
+| R00-24 | P0 | Distinguish source-game defect from candidate regression with fixture-only controls | SPECIFIED / NOT RUN | F-02/F-04 |
+| R00-25 | P1 | Validate raw frametime timestamps and equal rendered scene before scoring | NOT RUN | F-05 |
+| R00-26 | P0 | Each C-series claim linked to one result and reviewer decision | NO RESULTS | F-04/F-07 |
 
-**Ordered critical path:** reviewer cross-check → operator approves safe fixture/build scope → source game defect-isolation controls → candidate Windows builds → Tier-A parity → repeatable hardware traces → SBOM/security/maintenance review → signed ADR. Do not stage engine source modifications during WO-000E.
+**Stop order:** no score before C-001 proof; no profile performance claim before real device trace; no ADR adoption while any mandatory G1–G8 evidence is absent.
