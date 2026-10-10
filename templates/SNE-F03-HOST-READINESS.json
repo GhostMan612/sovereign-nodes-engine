@@ -1,0 +1,35 @@
+{
+  "schema": "SNE-F03-HOST-READINESS-v1",
+  "work_order_id": "SNE-WO-F03",
+  "authorization_id": null,
+  "scope_sha256": null,
+  "state": "NOT RUN",
+  "captured_at_utc": null,
+  "actor_private_ref": null,
+  "device_alias": null,
+  "os_build": null,
+  "os_arch": null,
+  "cpu": null,
+  "gpu": null,
+  "gpu_driver": null,
+  "ram_bytes": null,
+  "compiler": {
+    "vs_instance": null,
+    "msvc_version": null,
+    "cl_target": null,
+    "windows_sdk": null
+  },
+  "tools": {
+    "cmake_version": null,
+    "cmake_generator": null,
+    "ninja_version": null,
+    "git_version": null,
+    "python_native_version": null,
+    "vcpkg_commit": null
+  },
+  "approved_read_methods": [],
+  "raw_capture_private_ref": null,
+  "redacted_summary_sha256": null,
+  "reviewer_ref": null,
+  "notes": "Reported reference laptop is not actual inventory evidence."
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "SNE-F03-DOC-ARCHIVE-VALIDATION-v1",
+  "release": "v1.2.0",
+  "work_order": "SNE-WO-F03",
+  "mode": "DOCUMENTATION_ARCHIVE_ONLY",
+  "expected_parent_git_sha": "f2f2cfec676b9a5254fa2a5a7e6f08198581fa09",
+  "expected_total_files": 49,
+  "new_files": 43,
+  "replace_files": 6,
+  "preimage_check": "PINNED GITHUB BLOB SHA-1 MATCHES (all six)",
+  "zip_crc": "PASS",
+  "json_parse": "PASS",
+  "utf8_lf": "PASS",
+  "sha256_manifest": "PASS (self ledger excluded by design)",
+  "native_windows_build_status": "NOT RUN",
+  "host_inventory_status": "NOT RUN",
+  "operator_auth_b_status": "NOT GRANTED",
+  "independent_review_status": "PENDING",
+  "adr_state": "HOLD",
+  "notes": "The author checks only static archive format and pinned-source text; G4 runtime/build remains OPEN."
+}

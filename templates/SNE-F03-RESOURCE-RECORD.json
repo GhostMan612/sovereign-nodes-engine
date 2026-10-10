@@ -1,0 +1,15 @@
+{
+  "schema": "SNE-F03-RESOURCE-RECORD-v1",
+  "attempt_id": null,
+  "resource_id": null,
+  "role": null,
+  "original_file_path_private_ref": null,
+  "redacted_relative_name": null,
+  "sha256": null,
+  "size_bytes": null,
+  "license_clearance": "NOT CLEARED",
+  "source_ref": null,
+  "external_dependency": null,
+  "reviewer_ref": null,
+  "status": "NOT CAPTURED"
+}

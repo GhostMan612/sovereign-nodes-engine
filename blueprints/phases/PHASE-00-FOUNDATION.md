@@ -1,40 +1,37 @@
-# PHASE-00 — Sovereign Nodes Engine: evidence-gated foundation
+# PHASE-00 — Evidence-gated engine foundation, F-03 build readiness
 
-- Phase: `SNE-P00`; package under preparation **F-02 / v1.1.0**, planning parent `725fded39c0d50139ab76182211e32375bc2764e`.
-- Published documentary work orders: WO-000A…WO-000F, F-00, F-01. **All technical execution gates open.**
-- Foundation decision `ADR-SNE-002`: **HOLD / UNDECIDED**; Phase 01 implementation **NOT AUTHORIZED**.
+- Latest operator-published documentation: **F-02 `f2f2cfec676b9a5254fa2a5a7e6f08198581fa09`**. F-03 v1.2.0 is a proposed overlay until manually installed/committed.
+- `ADR-SNE-002`: **HOLD / NO ENGINE SELECTED**. Independent F-00 review and G1–G7 acceptance missing; Phase 01 implementation NOT AUTHORIZED.
+- **No engine build, host inventory, original PK3 hash, real compatibility test or UHD 620 trace is reported as performed.**
 
-## Current repository publication chain
+## Published document chain
 
-| Package | Last verified operator Git checkpoint | Meaning |
+| Work order | Verified checkpoint | Status |
 |---|---|---|
-| WO-000A | `369722f` | selected game/source reconnaissance published |
-| WO-000B | `edc274f` | source-engine code audit published |
-| WO-000C | `706db57` | 15-case compatibility blueprint published, NOT RUN |
-| WO-000D | `1f21e4c` | Windows/UHD plan published, NOT RUN |
-| WO-000E | `1644fb8` | author red-team/ADR HOLD published |
-| WO-000F | `1c01d2f` | verification readiness published, no runtime approvals |
-| F-00 | `148dc28` | author source recheck published, independent review PENDING |
-| F-01 | **`725fded39c0d50139ab76182211e32375bc2764e`** | scope freeze and authorization *templates* published; no approvals |
-| **F-02** | not committed yet | original identity and fixture **BLUEPRINT**; no executed data |
+| WO-A | `369722f` | selected source research published, acceptance open |
+| WO-B | `edc274f` | engine audit published, acceptance open |
+| WO-C | `706db57` | gameplay/renderer test plan published, no runtime |
+| WO-D | `1f21e4c` | toolchain/benchmark plan published, no builds |
+| WO-E | `1644fb8` | author red-team, ADR HOLD |
+| WO-F | `1c01d2f` | evidence readiness only |
+| F-00 | `148dc28` | author source-review packet; external reviewer pending |
+| F-01 | `725fded` | permissions/scope templates; all unsigned |
+| **F-02** | **`f2f2cfe`** | baseline/fixture blueprints, not run |
+| **F-03** | **v1.2.0 proposed** | native Windows build readiness only |
 
-## Baseline and product contract
+## Product / correctness baseline
 
-Retain original game's `MAPINFO version "4.14"`, three ZScript fragments, actor identity/GLDEFS, Godot→Doom handoff and MAP01 GapNode→MAP02 Breach→MAP03 Warren. Proposed control engine: GZDoom, comparator UZDoom, experimental reference BiasedDoom—none selected. Target operator device reported Dell Latitude 5400 (i5-8365U, 16 GiB, Intel UHD 620), not actually inventoried here.
+Existing game requires `MAPINFO version "4.14"`, three ZScript `addfragments`, MAP01 GapNode→MAP02 Breach→MAP03 Warren, sprites/GLDEFS, HUD and Godot→Doom handoff. Historic source game `44034e97fd22129f919a18cadceb84466ef1bcd3`. Control hypothesis GZDoom `c26ce2e6ca2a0c770f140cb25dde0d30073ca8f7`, production comparator UZDoom `dbedcc894fb6866c48520cf27ae773f9957024b9`, experimental BiasedDoom `6147e0670458e48e63d1a40750f36dfc68b00f7f`—none chosen or known to build on target hardware.
 
-## Present evidence-closure order and independent permission boundary
+## Execution and evidence dependency ordering
 
-1. **F-00** external qualified source reviewer rechecks critical primary files, source-path disagreement and signs a distinct review; package author cannot be reviewer.
-2. **F-01** category-specific operator permission records: AUTH-R/H/F/B/T/P/S/I/D; all unapproved unless authenticated separately by operator.
-3. **F-02A** (proposed) `AUTH-H` non-invasive Windows/device metadata and legal original game PK3/WAD file fingerprints. Source review and inventory require distinct scoped approvals where applicable.
-4. **F-02B** (proposed) `AUTH-F` isolated one-variable sprite and synthetic `hasParadox` fixture creation; **`AUTH-T` separately** if launching an engine. No authoritative game edit.
-5. **F-03** only `AUTH-B` after exact host/dependency/build scope; **F-04** only `AUTH-T` for unchanged B0 game C-001–C-008; **F-05** only `AUTH-P` after verified parity and predeclared UHD thresholds.
-6. **F-06** rights/security/maintenance qualified review; **F-07** independent G1–G7 evidence reconciliation and operator signed ADR. All remain OPEN.
+1. F-00 independent reviewer checks P0 source claims, particularly validator path, sprite names and boolean parser.
+2. F-01 authentic separate scopes for AUTH-R/H/F/B/T/P/S/I/D; all default denied.
+3. F-02A actual Windows inventory and B0 PK3/IWAD hashes require scoped AUTH-H; F-02B disposable sprite/boolean fixtures require AUTH-F; engine launch needs separate AUTH-T.
+4. **F-03:** actual compiler/build may only follow host/dependency admission and signed separate AUTH-B per candidate. This v1.2.0 release merely specifies commands, source pins, failure oracles and two-trial reproducibility requirements.
+5. F-04 requires actual candidate binary/resource SHA, unchanged B0 and lawful IWAD, unique custom GapNode proof with a distinct AUTH-T; F-05 UHD 620 measured frame times require AUTH-P and prior parity.
+6. F-06 independent license/security/SBOM review; F-07 independent gate reconciliation and operator ADR G8 decision. `AUTH-I` and `AUTH-D` remain separate regardless of results.
 
-## F-02 new source-backed constraint
+## Non-negotiable
 
-The game packager at `44034e97fd22129f919a18cadceb84466ef1bcd3` collects root `MAPINFO` and `GLDEFS`, referenced fragments, generated maps and sprites, but **deliberately excludes SNDINFO**; absence alone is NOT a packaging failure for this revision. Original PK3 archive bytes, external lawful IWAD, ZScript compilation, sprite and boolean behavior, and installed Windows toolchain remain UNVERIFIED.
-
-## Non-negotiable stops
-
-No implicit consent from document publication, no unlicensed WAD bytes, real Mantle data, invasive commands, game/engine mutation, GPU benchmark, GitHub push by package author or fabricated independent signoff. A previously unsigned template may never be silently converted into an authorization. The operator reviews and publishes only explicit approved paths. **ADR-SNE-002 remains HOLD.**
+No private Mantle data, commercial IWAD in repo, native test without permission, source-game mutation, engine fork, hidden dependency download, AI-assisted upstream UZDoom PR, fake G4/G5 figures or self-signed independent G7. GZDoom-first means **test control order only**. No action automatically follows Git publication.

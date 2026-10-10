@@ -1,24 +1,28 @@
-# WO-F — Forward evidence register (F-02 blueprint)
+# WO-F — Forward evidence register after F-03 build-readiness blueprint
 
-Historical IDs and statuses must not be rewritten as PASS because a newer document was published. This file is a planning index, not a test report.
+No row below is a verified runtime/compiler PASS. Historical result IDs retain provenance, are never silently promoted by file publication.
 
-| ID | Evidence target | Relevant source or plan | Status | Independent/operator acceptance |
+| ID | Target | Source/plan | Actual state | Review/acceptance |
 |---|---|---|---|---|
-| F-R001 | sprite family/GLDEFS | `SNE-SRC-GAME-005.md`; `SNE-F02-SPRITE-ALIAS-MATRIX.md` | SOURCE-ONLY / NOT RUN | PENDING |
-| F-R002 | handoff boolean | `SNE-F00-HANDOFF-PARSER-REVIEW.md`; `SNE-F02-HANDOFF-BOOLEAN.md` | SOURCE-ONLY / NOT RUN | PENDING |
-| F-R003 | missing validator path | `SNE-F02-VALIDATOR-PATH.md` | EXACT PATH LOOKUP FAILED; EQUIVALENT COVERAGE OPEN | PENDING |
-| F-R004 | original PK3 + lawful IWAD | `SNE-F02-PK3-STRUCTURE.md`; `SNE-F02-IDENTITY-AND-CHECKSUM.md` | NOT CAPTURED | PENDING |
-| F-R005 | Windows candidate build | `SNE-F02-F03-ENTRY-GATE.md` | NOT RUN | PENDING |
-| F-R006 | C-001..C-008 original parity | `SNE-F02-GAPNODE-CONTROL.md` | NOT RUN | PENDING |
-| F-R007 | UHD 620 frametime | `SNE-000F-HARDWARE-TRIAL-MATRIX.md` | NOT RUN | PENDING |
-| F-R008 | rights/security/SBOM | `SNE-F02-EVIDENCE-QUALITY.md` | NOT CLEARED | PENDING |
-| F-R009 | G1/G7 independent reviewer | F-00 source packet and F-02 review protocol | NOT COMPLETED | PENDING |
-| F-R010 | ADR-SNE-002 foundation | ADR-SNE-002 | HOLD | PENDING |
-| F-R011 | F-00 selected author source recheck | `SNE-F00-PIN-LEDGER.md` | AUTHOR SOURCE ONLY | PENDING |
-| **F-R012** | F-01 authorization/scopes | `725fded39c0d50139ab76182211e32375bc2764e` operator-published documentation | TEMPLATE PUBLISHED; NO AUTH APPROVED | PENDING |
-| **F-R013** | F-02A noninvasive host metadata | `templates/SNE-F02-HOST-INVENTORY.json` | NOT RUN | PENDING |
-| **F-R014** | F-02A original B0 PK3/WAD static identity | `templates/SNE-F02-BASELINE-IDENTITY.json` | NOT CAPTURED | PENDING |
-| **F-R015** | F-02B B1 sprite fixture and B2 synthetic handoff | `templates/SNE-F02-FIXTURE-CONTROL.json` | NOT RUN | PENDING |
-| **F-R016** | Pinned builder SNDINFO intentional omission | `SNE-F02-PRIMARY-SOURCE-NOTES.md` | SOURCE-OBSERVED (AUTHOR); PK3 NOT RUN | PENDING |
+| F-R001 | sprite/GLDEFS behavior | F-02 sprite plan | SOURCE-ONLY; GAME NOT RUN | PENDING |
+| F-R002 | Godot JSON/ZScript boolean | F-02 handoff plan | SOURCE-ONLY; GAME NOT RUN | PENDING |
+| F-R003 | `validate_pk3.py` path | F-00/F-02 validator review | EXACT PINNED PATH NOT FOUND | PENDING |
+| F-R004 | B0 PK3/lawful IWAD | F-02 identity template | NOT CAPTURED | PENDING |
+| F-R005 | Windows candidate binary | **F-03 proposed build records** | **NOT BUILT / AUTH-B ABSENT** | PENDING |
+| F-R006 | C-001–C-008 original parity | WO-C catalog | NOT RUN | PENDING |
+| F-R007 | UHD 620 frame traces | WO-D measurement | NOT RUN | PENDING |
+| F-R008 | rights/security/SBOM | F-03 dependency proposal | NOT CLEARED | PENDING |
+| F-R009 | independent G1/G7 reviewer | F-00 handoff | NOT COMPLETED | PENDING |
+| F-R010 | foundation decision | ADR-SNE-002 | HOLD | PENDING |
+| F-R011 | F-00 author source recheck | F-00 pin ledger | AUTHOR SOURCE ONLY | PENDING |
+| F-R012 | F-01 permission design | commit `725fded` | PUBLISHED; NO APPROVAL | PENDING |
+| F-R013 | F-02A host metadata | F-02 host JSON | NOT RUN | PENDING |
+| F-R014 | F-02A original PK3/WAD | F-02 B0 identity JSON | NOT CAPTURED | PENDING |
+| F-R015 | F-02B B1/B2 fixtures | F-02 fixtures JSON | NOT RUN | PENDING |
+| F-R016 | pinned builder SNDINFO omission | F-02 primary source notes | AUTHOR SOURCE-OBSERVED | PENDING |
+| **F-R017** | F-03 Windows toolchain/cache proposal | F-03 host/cmake plans | TEST-SPECIFIED; AUTH-H MISSING | PENDING |
+| **F-R018** | F-03 engine compilation and binary/resource hashes | F-03 build/resource templates | NOT RUN / UNKNOWN | PENDING |
+| **F-R019** | F-03 repeatable build evidence | F-03 two-trial plan | NOT RUN | PENDING |
+| **F-R020** | UZ/BD default feature, dependency policy | F-03 source observations | SOURCE-OBSERVED ONLY | PENDING |
 
-A future real result must specify immutable evidence ID, operator authorization, original/fixture hashes, legal external IWAD ref, actual artifacts, negative controls, independent reviewer and dated operator disposition. New runs should use new IDs or explicit supersession records; never silently overwrite F-R history.
+Future actual results need separate immutable IDs with signed scope, actual source/binary/package checksums, redacted logs and independent technical review. Documentary ZIP QA never promotes G4/G3/G5.

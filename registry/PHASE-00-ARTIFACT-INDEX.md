@@ -1,29 +1,27 @@
-# SNE Phase 00 — Work-order registry v1.1.0 (F-02 blueprint)
+# SNE Phase 00 — Published documentation registry / F-03 v1.2.0 draft
 
-| Work order | Published commit / state | Acceptance and implementation |
+| Work order | Actual operator publication or status | Technical acceptance |
 |---|---|---|
-| WO-000A | `369722f` PUBLISHED | source acceptance PENDING |
-| WO-000B | `edc274f` PUBLISHED | engine source only |
-| WO-000C | `706db57` PUBLISHED | gameplay C-001..C-015 NOT RUN |
-| WO-000D | `1f21e4c` PUBLISHED | Windows/GPU NOT RUN |
-| WO-000E | `1644fb8` PUBLISHED | ADR-SNE-002 HOLD |
-| WO-000F | `1c01d2f` PUBLISHED | all F execution categories unapproved |
-| F-00 | `148dc28` PUBLISHED | author recheck only, independent PENDING |
-| **F-01** | **`725fded39c0d50139ab76182211e32375bc2764e` PUBLISHED** | operator authorization system, no active grants |
-| **F-02** | v1.1.0 OVERLAY PREPARED / commit unknown | identity/fixture **BLUEPRINT ONLY**, no host/PK3/fixtures tested |
+| WO-A | `369722f` | source research only |
+| WO-B | `edc274f` | candidate source audit only |
+| WO-C | `706db57` | C-001…C-015 NOT RUN |
+| WO-D | `1f21e4c` | Windows/UHD NOT RUN |
+| WO-E | `1644fb8` | ADR HOLD |
+| WO-F | `1c01d2f` | readiness, all permissions unapproved |
+| F-00 | `148dc28` | author review packet, independent PENDING |
+| F-01 | `725fded` | authorization templates, NONE approved |
+| **F-02** | **`f2f2cfec676b9a5254fa2a5a7e6f08198581fa09`** | blueprint published; host/PK3/fixtures NOT RUN |
+| **F-03** | **v1.2.0 ZIP PREPARED; future Git SHA unknown** | build readiness only; G4 NOT RUN |
 
-## F-02 canonical artifacts
+## New F-03 artifacts
 
-| Category | Paths | State |
-|---|---|---|
-| Start and work order | `docs/SNE-F02-START-HERE.md`; `artifact-chain/work-orders/SNE-WO-F02.md` | DOCUMENT PREPARED |
-| Scope, admission | `blueprints/architecture/SNE-F02-BASELINE-CONTRACT.md`; `blueprints/verification/SNE-F02-ADMISSION.md` | FUTURE AUTH-H/F/T |
-| Original archive and map controls | `blueprints/verification/SNE-F02-PK3-STRUCTURE.md`; `SNE-F02-GAPNODE-CONTROL.md`; `SNE-F02-WAD-VALIDATION.md` | STATIC/RUNTIME NOT RUN |
-| Sprite, GLDEFS, JSON handoff | `SNE-F02-SPRITE-ALIAS-MATRIX.md`; `SNE-F02-GLDEFS-MATRIX.md`; `SNE-F02-HANDOFF-BOOLEAN.md` in `blueprints/verification/` | FIXTURES NOT CREATED |
-| Source observations | `evidence/sources/SNE-F02-PRIMARY-SOURCE-NOTES.md` | AUTHOR SOURCE ONLY |
-| Authorization and risks | `governance/SNE-F02-AUTHORIZATION-REQUESTS.md`; `SNE-F02-RISK-REGISTER.md` | SIGNATURES PENDING |
-| Structured records | `templates/SNE-F02-*.json` | BLANK / NOT RUN |
-| Chain and package | `artifact-chain/*/SNE-*-F02.md`; `scaffold/SNE-F02-*` | DOCUMENTARY VALIDATION ONLY |
-| ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | **HOLD / UNMODIFIED** |
+- Work order / start: `artifact-chain/work-orders/SNE-WO-F03.md`; `docs/SNE-F03-START-HERE.md`.
+- Candidate build controls: `blueprints/verification/SNE-F03-GZDOOM-CONTROL.md`, `SNE-F03-UZDOOM-COMPARATOR.md`, `SNE-F03-BIASEDDOOM-EXPERIMENT.md`.
+- Dependency/toolchain/configuration: `SNE-F03-WINDOWS-TOOLCHAIN.md`, `SNE-F03-DEPENDENCY-SBOM.md`, `SNE-F03-GENERATOR-MATRIX.md`, `SNE-F03-CMAKE-CONFIGURATION.md`.
+- Build evidence and reproducibility: `SNE-F03-REPRODUCIBILITY-TRIALS.md`, `SNE-F03-RESOURCE-HASHES.md`, blank `templates/SNE-F03-*.json`.
+- Governance: `governance/SNE-F03-AUTHORIZATION-REQUEST.md`, `SNE-F03-RISK-REGISTER.md`, evidence/verification/acceptance/reconciliation in `artifact-chain/`.
+- Pinned author primary-source: `evidence/sources/SNE-F03-SOURCE-PINS.md` and `SNE-F03-CMAKE-OBSERVATIONS.md`.
+- ZIP reproducibility: `scaffold/SNE-F03-MANIFEST.md`, `SNE-F03-SHA256.json`, `SNE-F03-BUILD-VERIFICATION.json`, exact staging in `SNE-F03-INSTALL.md`.
+- `ADR-SNE-002` remains **HOLD and unmodified** by F-03.
 
-This registry records *known past pushed SHAs*, never invents the future F-02 commit. Operator stages/pushes the docs only after exact preimage check. No source-engine/game implementation authorized by publication.
+Publication of this packet will not authorize toolchain inspection, compilation, game launch, GPU benchmark or source code edits. Record the actual future F-03 Git SHA in a later reconciliation document, not an invented number.

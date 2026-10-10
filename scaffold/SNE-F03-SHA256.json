@@ -1,0 +1,325 @@
+{
+  "schema": "SNE-F03-OVERLAY-SHA256-v1",
+  "release": "v1.2.0",
+  "archive_root": "sovereign-nodes-engine/",
+  "expected_parent_git_sha": "f2f2cfec676b9a5254fa2a5a7e6f08198581fa09",
+  "self_hash_excluded_path": "scaffold/SNE-F03-SHA256.json",
+  "rule": "All SHA-256 digests are raw UTF-8 ZIP member bytes. This ledger excludes its own file to avoid recursive self-hashing.",
+  "file_count": 49,
+  "replacements": [
+    {
+      "path": "blueprints/phases/PHASE-00-FOUNDATION.md",
+      "git_blob_sha1_preimage": "4f8899a463eec290768e5a692d01a285a470f910"
+    },
+    {
+      "path": "blueprints/research/RESEARCH-QUEUE.md",
+      "git_blob_sha1_preimage": "37bc314167689ced6b8f6332cd27730dc49ec99a"
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-RESULT-REGISTER.md",
+      "git_blob_sha1_preimage": "abbea78d60f9c4fc14cbfc89a22fa67e47989745"
+    },
+    {
+      "path": "evidence/sources/SOURCE-INDEX.md",
+      "git_blob_sha1_preimage": "95396501fdb315b2d9a31575436816c317bfd944"
+    },
+    {
+      "path": "governance/PHASE-00-REVIEW-GATES.md",
+      "git_blob_sha1_preimage": "71f2d9c23b8fa8408f9bfe7744457f111138aab5"
+    },
+    {
+      "path": "registry/PHASE-00-ARTIFACT-INDEX.md",
+      "git_blob_sha1_preimage": "79af429900c95754614bf2c5ea4316be8ceed6c2"
+    }
+  ],
+  "members": [
+    {
+      "path": "SNE-F03-INSTALL.md",
+      "action": "ADD",
+      "bytes": 5046,
+      "sha256": "930f2c3ca6379e026a4f50df6b95f4277739df26f289d9c414492c8dc9d46ea5"
+    },
+    {
+      "path": "artifact-chain/acceptance/SNE-ACC-F03.md",
+      "action": "ADD",
+      "bytes": 1069,
+      "sha256": "7784a314eb32feff703d52dabaa4fbb5a4b87431668aed64ab0abe9b2b0dd781"
+    },
+    {
+      "path": "artifact-chain/evidence/SNE-EVD-F03.md",
+      "action": "ADD",
+      "bytes": 1075,
+      "sha256": "e845aaff3b17b39e13deab0369b1d4bd90cda10e62bd54ac1c809567e79c6b66"
+    },
+    {
+      "path": "artifact-chain/reconciliation/SNE-REC-F03.md",
+      "action": "ADD",
+      "bytes": 950,
+      "sha256": "63c7e762ad824a30940c5ce8cfbf93ca800a62a1fbd53740cd9f6e6a0e195223"
+    },
+    {
+      "path": "artifact-chain/verification/SNE-VER-F03.md",
+      "action": "ADD",
+      "bytes": 903,
+      "sha256": "7edf6154d8f1bb76e5329b3a06d4fb45ad50a3313a344e276d7721fc9ca50817"
+    },
+    {
+      "path": "artifact-chain/work-orders/SNE-WO-F03.md",
+      "action": "ADD",
+      "bytes": 3345,
+      "sha256": "4e3b174e42ddd48a3bedd67baacc515b3823c96357c8c44401bdec98d88c393c"
+    },
+    {
+      "path": "blueprints/architecture/SNE-F03-BUILD-BOUNDARY.md",
+      "action": "ADD",
+      "bytes": 1758,
+      "sha256": "f57374d15e5e4a9e80ae9d53b702a0a7babe3886c247f3e5a41a181485e865e7"
+    },
+    {
+      "path": "blueprints/diagrams/SNE-F03-BUILD-GATE-GRAPH.md",
+      "action": "ADD",
+      "bytes": 974,
+      "sha256": "f0ec7d00c889482be863396890c2d114bad4dfb3b07d5164a9e1763a9d2c9176"
+    },
+    {
+      "path": "blueprints/phases/PHASE-00-FOUNDATION.md",
+      "action": "REPLACE",
+      "bytes": 3173,
+      "sha256": "db861e2d4253f819359ea516b273a81da040e06e7667a4a2a59cadca9b294267"
+    },
+    {
+      "path": "blueprints/research/RESEARCH-QUEUE.md",
+      "action": "REPLACE",
+      "bytes": 3882,
+      "sha256": "86d90d4f872327bac22b1f200f20bc95a040734d8924a7a88fd25a4dfefb6cbc"
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-RESULT-REGISTER.md",
+      "action": "REPLACE",
+      "bytes": 2355,
+      "sha256": "86a1a0e24491f2b7518021fcbe16a051e0e27f5a280cccdc6bb04ff0ee595206"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-ADMISSION.md",
+      "action": "ADD",
+      "bytes": 1710,
+      "sha256": "4165e78397d96d19847f3bdd2be6fa420b808e5ae5064f382eae66b9a533da73"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-BIASEDDOOM-EXPERIMENT.md",
+      "action": "ADD",
+      "bytes": 1677,
+      "sha256": "ad656845c3333a4efc076d56606d8ecb213e150b9be83381b39095f49fb5854e"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-BUILD-FAILURE-TAXONOMY.md",
+      "action": "ADD",
+      "bytes": 1823,
+      "sha256": "bf986c7ec1a283af91428dc57416caf1a29925ca3717440664dc8dca4066b0d2"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-CMAKE-CONFIGURATION.md",
+      "action": "ADD",
+      "bytes": 1401,
+      "sha256": "dc17b0bfd43f28e0d697fdc3fb8c6234abaa8412e5908ff10ab8df3fee598626"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-COMMAND-PLAN.md",
+      "action": "ADD",
+      "bytes": 1991,
+      "sha256": "39d96450b04f1a87fe89294b15e1d46aa8bb801f0f270782e173109d449b5531"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-DEPENDENCY-DRIFT.md",
+      "action": "ADD",
+      "bytes": 1185,
+      "sha256": "48597bce69b5e12026095953ff303c7c4910e2c82388d54a6fa87e03ac103b4b"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-DEPENDENCY-SBOM.md",
+      "action": "ADD",
+      "bytes": 1970,
+      "sha256": "94cd30d6712c40af7ff4aa4182a302d033ef65e8861ab7a82075a710371bdfe1"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-F04-ENTRY.md",
+      "action": "ADD",
+      "bytes": 1362,
+      "sha256": "3cf265b487886c34ffd1163a4fdccb080e6932d6b87eeeb5e589628a54ce41a2"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-GENERATOR-MATRIX.md",
+      "action": "ADD",
+      "bytes": 1455,
+      "sha256": "e253557fb9624d21c9126af1a7e5959aaf1f471f736487f195528c4063aeeb55"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-GZDOOM-CONTROL.md",
+      "action": "ADD",
+      "bytes": 1723,
+      "sha256": "0f8172a2667f8659fd31458804b306081c5d745bfd4a2ffe5645a4fb3e1e9ec8"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-OPERATOR-HANDOFF.md",
+      "action": "ADD",
+      "bytes": 1367,
+      "sha256": "85f95d9430e3bf2436e144b7a13113a5bdec5ba8659faeb0aefe0e3d3c0d6089"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-RED-FLAGS.md",
+      "action": "ADD",
+      "bytes": 1683,
+      "sha256": "705081bbed4f2ed14e5da1fefccf3724ac5158c95f6c34170309aad9d1959ab8"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-REPRODUCIBILITY-TRIALS.md",
+      "action": "ADD",
+      "bytes": 1649,
+      "sha256": "2dc1f1b9f5badf3a3ba8544535d04aae843150986879c92346f3262295ab0f84"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-RESOURCE-HASHES.md",
+      "action": "ADD",
+      "bytes": 1073,
+      "sha256": "303bcc79b241ca801a7cc8ba17ee92e18fa61f69f381f8a2bb12795f34102315"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-SECURITY-AND-LEGAL.md",
+      "action": "ADD",
+      "bytes": 1308,
+      "sha256": "8d1e6dfc7348c012dd24a67a82c1e2902d615795b2f83e1bb3f65005d2506c43"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-SOURCE-IMMUTABILITY.md",
+      "action": "ADD",
+      "bytes": 1672,
+      "sha256": "a5952c4a1c9b506ac6b0ffe6814dd7a148d8dd2ee4746355114cfbdeeb21fedf"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-STOP-ROLLBACK.md",
+      "action": "ADD",
+      "bytes": 1314,
+      "sha256": "11796fbc5d54816bfe55c822e4a2d1068c604469f04451418c18856b2e5b517d"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-UZDOOM-COMPARATOR.md",
+      "action": "ADD",
+      "bytes": 1824,
+      "sha256": "b97f6a7354b3a4b1f0303161ff91a44063ab3543056f5ab8d378b4ee21f2ba01"
+    },
+    {
+      "path": "blueprints/verification/SNE-F03-WINDOWS-TOOLCHAIN.md",
+      "action": "ADD",
+      "bytes": 1807,
+      "sha256": "94e6633314a6f515e297f92f2524b3481485c2af1029495db34a7038a66bb89c"
+    },
+    {
+      "path": "docs/SNE-F03-START-HERE.md",
+      "action": "ADD",
+      "bytes": 1157,
+      "sha256": "e62e32a5ab66b90ddce268238b278fc64092071cc92f824e045d7ce2961d3666"
+    },
+    {
+      "path": "evidence/sources/SNE-F03-CMAKE-OBSERVATIONS.md",
+      "action": "ADD",
+      "bytes": 2483,
+      "sha256": "e2a6fce0fb0ebe402eb9fc04cb1d66947cdf769bf673282d6fae94c9c2e46523"
+    },
+    {
+      "path": "evidence/sources/SNE-F03-SOURCE-PINS.md",
+      "action": "ADD",
+      "bytes": 2074,
+      "sha256": "8b19844f84d46b861a72374f0ffabbf8bb8efe9e0d6336b721c0946707341437"
+    },
+    {
+      "path": "evidence/sources/SOURCE-INDEX.md",
+      "action": "REPLACE",
+      "bytes": 1594,
+      "sha256": "140223bffd22bb106d902f1c0dec26ed22922fe2636b74fc833bd694091d7d3c"
+    },
+    {
+      "path": "governance/PHASE-00-REVIEW-GATES.md",
+      "action": "REPLACE",
+      "bytes": 2197,
+      "sha256": "34b02ec90327209d437f38d1936ec0e5da175d114b2e462be638ab254851c33a"
+    },
+    {
+      "path": "governance/SNE-F03-AUTHOR-REVIEW.md",
+      "action": "ADD",
+      "bytes": 1206,
+      "sha256": "48b17548ea3cad7561128e93ef723593aaa80b5713891cbf3fe87cf12fe0742c"
+    },
+    {
+      "path": "governance/SNE-F03-AUTHORIZATION-REQUEST.md",
+      "action": "ADD",
+      "bytes": 1710,
+      "sha256": "332100fa03c102036b9510c5a5c30426a8fd8ed8217894047eddab4156000f42"
+    },
+    {
+      "path": "governance/SNE-F03-RISK-REGISTER.md",
+      "action": "ADD",
+      "bytes": 1914,
+      "sha256": "48d4d929a8ec743da697951742f4fad36ea6a0ef1d2d05ddd63fa7e6a7cbb618"
+    },
+    {
+      "path": "registry/PHASE-00-ARTIFACT-INDEX.md",
+      "action": "REPLACE",
+      "bytes": 2058,
+      "sha256": "2659c4c4576677e3f1c9bedf4946d726806ceed057324efca10df646d0881256"
+    },
+    {
+      "path": "scaffold/SNE-F03-BUILD-VERIFICATION.json",
+      "action": "ADD",
+      "bytes": 787,
+      "sha256": "0ec20e4b4f001d3d0ffa39325364e979694490ab6bf8fa678613781085416966"
+    },
+    {
+      "path": "scaffold/SNE-F03-CHANGELOG.md",
+      "action": "ADD",
+      "bytes": 769,
+      "sha256": "a8d995c60f1b5f1f2f96e0d05a021440d95f3fc9096409c6d55f01c1ad64d632"
+    },
+    {
+      "path": "scaffold/SNE-F03-MANIFEST.md",
+      "action": "ADD",
+      "bytes": 3869,
+      "sha256": "250e324a827a565c0b38887e3922ac98a5a9cfdd058d912e44a9fc9ed7b6746b"
+    },
+    {
+      "path": "templates/SNE-F03-BUILD-RECORD.json",
+      "action": "ADD",
+      "bytes": 1109,
+      "sha256": "3981a5cce963a4972491a45dc73392b752cd142990cd6840da985f95e84cc14a"
+    },
+    {
+      "path": "templates/SNE-F03-DEPENDENCY-ROW.json",
+      "action": "ADD",
+      "bytes": 504,
+      "sha256": "57e0b40163bdaec69f16174dd7997c90d7cbe46a520f19a6dcbd648a2488553a"
+    },
+    {
+      "path": "templates/SNE-F03-HOST-READINESS.json",
+      "action": "ADD",
+      "bytes": 847,
+      "sha256": "834d085366d67ff3988aab6c0f5338e1d9e3026ffeaaea7114b6415be624ccc0"
+    },
+    {
+      "path": "templates/SNE-F03-README.md",
+      "action": "ADD",
+      "bytes": 839,
+      "sha256": "9914ce5accab4aca03068b6814057eaa1ebf4bf54b44a91128f921cd8f2b219f"
+    },
+    {
+      "path": "templates/SNE-F03-REPRO-RECORD.json",
+      "action": "ADD",
+      "bytes": 593,
+      "sha256": "6ad116ab360edefef5bedc0edaac5a83433b9111c1c473f1ba78e1d50cdef399"
+    },
+    {
+      "path": "templates/SNE-F03-RESOURCE-RECORD.json",
+      "action": "ADD",
+      "bytes": 365,
+      "sha256": "a295591fe43b4dc9730bc7896b17e5c422db89d83be13b568d9137ece4056a07"
+    }
+  ]
+}

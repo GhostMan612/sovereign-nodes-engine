@@ -1,0 +1,19 @@
+{
+  "schema": "SNE-F03-REPRO-RECORD-v1",
+  "candidate": null,
+  "source_git_sha": null,
+  "configuration_scope_hash": null,
+  "dependency_closure_hash": null,
+  "toolchain_identity_hash": null,
+  "attempt_a": null,
+  "attempt_b": null,
+  "independent_build_trees_confirmed": null,
+  "effective_inputs_equal": null,
+  "binaries_sha256_equal": null,
+  "resources_sha256_equal": null,
+  "nondeterminism_investigation_ref": null,
+  "reviewer_ref": null,
+  "operator_signoff_private_ref": null,
+  "status": "NOT RUN",
+  "notes": "Two future attempts, not duplicate entries for one cached build."
+}

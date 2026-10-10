@@ -1,0 +1,20 @@
+{
+  "schema": "SNE-F03-DEPENDENCY-ROW-v1",
+  "dependency_id": null,
+  "candidate_engine": null,
+  "role": null,
+  "source_revision": null,
+  "version": null,
+  "origin_url": null,
+  "source_or_package_sha256": null,
+  "manager": null,
+  "manifest_feature": null,
+  "arch_triplet": null,
+  "license_spdx_or_text": null,
+  "notice_review_state": "NOT CLEARED",
+  "binary_or_runtime_required": null,
+  "transitive_dependencies": [],
+  "auth_b_ref": null,
+  "state": "NOT VERIFIED",
+  "reviewer_ref": null
+}
