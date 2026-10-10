@@ -1,0 +1,14 @@
+{
+  "schema_id": "SNE-F01-CHANGE-REQUEST-v1",
+  "old_authorization_id": null,
+  "new_request_id": null,
+  "proposed_category": null,
+  "changed_scope_fields": [],
+  "reason": null,
+  "new_scope_sha256": null,
+  "old_approval_carries_over": false,
+  "new_operator_private_signature_ref": null,
+  "new_approval_state": "PROPOSED",
+  "execution_allowed": false,
+  "notes": "Widened/modified scope requires new independently approved ID; never edit approved record in place."
+}

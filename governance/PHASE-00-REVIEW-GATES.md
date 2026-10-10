@@ -1,28 +1,43 @@
-# Phase 00 — Acceptance and permission gates after WO-F / F-00
+# SNE-P00 — Gate closure and execution authorization, v1.0.0
 
-**State:** Published A–F plans; F-00 independent source reviewer packet authored, **not independently reviewed or operator-accepted**. `ADR-SNE-002` HOLD. Signing or installing a Markdown package is not a test outcome.
+Document publication, source verification, test execution, independent acceptance and the foundation decision are **different states**.
 
-| Gate | Required real evidence | Present state | What F-00 contributes |
+| Gate | Required independently reviewable proof | Actual state after F-01 *design* | Block example |
 |---|---|---|---|
-| P00-G1 Provenance | independent primary-source URL@SHA/blob/line, checked counterclaim and path resolution | SELECTED AUTHOR-SOURCE; INDEPENDENT PENDING | 16-item source claim catalog, pin ledger |
-| P00-G2 Rights | full transitive code/asset/branding/source distribution SBOM, legal review and lawful external IWAD | NOT CLEARED | upstream policy claims and gaps only |
-| P00-G3 Parity | C-001…C-008 on unchanged original game, correct GapNode, actor/GLDEFS/HUD/negative controls | NOT RUN | source-risk falsification, not parity |
-| P00-G4 Build | exact Windows toolchain, dependencies, native binary/config/resource SHA and repeatability | NOT RUN | root CMake claim audit, not compiled |
-| P00-G5 UHD 620 | >=3 valid actual P0 traces per scene and operator-approved thresholds | NOT RUN | no device access or measurements |
-| P00-G6 Security | synthetic JSON truth table/replay/schema/path safety, optional CPython and Mantle separation | NOT TESTED | source parse questions only |
-| P00-G7 Independence | distinct reviewer inspects primary source and tests, retains dissent, operator reconciliation | NOT COMPLETED | appointment and blank reviewer protocol |
-| P00-G8 Foundation | all relevant approved evidence, score and explicit operator engine SHA/rollback | HOLD | no engine adoption or Phase 01 approval |
+| G1 | immutable source Git URLs/revisions and verified blob claims; distinct reviewer | AUTHOR RECHECK / INDEPENDENT PENDING | stale blob interpreted as build proof |
+| G2 | complete source/dependency/asset license and lawful IWAD rights decisions | NOT CLEARED | unowned WAD/brand repackaged |
+| G3 | C-001…C-008 unchanged PK3 on genuine custom GapNode by pinned engine with controls | NOT RUN | vanilla Entryway fallback |
+| G4 | recorded Windows/compiler/dependency pin and reproducible executable/resource SHA-256 | NOT RUN | only theoretical CMake commands |
+| G5 | >=3 real UHD 620 trace captures per agreed configuration + thresholds | NOT RUN | manufactured FPS, different visuals |
+| G6 | synthetic-only handoff parse, missing/stale data and Python/Mantle boundary checks | NOT RUN | real lineage disclosure or execution |
+| G7 | reviewer genuinely distinct from author, primary-source audit and documented dissent | NOT COMPLETE | author's own red-team renamed independent |
+| G8 | G1–G7 disposition plus scored evidence, rollback and operator-selected engine commit | **HOLD** | preference treated as adoption |
 
-## Approval categories remain independent
+## F-01 categories — none are currently active
 
-`AUTH-R` reviewer read-only source; `AUTH-H` host inventory; `AUTH-F` disposable fixture; `AUTH-B` build; `AUTH-T` parity runtime; `AUTH-P` GPU measurement; `AUTH-S` rights/security; `AUTH-I` implementation; `AUTH-D` redistribution. All categories that access user's computer, build, test or modify code default **NOT GRANTED** unless user separately signs. The current overlay is document preparation and author source inspection, **not an AUTH-R signoff for a third-party reviewer**.
+| Category | Task boundary | Approval needed before use |
+|---|---|---|
+| `AUTH-R` | independent read-only source/claim review | reviewer appointment + explicit operator approval |
+| `AUTH-H` | non-invasive local metadata inventory | machine/path/data bounds + separate operator approval |
+| `AUTH-F` | synthetic fixture creation in disposable workspace | allowed writes/source hash and cleanup bounds |
+| `AUTH-B` | native engine configure/build | pinned source, deps, output dirs, network policy and build approval |
+| `AUTH-T` | local gameplay/compatibility run | lawful external IWAD, binary/PK3 identity, session and log bounds |
+| `AUTH-P` | hardware frame-time benchmark | approved scene/profile/threshold/device and stress stop |
+| `AUTH-S` | security/license audit | allowed records and private-data/redaction boundary |
+| `AUTH-I` | actual game or engine code implementation | **separate future implementation work order**; not granted here |
+| `AUTH-D` | redistribution and upstream contribution | separate rights and policy acceptance; not granted here |
 
-## Truth/status enforcement
+## Evidence and approval semantics
 
-- Source observed ≠ independent accepted; test specified ≠ passed; absent permission/resource ≠ engine failure.
-- Reviewer must reconstruct evidence; signoff must be dated, scoped and distinct from author; dissent and conflicting evidence preserved.
-- Any claimed runtime PASS requires actual binary and fixture hashes, exact lawful resources, real logs/trace and independent scrutiny.
-- Unresolved validator-path question, sprite naming and `hasParadox` source mismatch remain risks, not known runtime defects.
-- Operator may accept **documentation** without closing any technical gate. Full Phase 00 and Phase 01 remain separate authorizations.
+- A proposed JSON form is **not** operator consent. State `PROPOSED`, missing fields, expired time or revoked scope → **NOT AUTHORIZED**. Signed scope must be authenticated by the operator through an accepted private channel before dispatch.
+- One permission may never be inherited: `AUTH-H` does not allow `AUTH-F/B/T/P`; `AUTH-R` does not permit local device access; `AUTH-B` does not allow `AUTH-I/D`.
+- A reviewer can attest source facts without authorizing commands. The operator chooses and revokes permissions; the tester logs actual evidence; a separate qualified reviewer adjudicates tests.
+- Defaults for tests are `NOT RUN`. When blocked by consent, lawful resources or dependencies use `BLOCKED` with reason, never fabricated `FAIL/PASS`.
+- An `APPROVED` record must name exact subject, operator evidence reference, task ID, working directory, permitted read/write paths, candidate revisions, tool/network policy, time window, logs, stop/rollback and no data scope creep.
+- F-00 independent source audit is still pending; any high-severity claim dispute remains HOLD even if a narrow metadata-review proposal is drafted.
 
-See `governance/SNE-F00-REVIEW-ASSIGNMENT.md`, `SNE-F00-CONFLICT-OF-INTEREST.md`, `blueprints/verification/SNE-F00-GATE-IMPACT.md` and the existing `SNE-000F-*` workstream blueprints.
+## Safe decision order
+
+Propose request → independent/documentary checks → operator authenticates explicit approval for one category → freeze scope/hash and date → recheck actual current state → execute *only that future approved task* → collect redacted evidence → independent review → operator reconciliation. Revocation stops new steps immediately. No F-01 file itself performs this lifecycle or closes any G1–G8 gate.
+
+See `governance/WO-000F-AUTHORIZATION-MATRIX.md`, `blueprints/verification/SNE-F01-AUTHORIZATION-LIFECYCLE.md`, `templates/SNE-F01-AUTHORIZATION.json` and `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md`.

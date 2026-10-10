@@ -1,0 +1,180 @@
+{
+  "schema_id": "SNE-F01-FILE-SHA256-v1",
+  "release": "v1.0.0",
+  "parent_commit": "148dc28cdbdf4970c8011d76762b31b8dcafea0b",
+  "archive_root": "sovereign-nodes-engine/",
+  "member_count_including_ledger": 42,
+  "entries_excluding_this_ledger_count": 41,
+  "self_member_not_hashed": "scaffold/SNE-F01-SHA256.json",
+  "entries": {
+    "SNE-F01-INSTALL.md": {
+      "action": "ADD",
+      "sha256": "5fae848adb5b4cecec968b8789792ac829d072d91d3c91b0d95675242a6a6606"
+    },
+    "artifact-chain/acceptance/SNE-ACC-F01.md": {
+      "action": "ADD",
+      "sha256": "aa99bfcca96d7d894ba1f081ba7044aec76648e76d653528e15650a290fb57f4"
+    },
+    "artifact-chain/evidence/SNE-EVD-F01.md": {
+      "action": "ADD",
+      "sha256": "ffbb2053775d221149b1bb4a73fe128ecbb12d9867bd8e924840be8fba30f098"
+    },
+    "artifact-chain/reconciliation/SNE-REC-F01.md": {
+      "action": "ADD",
+      "sha256": "b8bafb07c74244f8fdc6e6f29f6a2d3c5270892ba98cf3c560bc6a52910f8b4b"
+    },
+    "artifact-chain/verification/SNE-VER-F01.md": {
+      "action": "ADD",
+      "sha256": "bf4b6a0cc8132fe66b1f6e16bb8b00a8ac226d33b94fe20a0cf3b93420dd8a97"
+    },
+    "artifact-chain/work-orders/SNE-WO-F01.md": {
+      "action": "ADD",
+      "sha256": "b8c27ede40c2bfcd8b8c5f37a933b9b2bca474882b2e2c43f399b604ac011ce8"
+    },
+    "blueprints/architecture/SNE-F01-SCOPE-BOUNDARIES.md": {
+      "action": "ADD",
+      "sha256": "72e728a92da6f9b3367ded94df74c2bdf2eadfd2deb780271a99dd9f95a51bd7"
+    },
+    "blueprints/diagrams/SNE-F01-AUTHORIZATION-LIFECYCLE.md": {
+      "action": "ADD",
+      "sha256": "9b41b2e4b441d0feed70a5524ffee57c73b0f9dee507e2c25be9471d0a0269cf"
+    },
+    "blueprints/phases/PHASE-00-FOUNDATION.md": {
+      "action": "REPLACE",
+      "sha256": "88a03189747b90b0a84191387e073c44f9835840880f0b7d2f7292b1130699b3",
+      "git_parent_blob_sha1": "d2cfa6828f8a7be92b700042e38f942610647f4a"
+    },
+    "blueprints/research/RESEARCH-QUEUE.md": {
+      "action": "REPLACE",
+      "sha256": "f2939505bff065dee991922433b2087198fc35be93e43f80405abcbb3e132f35",
+      "git_parent_blob_sha1": "14e4187a3320f4d77a70c796584b4be3d8ae0ea2"
+    },
+    "blueprints/verification/SNE-F01-AGENT-DISPATCH-CONTRACT.md": {
+      "action": "ADD",
+      "sha256": "830de9021f46c627d12e808276677ded7ff6538fce17a7e148f5e67cd66649b8"
+    },
+    "blueprints/verification/SNE-F01-AUTHORIZATION-LIFECYCLE.md": {
+      "action": "ADD",
+      "sha256": "d7710e0dabad28dc415e2ac43cfad99c0dc036502e85fc42053ca1821df2edfd"
+    },
+    "blueprints/verification/SNE-F01-BUILD-RUN-LANES.md": {
+      "action": "ADD",
+      "sha256": "e7bb58785170cfd5082a0ee5517c92802cc511fa60c4abcc038efe61830b50ee"
+    },
+    "blueprints/verification/SNE-F01-DEPENDENCY-NETWORK-CONTROLS.md": {
+      "action": "ADD",
+      "sha256": "a3cae8a1c59e47f3459835d0574e2006f272846325248ee688d82d80061cb32d"
+    },
+    "blueprints/verification/SNE-F01-EVIDENCE-CHAIN-AND-RETENTION.md": {
+      "action": "ADD",
+      "sha256": "c96c09e0aabbe252caedc94a6bebfb10989ed02654a42cb0c7abac739fa92602"
+    },
+    "blueprints/verification/SNE-F01-F02-ENTRY-GATE.md": {
+      "action": "ADD",
+      "sha256": "30d9f26204d3de478e8b774a8036f51f2dbff7e97997c81ae3f6ef66803d40f9"
+    },
+    "blueprints/verification/SNE-F01-FIXTURE-LANE.md": {
+      "action": "ADD",
+      "sha256": "532432a256668d3f8f110acb4607f7449b3581d4fa52abd263ffb5249b0051ac"
+    },
+    "blueprints/verification/SNE-F01-HOST-INVENTORY-LANE.md": {
+      "action": "ADD",
+      "sha256": "976e830cf0af9f3fba7bae4e65e62eb043d48f3f362e783696c75bce709ecab9"
+    },
+    "blueprints/verification/SNE-F01-PATH-DATA-BOUNDARIES.md": {
+      "action": "ADD",
+      "sha256": "ae208858eaad0e5ef9cdcb0a28683ce7cf65f4ab6cd52fd67aed58f54bb3db3d"
+    },
+    "blueprints/verification/SNE-F01-PERFORMANCE-ADMISSION.md": {
+      "action": "ADD",
+      "sha256": "5818fba33ef7df0fe72855588544f23d426c13039e0e1669fdd495c520d7e32a"
+    },
+    "blueprints/verification/SNE-F01-READ-ONLY-REVIEW-LANE.md": {
+      "action": "ADD",
+      "sha256": "2c6091b6e1691f7bcae6a7d9b09f0847180ae1823d78206a43f8e6cdb4939520"
+    },
+    "blueprints/verification/SNE-F01-SCOPE-FREEZE.md": {
+      "action": "ADD",
+      "sha256": "b355066d4b5cf120d8e2e7650b1ee0099a4a70138c64c91b3e4f91a15ef1d2b7"
+    },
+    "blueprints/verification/SNE-F01-STOP-REVOKE-ROLLBACK.md": {
+      "action": "ADD",
+      "sha256": "ca927a23913186a377ad8b6aea9e8c111c1f0c4bb6bc9f69d8f0780def21a8fb"
+    },
+    "docs/SNE-F01-START-HERE.md": {
+      "action": "ADD",
+      "sha256": "743f70ea4cb58330d1d92714a37e7ae54ba59ae9609c73894e39fd188097e30d"
+    },
+    "governance/PHASE-00-REVIEW-GATES.md": {
+      "action": "REPLACE",
+      "sha256": "680cd847a9d7684992428efa9ee707086c7c9f834e32a2d0bd65ea9ce6bfaa11",
+      "git_parent_blob_sha1": "84c299f6db19197bbc5c1f7a38eb39b8121a1d58"
+    },
+    "governance/SNE-F01-AUTHOR-REVIEW.md": {
+      "action": "ADD",
+      "sha256": "d9f8524f907a6f7341ff1324ff6287894000f1bb3b35d0c305e0422a28145548"
+    },
+    "governance/SNE-F01-DECISION-LOG.md": {
+      "action": "ADD",
+      "sha256": "a6f76e11c774650d7822621bab430ffd45bec11edd0bb9d226b4290c0a260122"
+    },
+    "governance/SNE-F01-INDEPENDENCE-APPOINTMENT.md": {
+      "action": "ADD",
+      "sha256": "c6a0396eb6a55cbd61a08d6e964032884d12c8a3d01d81316592078bf725a735"
+    },
+    "governance/SNE-F01-RISK-REGISTER.md": {
+      "action": "ADD",
+      "sha256": "9164eeb5f277d00182abbe0e07760c4082cc4a9aec99805112050811db494c41"
+    },
+    "governance/WO-000F-AUTHORIZATION-MATRIX.md": {
+      "action": "REPLACE",
+      "sha256": "4e5bcfbdb45bba2879ee599da8b6fb871ec96820f9d2d17004a1458a2c89d6b8",
+      "git_parent_blob_sha1": "1510ee3f41340215011da612f992cfde74d0e527"
+    },
+    "registry/PHASE-00-ARTIFACT-INDEX.md": {
+      "action": "REPLACE",
+      "sha256": "94979c95d892e7aa899f5d9919834f6562864458260723ed7dd406132fc7a44e",
+      "git_parent_blob_sha1": "aa5559e84aa6d04f9c24ee45ab54e1548f1dfa99"
+    },
+    "scaffold/SNE-F01-BUILD-VERIFICATION.json": {
+      "action": "ADD",
+      "sha256": "cee678f3d5ca00a23606ce3e604123cb4e3e59c4658908740e0e8b0d2fd077cd"
+    },
+    "scaffold/SNE-F01-CHANGELOG.md": {
+      "action": "ADD",
+      "sha256": "963c24304fc1f2f00030f6a30a1b70bb5b6c43bf8bdafeaecc7d4ff052fbda51"
+    },
+    "scaffold/SNE-F01-MANIFEST.md": {
+      "action": "ADD",
+      "sha256": "2157a9be8d0337fd593d9d6732904d346d46f731f9b28114aaee2408f435f85e"
+    },
+    "templates/SNE-F01-AUTHORIZATION.json": {
+      "action": "ADD",
+      "sha256": "0c3361d2fdeeada1a1831f337cf186657c87e238032f215c15b18bda53262c36"
+    },
+    "templates/SNE-F01-AUTHORIZATION.schema.json": {
+      "action": "ADD",
+      "sha256": "0ac4b2e6d5bef8e830057c6d103296dadc410ae48d7f8479c5c19a6d5bf85d2d"
+    },
+    "templates/SNE-F01-CHANGE-REQUEST.json": {
+      "action": "ADD",
+      "sha256": "f98c14c0386700c038a1f427d1584b9ebb6d25498256d4bc76ee78eb09c0eb4a"
+    },
+    "templates/SNE-F01-README.md": {
+      "action": "ADD",
+      "sha256": "520c8086afacc17476e45f2e38af5c0a819cca8a7ab6351627895174e4ead0e6"
+    },
+    "templates/SNE-F01-REVIEW-ATTESTATION.json": {
+      "action": "ADD",
+      "sha256": "ddf2a2f673c3d49c724fbbca6759eb5e0a5e96b5fac3db355c58e212ff57b03b"
+    },
+    "templates/SNE-F01-REVOCATION.json": {
+      "action": "ADD",
+      "sha256": "d67fdd8855d705124055337b5a7fbea7bc94932095e094fc1984affc264708ee"
+    },
+    "templates/SNE-F01-SCOPE-FREEZE.json": {
+      "action": "ADD",
+      "sha256": "df9ec213ceb95cdef230d22f462b42d5d69d676a796af16d29ee1e6fe1db4f55"
+    }
+  }
+}

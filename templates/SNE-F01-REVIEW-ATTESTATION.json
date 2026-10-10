@@ -1,0 +1,21 @@
+{
+  "schema_id": "SNE-F01-REVIEW-ATTESTATION-v1",
+  "review_request_id": null,
+  "reviewer_private_id": null,
+  "reviewer_is_original_author": null,
+  "qualification_private_ref": null,
+  "independence_disclosure_private_ref": null,
+  "source_claim_ids": [],
+  "source_commit_and_blob_checks": [],
+  "attempted_falsifications": [],
+  "disputed_findings": [],
+  "correction_requests": [],
+  "reviewer_signed_at": null,
+  "reviewer_signature_private_ref": null,
+  "operator_accepted_at": null,
+  "operator_signature_private_ref": null,
+  "g1_review_state": "PENDING",
+  "g7_review_state": "PENDING",
+  "game_runtime_tests": "NOT RUN",
+  "foundation_adr_state": "HOLD"
+}

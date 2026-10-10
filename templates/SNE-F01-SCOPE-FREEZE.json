@@ -1,0 +1,22 @@
+{
+  "schema_id": "SNE-F01-SCOPE-FREEZE-v1",
+  "work_order_id": "SNE-WO-F01",
+  "request_id": null,
+  "authorization_id": null,
+  "freeze_status": "DRAFT",
+  "scope_sha256": null,
+  "canonicalization": "JSON UTF-8, sorted object keys, compact no-space separators; only scope object hashed",
+  "preflight_source_commit": "148dc28cdbdf4970c8011d76762b31b8dcafea0b",
+  "approved_category": null,
+  "filesystem_roots_verified": false,
+  "symlink_junction_escape_checked": false,
+  "file_hashes_recorded": [],
+  "requested_side_effects": [],
+  "independent_review_ref": null,
+  "operator_private_approval_ref": null,
+  "operator_signed": false,
+  "actual_task_start_at": null,
+  "actual_task_finish_at": null,
+  "stop_or_block_reason": "NO AUTHORIZATION",
+  "execution_allowed": false
+}

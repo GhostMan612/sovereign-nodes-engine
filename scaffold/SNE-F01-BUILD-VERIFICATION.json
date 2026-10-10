@@ -1,0 +1,33 @@
+{
+  "schema_id": "SNE-F01-ZIP-VERIFICATION-v1",
+  "release": "v1.0.0",
+  "scope": "documentation/package generation only; no device verification",
+  "parent_repository_commit": "148dc28cdbdf4970c8011d76762b31b8dcafea0b",
+  "expected_total_files": 42,
+  "expected_add_files": 37,
+  "expected_replace_files": 5,
+  "replace_git_blobs_sha1": {
+    "blueprints/phases/PHASE-00-FOUNDATION.md": "d2cfa6828f8a7be92b700042e38f942610647f4a",
+    "blueprints/research/RESEARCH-QUEUE.md": "14e4187a3320f4d77a70c796584b4be3d8ae0ea2",
+    "governance/PHASE-00-REVIEW-GATES.md": "84c299f6db19197bbc5c1f7a38eb39b8121a1d58",
+    "registry/PHASE-00-ARTIFACT-INDEX.md": "aa5559e84aa6d04f9c24ee45ab54e1548f1dfa99",
+    "governance/WO-000F-AUTHORIZATION-MATRIX.md": "1510ee3f41340215011da612f992cfde74d0e527"
+  },
+  "zip_crc_valid": true,
+  "member_inventory_exact": true,
+  "duplicate_and_casefold_collision_free": true,
+  "no_absolute_or_parent_traversal": true,
+  "all_text_utf8_lf_terminal_newline": true,
+  "all_json_parse": true,
+  "all_sha256_members_except_ledger_verified": true,
+  "parent_git_blob_checks": "PINNED CONNECTED GITHUB SHA, NOT LOCAL WORKTREE PREIMAGE",
+  "actual_user_install_verified": false,
+  "independent_source_reviewer_signed": false,
+  "operator_authorization_granted": false,
+  "windows_engine_build": "NOT RUN",
+  "actual_gameplay_parity": "NOT RUN",
+  "uhd620_benchmark": "NOT RUN",
+  "foundation_adr": "HOLD",
+  "phase01_implementation": "NOT AUTHORIZED",
+  "notes": "Package checks will be rerun against the final archive; flags refer only to generated package bytes."
+}

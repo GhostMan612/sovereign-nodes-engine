@@ -1,0 +1,407 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/sne/schemas/SNE-F01-AUTHORIZATION.schema.json",
+  "title": "SNE-F01 category-specific authorization request (schema is NOT an approval)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "work_order_id",
+    "authorization_id",
+    "request_state",
+    "category",
+    "scope",
+    "scope_sha256",
+    "operator_signature_private_ref",
+    "operator_approved_at",
+    "valid_from",
+    "expires_at",
+    "revoked",
+    "operator_authentication_verified_by_executor",
+    "dispatch_admission",
+    "execution_attempted",
+    "execution_status"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "SNE-F01-AUTHORIZATION-v1"
+    },
+    "work_order_id": {
+      "const": "SNE-WO-F01"
+    },
+    "authorization_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[A-Za-z0-9_-]{10,100}$"
+    },
+    "request_state": {
+      "enum": [
+        "PROPOSED",
+        "APPROVED",
+        "DENIED",
+        "REVOKED",
+        "EXPIRED",
+        "COMPLETED"
+      ]
+    },
+    "category": {
+      "enum": [
+        "AUTH-R",
+        "AUTH-H",
+        "AUTH-F",
+        "AUTH-B",
+        "AUTH-T",
+        "AUTH-P",
+        "AUTH-S",
+        "AUTH-I",
+        "AUTH-D",
+        null
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "task_id",
+        "purpose",
+        "actor_private_id",
+        "device_private_id",
+        "planning_repository_commit",
+        "source_revisions",
+        "allowed_read_paths",
+        "allowed_write_paths",
+        "allowed_operations",
+        "forbidden_operations",
+        "network_access_allowed",
+        "dependency_downloads_allowed",
+        "licensed_external_resource_private_refs",
+        "private_raw_evidence_root",
+        "public_redacted_summary_path",
+        "max_duration_minutes",
+        "max_output_bytes",
+        "retention_policy",
+        "stop_conditions",
+        "rollback_plan"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "task_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "purpose": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "actor_private_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "device_private_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "planning_repository_commit": {
+          "const": "148dc28cdbdf4970c8011d76762b31b8dcafea0b"
+        },
+        "source_revisions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "repository",
+              "commit"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "repository": {
+                "type": "string",
+                "minLength": 1
+              },
+              "commit": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$"
+              }
+            }
+          }
+        },
+        "allowed_read_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowed_write_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowed_operations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden_operations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "network_access_allowed": {
+          "type": "boolean"
+        },
+        "dependency_downloads_allowed": {
+          "type": "boolean"
+        },
+        "licensed_external_resource_private_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "private_raw_evidence_root": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "public_redacted_summary_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "max_duration_minutes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "max_output_bytes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "retention_policy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stop_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rollback_plan": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "scope_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "scope_digest_method": {
+      "type": "string"
+    },
+    "operator_signature_private_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "operator_approved_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "valid_from": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "independent_reviewer_private_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revoked": {
+      "type": "boolean"
+    },
+    "revocation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "operator_authentication_verified_by_executor": {
+      "type": "boolean"
+    },
+    "dispatch_admission": {
+      "enum": [
+        "BLOCKED",
+        "ALLOW"
+      ]
+    },
+    "execution_attempted": {
+      "type": "boolean"
+    },
+    "execution_status": {
+      "enum": [
+        "NOT RUN",
+        "BLOCKED",
+        "INCONCLUSIVE",
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "request_state": {
+            "const": "APPROVED"
+          }
+        },
+        "required": [
+          "request_state"
+        ]
+      },
+      "then": {
+        "properties": {
+          "authorization_id": {
+            "type": "string",
+            "minLength": 10
+          },
+          "category": {
+            "type": "string"
+          },
+          "scope_sha256": {
+            "type": "string"
+          },
+          "operator_signature_private_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "operator_approved_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "valid_from": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expires_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scope": {
+            "properties": {
+              "task_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "purpose": {
+                "type": "string",
+                "minLength": 1
+              },
+              "actor_private_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "stop_conditions": {
+                "type": "array",
+                "minItems": 1
+              },
+              "rollback_plan": {
+                "type": "string",
+                "minLength": 1
+              },
+              "max_duration_minutes": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "retention_policy": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "not": {
+          "properties": {
+            "revoked": {
+              "const": true
+            }
+          },
+          "required": [
+            "revoked"
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "dispatch_admission": {
+            "const": "ALLOW"
+          }
+        },
+        "required": [
+          "dispatch_admission"
+        ]
+      },
+      "then": {
+        "properties": {
+          "request_state": {
+            "const": "APPROVED"
+          },
+          "revoked": {
+            "const": false
+          },
+          "operator_authentication_verified_by_executor": {
+            "const": true
+          }
+        }
+      }
+    }
+  ]
+}

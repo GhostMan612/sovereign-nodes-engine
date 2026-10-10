@@ -1,27 +1,33 @@
-# Phase 00 — Work-order registry v0.9.0 (F-00 reviewer handoff)
+# SNE Phase 00 — Work-order registry v1.0.0, F-01 authorization design
 
-| Work order | Main artifact | Last user-pushed Git checkpoint | Current documentary and technical state |
-|---|---|---|---|
-| WO-A | `SNE-WO-000A.md` | `369722f` | PUBLISHED; formal acceptance PENDING |
-| WO-B | `SNE-WO-000B.md` | `edc274f` | PUBLISHED; formal acceptance PENDING |
-| WO-C | `SNE-WO-000C.md` | `706db57` | PUBLISHED; C-series NOT RUN |
-| WO-D | `SNE-WO-000D.md` | `1f21e4c` | PUBLISHED; native build/UHD NOT RUN |
-| WO-E | `SNE-WO-000E.md` | `1644fb8` | PUBLISHED; ADR HOLD and G7 OPEN |
-| WO-F | `SNE-WO-000F.md` | `1c01d2ff5bc3a1369210a7d68dd58269ecf6506d` | PUBLISHED; verification readiness, no execution authority |
-| **F-00** | `artifact-chain/work-orders/SNE-WO-F00.md` | **v0.9.0 overlay prepared; Git commit not yet known** | AUTHOR SOURCE RECHECK; independent review PENDING |
-
-## New F-00 sub-workorder artifacts
-
-| Category | Canonical paths | State |
+| Work order | Last confirmed operator-published commit | State |
 |---|---|---|
-| Start and authority | `docs/SNE-F00-START-HERE.md`; `artifact-chain/work-orders/SNE-WO-F00.md` | DOCUMENTATION PREPARED |
-| Audit source claims | `blueprints/verification/SNE-F00-CLAIM-CATALOG.md` | 16 selected source claims; no reviewer |
-| Discriminating critiques | `SNE-F00-SPRITE-PARSER-REVIEW.md`; `SNE-F00-HANDOFF-PARSER-REVIEW.md`; `SNE-F00-PK3-VALIDATOR-REVIEW.md` in `blueprints/verification/` | AUTHOR HYPOTHESES, NOT RUN |
-| Source ledgers | `evidence/sources/SNE-F00-PIN-LEDGER.md`; `SNE-F00-GAME-PRIMARY-OBSERVATIONS.md` / `SNE-F00-ENGINE-PRIMARY-OBSERVATIONS.md` | PINNED AUTHOR SOURCE |
-| Reviewer governance | `governance/SNE-F00-REVIEW-ASSIGNMENT.md`; `SNE-F00-AUTHOR-FINDINGS.md`; `SNE-F00-RISK-REGISTER.md` | INDEPENDENT PENDING |
-| Review form templates | `templates/SNE-F00-*.json` | BLANK, NO PASS |
-| Evidence and acceptance | `artifact-chain/evidence/SNE-EVD-F00.md`; `artifact-chain/acceptance/SNE-ACC-F00.md` | SOURCE PACKET, NOT ACCEPTED |
-| Archive reproducibility | `scaffold/SNE-F00-MANIFEST.md`; `scaffold/SNE-F00-SHA256.json`; `SNE-F00-INSTALL.md` | PACKAGE VALIDATION ONLY |
-| Foundation ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | **HOLD / UNMODIFIED** |
+| WO-000A | `369722f` | published source research; acceptance pending |
+| WO-000B | `edc274f` | published upstream audit; acceptance pending |
+| WO-000C | `706db57` | published compatibility specification; no runtime proof |
+| WO-000D | `1f21e4c` | published Windows/UHD protocols; not run |
+| WO-000E | `1644fb8` | published architecture red-team; ADR HOLD |
+| WO-000F | `1c01d2f` | published verification readiness; no approvals granted |
+| F-00 | **`148dc28cdbdf4970c8011d76762b31b8dcafea0b`** | published source review handoff; **external independent signoff pending** |
+| **F-01** | **NOT YET COMMITTED** | v1.0.0 documentation preparation; **authorization records empty/unapproved** |
 
-**Next:** external independent source review and operator reconciliation, then explicitly scoped **F-01 authorization** and, when separately approved, F-02 synthetic/original parity. No engine source changes are allowed by F-00.
+## F-01 new canonical artifacts
+
+| Class | File | State |
+|---|---|---|
+| Operator work order | `artifact-chain/work-orders/SNE-WO-F01.md` | proposed, documentation only |
+| Intake | `docs/SNE-F01-START-HERE.md` | usage and hard stops |
+| Scope-freeze design | `blueprints/verification/SNE-F01-SCOPE-FREEZE.md` | protocol, not run |
+| Approval lifecycle | `blueprints/verification/SNE-F01-AUTHORIZATION-LIFECYCLE.md` | proposed permission state machine |
+| Agent handoff | `blueprints/verification/SNE-F01-AGENT-DISPATCH-CONTRACT.md` | no active agent task |
+| Review/authority | `governance/WO-000F-AUTHORIZATION-MATRIX.md` | revised matrix with F-01 categories and all pending |
+| Evidence and acceptance | `artifact-chain/evidence/SNE-EVD-F01.md`; `artifact-chain/acceptance/SNE-ACC-F01.md` | source-review references, acceptance unfilled |
+| Blank operator templates | `templates/SNE-F01-*.json` | unsigned and nonauthorizing |
+| File manifest | `scaffold/SNE-F01-MANIFEST.md`; `scaffold/SNE-F01-SHA256.json` | overlay validation only |
+| Foundation ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | **HOLD / unchanged** |
+
+## Registry invariants
+
+The observed commit `148dc28cdbdf4970c8011d76762b31b8dcafea0b` is the **pre-extraction** parent only; the F-01 output commit must be recorded in a later revision after the operator's actual push. Avoid inventing Git SHAs, rewriting historical A–F evidence, accepting G7 from author-written forms, or activating a command because this overlay was installed.
+
+**Next:** after package publication, the operator can appoint an independent F-00 reviewer and separately approve a minimally scoped `AUTH-R`, or request a specific `AUTH-H` metadata inventory. Other F-02…F-07 steps remain individually gated.

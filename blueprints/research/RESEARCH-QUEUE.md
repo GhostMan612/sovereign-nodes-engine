@@ -1,35 +1,36 @@
-# SNE-P00 — Evidence closure queue after WO-F publication (v0.9.0)
+# SNE-P00 — Active evidence queue, F-01 v1.0.0
 
-All source findings here are from an **author's selected read-only check**. No independent reviewer has yet signed; no local/game/device tests or license clearance completed.
+**Observed source/docs only.** No F-00 independent signature, local Windows/engine run, lawful IWAD provenance or UHD 620 trace has been supplied to this packet. Source pins must be rechecked at the moment future tests are authorized. SNE planning base: `148dc28cdbdf4970c8011d76762b31b8dcafea0b`.
 
-| ID | Priority | Evidence item | Current honest state | Next lane |
+| ID | Priority | Unresolved evidence | Next lane | Current status |
 |---|---|---|---|---|
-| R00-01 | P0 | Pinned game/engine SHA, blob and source line independent audit | SOURCE PINNED / G7 PENDING | F-00 |
-| R00-02 | P0 | Complete custom original game artifact/class/resource identity | SOURCE PARTIAL | F-02 |
-| R00-03 | P0 | Transitive code, asset and branding rights | NOT CLEARED | F-06 |
-| R00-04 | P0 | C-001…C-008 original-game per-candidate runtime | NOT RUN | F-04 |
-| R00-05 | P0 | UZDoom source policy vs GPL downstream review | SOURCE RECHECK / LEGAL PENDING | F-00/F-06 |
-| R00-06 | P1 | Voxel/glTF renderer runtime and actor invariant | NOT RUN | F-05 |
-| R00-07 | P0 | Three repeatable UHD 620 720p P0 runs | NOT RUN | F-05 |
-| R00-08 | P1 | Logical zone state/save/revisit and ZDaemon lane | NOT RUN | F-04/SEPARATE |
-| R00-09 | P0 | Boolean/scanner/schema/stale handoff safety | SOURCE SHAPE RECHECKED / NOT RUN | F-00/F-02 |
-| R00-10 | P1 | Fork maintenance, conflict and update trial | NOT RUN | F-06 |
-| R00-11 | P1 | Historic WO-A checksum independent spot check | NOT REVIEWED | F-00 |
-| R00-12 | P1 | BiasedDoom glTF ON, CPython OFF and resource texture proof | OPTIONS OBSERVED / NOT BUILT | F-03/F-05 |
-| R00-13 | P0 | Windows compiler, SDK, toolchain hashes and binary identity | NOT RUN | F-03 |
-| R00-14 | P0 | `ORESHAA0`/`TOOLAA0` actual sprite/GLDEFS compatibility | SOURCE PARSER RISK / NOT RUN | F-00/F-02 |
-| R00-15 | P0 | `hasParadox` Godot boolean vs `ScanInt`/`ToInt` | SOURCE SHAPE MISMATCH / NOT RUN | F-00/F-02 |
-| R00-16 | P1 | Light/profile thermal traces and backend fallback | NOT RUN | F-05 |
-| R00-17 | P1 | ZDaemon independently pinned native lane | NOT RUN | SEPARATE |
-| R00-18 | P0 | Complete binary/resources/dependency provenance | NOT CAPTURED | F-03/F-06 |
-| R00-19 | P0 | Independent A–F review including author dissent | NOT ASSIGNED | F-00/F-07 |
-| R00-20 | P0 | Foundation ADR with actual per-candidate accepted evidence | HOLD | F-07 |
-| R00-21 | P0 | Operator authorization for host inventory/fixtures/builds/runs | NOT GRANTED | F-01 |
-| R00-22 | P0 | Resolve absent `tools/validate_pk3.py` exact pinned file vs packager checks | PATH DISCREPANCY/OPEN | F-00 |
-| R00-23 | P0 | Exact original PK3 and lawful IWAD hashes | NOT CAPTURED | F-02 |
-| R00-24 | P0 | Discriminating unchanged-game and fixture mutations | SPECIFIED ONLY | F-02/F-04 |
-| R00-25 | P1 | Raw frametime estimator and identical rendered scene | NOT RUN | F-05 |
-| R00-26 | P0 | Reviewer-linked individual C-series evidence | NO ACTUAL RESULTS | F-04/F-07 |
-| R00-27 | P0 | Independent P0 source-claim checks F00-C01…C11 and dissent | AUTHOR RECHECKED / INDEPENDENT PENDING | F-00 |
+| R00-01 | P0 | Pinned primary-source and blob correctness independently reviewed | F-00 + AUTH-R | AUTHOR RECHECK; INDEPENDENT PENDING |
+| R00-02 | P0 | Actual PK3/lumps/classes and lawful external IWAD identity | F-02, AUTH-H/F/T as required | NOT CAPTURED |
+| R00-03 | P0 | Third-party dependencies, notices, branding, rights and release plan | F-06 AUTH-S | PARTIAL / NOT CLEARED |
+| R00-04 | P0 | C-001…C-008 unchanged-game parity per candidate and negative controls | F-04 AUTH-T | NOT RUN |
+| R00-05 | P0 | UZDoom upstream PR prohibition vs permissible downstream maintenance | F-06 AUTH-S | SOURCE-OBSERVED / REVIEW PENDING |
+| R00-06 | P1 | Voxel/glTF conditional compilation and actor-preserving real rendering | F-05 AUTH-B/T/P separately | NOT RUN |
+| R00-07 | P0 | 3+ real UHD 620 P0 performance traces and approved thresholds | F-05 AUTH-P | NOT RUN |
+| R00-08 | P1 | MAP01→MAP03/save/zone persistence real checks | F-04 AUTH-T | NOT RUN |
+| R00-09 | P0 | Boolean handoff, stale replay, missing/malformed/schema controls | F-02/04 AUTH-F/T | NOT RUN |
+| R00-10 | P1 | Independent rebase and fork maintainability | F-06 AUTH-S/B separately | NOT RUN |
+| R00-11 | P1 | Early A-package checksum reconciliation | F-00 AUTH-R | INDEPENDENT PENDING |
+| R00-12 | P1 | BiasedDoom glTF ON, embedded Python OFF and runtime flags | F-03/05 AUTH-B/T | NOT RUN |
+| R00-13 | P0 | Actual Windows MSVC/SDK/CMake inventory and build hash | F-02A/F-03 AUTH-H/B | NOT RUN |
+| R00-14 | P0 | ORESHAA0/TOOLAA0 sprite vs GLDEFS real frame behavior | F-02B/F-04 AUTH-F/T | SOURCE HYPOTHESIS |
+| R00-15 | P0 | Godot bool vs ZScript ScanInt observed true/false | F-02B/F-04 AUTH-F/T | SOURCE HYPOTHESIS |
+| R00-16 | P1 | Light/postFX thermal load and fallback | F-05 AUTH-P | NOT RUN |
+| R00-17 | P1 | ZDaemon is separate native multiplayer lane | independent future approval | NOT RUN |
+| R00-18 | P0 | Dependency and engine/game artifact identity ledger | F-03/06 AUTH-B/S | NOT CAPTURED |
+| R00-19 | P0 | Distinct F-00 reviewer and dissent record | F-00 AUTH-R | NOT APPOINTED |
+| R00-20 | P0 | Evidence-backed foundation adoption | F-07 operator | HOLD |
+| R00-21 | P0 | Per-category signed authorization and scope freeze | **F-01** | **NOT APPROVED** |
+| R00-22 | P0 | Resolve missing `validate_pk3.py` reference vs real packager | F-00/F-02 AUTH-R/H | UNRESOLVED |
+| R00-23 | P0 | Original unchanged PK3/hash and unambiguous GapNode marker | F-02 AUTH-H/F/T | NOT CAPTURED |
+| R00-24 | P0 | Distinguish game defect vs fork regression via B0 vs disposable controls | F-02B AUTH-F/T | NOT RUN |
+| R00-25 | P1 | Frame-time equivalence, raw traces and thermal confounds | F-05 AUTH-P | NOT RUN |
+| R00-26 | P0 | Per-case validated outcome, reviewer and G1–G8 mapping | F-07 | NOT RUN |
+| R00-27 | P0 | Authorization signature, path allowlists, expiry, revocation and immutable consent IDs | F-01 | TEMPLATE ONLY |
+| R00-28 | P0 | F-00 critical source-claim disputes resolved prior to source-based PASS | F-00→F-01 | PENDING |
 
-**Hard stops:** no G1/G7 completion by author self-review; no gameplay pass from a source comment; no FPS without actual on-device trace; no engine selection while G2–G8 remain open.
+**First safe proposed gate:** request `AUTH-R` for a distinct primary-source reviewer; absence of reviewer leaves G7 OPEN. Any host inventory uses separately signed `AUTH-H`. No automatic progression from a review package into local commands.

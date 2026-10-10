@@ -1,0 +1,15 @@
+{
+  "schema_id": "SNE-F01-REVOCATION-v1",
+  "revocation_id": null,
+  "authorization_id": null,
+  "operator_signature_private_ref": null,
+  "revocation_issued_at": null,
+  "reason": null,
+  "stop_acknowledged_by_actor": false,
+  "last_action_evidence_private_ref": null,
+  "side_effects_contained": null,
+  "cleanup_authorized_by_original_scope": null,
+  "new_cleanup_authorization_id": null,
+  "revocation_effective": "PENDING",
+  "notes": "Template only; does not revoke any existing task automatically."
+}
