@@ -1,0 +1,240 @@
+{
+  "schema": "SNE-F02-MEMBER-SHA256-v1",
+  "package": "SNE-F02 v1.1.0",
+  "archive_basename": "SNE-F02-Baseline-Inventory-Fixture-Verification-v1.1.0.zip",
+  "required_parent_commit": "725fded39c0d50139ab76182211e32375bc2764e",
+  "tracked_preimage_git_blob_sha1": {
+    "blueprints/phases/PHASE-00-FOUNDATION.md": "b8d0e6cc27f093d3fdf990168ba07762ae90cb24",
+    "blueprints/research/RESEARCH-QUEUE.md": "689a64d53d21db1d4b7bd6524f0ce3a33cc4b01b",
+    "blueprints/verification/SNE-000F-RESULT-REGISTER.md": "8005932e29749f1fbfbdfc4a048c9c3ddd99e7e0",
+    "evidence/sources/SOURCE-INDEX.md": "aca7e18fa1cd42ec8ef93b25dbd7c0f177f7fa50",
+    "governance/PHASE-00-REVIEW-GATES.md": "53b4e25810668355be11463e04298f5689ca47ba",
+    "registry/PHASE-00-ARTIFACT-INDEX.md": "51baf91b61a3520c0a91fb807a66d4afd581e8f7"
+  },
+  "total_members": 45,
+  "added_members": 39,
+  "replaced_members": 6,
+  "self_hash_excluded": "scaffold/SNE-F02-SHA256.json",
+  "members": {
+    "SNE-F02-INSTALL.md": {
+      "sha256": "e6b4c9135e4d74c833ad198530e1613a6e09ca731f7b3e4892fac65206c3d2cd",
+      "size_bytes": 4646,
+      "operation": "ADD"
+    },
+    "artifact-chain/acceptance/SNE-ACC-F02.md": {
+      "sha256": "eb92f0e56c8663314d764109ec59f41327029a1c96546980bd12e4b45db9c5eb",
+      "size_bytes": 1362,
+      "operation": "ADD"
+    },
+    "artifact-chain/evidence/SNE-EVD-F02.md": {
+      "sha256": "9a5136c5abbffd99127e1268f0a9b0eddf9d94acf6266f23e5d631edfa71c7bb",
+      "size_bytes": 1294,
+      "operation": "ADD"
+    },
+    "artifact-chain/reconciliation/SNE-REC-F02.md": {
+      "sha256": "ed10c928d4f6be93c1dc8af74750e10c4306a3c9c721d320c6fe2f779774bb64",
+      "size_bytes": 1239,
+      "operation": "ADD"
+    },
+    "artifact-chain/verification/SNE-VER-F02.md": {
+      "sha256": "db76b83fcdfeb2e08ae515a7be6b62a6dd91cf69ccc8d06d71956dc274579119",
+      "size_bytes": 1139,
+      "operation": "ADD"
+    },
+    "artifact-chain/work-orders/SNE-WO-F02.md": {
+      "sha256": "9ab7687a1f7fa3827bad78c117bff06663eed7ab9531a8ebdf1872d788b2ce99",
+      "size_bytes": 3934,
+      "operation": "ADD"
+    },
+    "blueprints/architecture/SNE-F02-BASELINE-CONTRACT.md": {
+      "sha256": "2cbb8d9ae9dff8688036ae5c054fb17b820d4544d1503b186c82485a0f104dad",
+      "size_bytes": 1981,
+      "operation": "ADD"
+    },
+    "blueprints/diagrams/SNE-F02-EVIDENCE-FLOW.md": {
+      "sha256": "233e3e474d94099b6b8bbaae1456cda9f82556bbcb203b28fab89fae489597b2",
+      "size_bytes": 937,
+      "operation": "ADD"
+    },
+    "blueprints/phases/PHASE-00-FOUNDATION.md": {
+      "sha256": "d1cb6a6af4771b01614f2c484675671dfe0618f7109aab47c1568ac062b47712",
+      "size_bytes": 3647,
+      "operation": "REPLACE"
+    },
+    "blueprints/research/RESEARCH-QUEUE.md": {
+      "sha256": "0c33397c18d19d7f101f4792a42adcddd620d3434263e11a31d8557a2a1d01fc",
+      "size_bytes": 3835,
+      "operation": "REPLACE"
+    },
+    "blueprints/verification/SNE-000F-RESULT-REGISTER.md": {
+      "sha256": "0eadc360bb3a49a738563d0507781cd040af6cc8014d19217702ea8c09c90453",
+      "size_bytes": 2487,
+      "operation": "REPLACE"
+    },
+    "blueprints/verification/SNE-F02-ADMISSION.md": {
+      "sha256": "5dc2ae5655802dd04c8a551b6c11ebc1ee472e1425e999642d8e0e7051c43058",
+      "size_bytes": 1523,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-AUTH-DISPATCH.md": {
+      "sha256": "dc7703540cd49a6970938b68b62736b82a1e23cd059f9229548dcca41ae838a3",
+      "size_bytes": 1919,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-EVIDENCE-QUALITY.md": {
+      "sha256": "5fd54450f12c7cad2108e95926817d5a2bda2080d69ddd66f9f05653e3982a6b",
+      "size_bytes": 1799,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-F03-ENTRY-GATE.md": {
+      "sha256": "73b53245df1fd716bd74c14b96c6f1dcd49af55faa7b2bc269ae8e9a2f51dc58",
+      "size_bytes": 1301,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-FIXTURE-DELTA.md": {
+      "sha256": "09df1bc6e50b833febbcc62db1a6a45664c9ad6970349252134a2ef7665d0d14",
+      "size_bytes": 1838,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-GAME-VS-ENGINE.md": {
+      "sha256": "0d3b190b65a1bc1283a13b15eb59354fbc9b285f333ce695e2035b0684e84f2c",
+      "size_bytes": 1565,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-GAPNODE-CONTROL.md": {
+      "sha256": "1630b3c1265d2c3dc8705337426703a8099ae13148474b41d6634045a45ab6ab",
+      "size_bytes": 1502,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-GLDEFS-MATRIX.md": {
+      "sha256": "cfbf1abc0cdf45b71338245a2a87b59e1a967bc1b5022c9aaea1a799ed2f8820",
+      "size_bytes": 1398,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-HANDOFF-ADVERSARIAL.md": {
+      "sha256": "f0d53efd9fe0eed03a0930bdd39f6a56d9e38408d025671730179d8b266b7dcf",
+      "size_bytes": 1510,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-HANDOFF-BOOLEAN.md": {
+      "sha256": "a268b19e0f5b3deefec74624e97785ea80da0c71d1584941dee633c255280775",
+      "size_bytes": 1668,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-HOST-INVENTORY.md": {
+      "sha256": "16aed1f6934d6e1f4e28cead83974c9d2943ac8dd2656422e30a0e677363c84d",
+      "size_bytes": 2126,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-IDENTITY-AND-CHECKSUM.md": {
+      "sha256": "e1f080181eecf2e87386eac6f22f730c2ece89418bf53ffb919daed06b1926d2",
+      "size_bytes": 1952,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-INDEPENDENT-REVIEW.md": {
+      "sha256": "39c5961b025418a56588d07241ddb3ab9fff42973251eba65a90677f9abe087a",
+      "size_bytes": 1553,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-PK3-STRUCTURE.md": {
+      "sha256": "cb9daa0ec1959c27203dfb59b63a8bbfca340f5048f3d13d6fdaf762d7afc264",
+      "size_bytes": 2432,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-SPRITE-ALIAS-MATRIX.md": {
+      "sha256": "1f8c1ec92802600d7b5f7c980fb8f6a8876555ee3e39b7f5d8040559c1039619",
+      "size_bytes": 1759,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-VALIDATOR-PATH.md": {
+      "sha256": "6abc616c6e4e6988158d4410773b88364f30150ba111013694430c260217178c",
+      "size_bytes": 1901,
+      "operation": "ADD"
+    },
+    "blueprints/verification/SNE-F02-WAD-VALIDATION.md": {
+      "sha256": "3d64e41ccba611eb6ba930e5c07dc6f5b2473b3f72ece8516eadc6a445b9520b",
+      "size_bytes": 1539,
+      "operation": "ADD"
+    },
+    "docs/SNE-F02-START-HERE.md": {
+      "sha256": "3fe08bba55c0a68d40880e9a77ee6a66f3651d116af8e66bb15c96f611c13a44",
+      "size_bytes": 1983,
+      "operation": "ADD"
+    },
+    "evidence/sources/SNE-F02-PRIMARY-SOURCE-NOTES.md": {
+      "sha256": "1a816922a38d34eb5937c06eadc8a62f7c75e82343e850af119e2c8561a0e8d5",
+      "size_bytes": 3519,
+      "operation": "ADD"
+    },
+    "evidence/sources/SOURCE-INDEX.md": {
+      "sha256": "3d463c0f70735dffa5abdb455ab63055eb0fdb9196eb586028c097f5c4c2a08d",
+      "size_bytes": 2091,
+      "operation": "REPLACE"
+    },
+    "governance/PHASE-00-REVIEW-GATES.md": {
+      "sha256": "94deeb5db076031b0590c9f3eddfa252364fa7849ba7bcbbc1a0273bac8fefc8",
+      "size_bytes": 2974,
+      "operation": "REPLACE"
+    },
+    "governance/SNE-F02-AUTHOR-FINDINGS.md": {
+      "sha256": "d71f78d7a34873cf98c49376d29ba6d02ef41979eeea3b1d289a1e2210a50574",
+      "size_bytes": 1810,
+      "operation": "ADD"
+    },
+    "governance/SNE-F02-AUTHORIZATION-REQUESTS.md": {
+      "sha256": "a28db827cce7732d5073ae785810e778a7b8743a834a4968dc9860f3b06a605f",
+      "size_bytes": 1910,
+      "operation": "ADD"
+    },
+    "governance/SNE-F02-RISK-REGISTER.md": {
+      "sha256": "a01b351889a486d99080c4cd8e63d8044cb484a1b2a91deb2416f7771d68a032",
+      "size_bytes": 1984,
+      "operation": "ADD"
+    },
+    "registry/PHASE-00-ARTIFACT-INDEX.md": {
+      "sha256": "590c9787b0aa4c1b1379bec42ce6e4693dddc31ebd9672c4167af771d013a08e",
+      "size_bytes": 2239,
+      "operation": "REPLACE"
+    },
+    "scaffold/SNE-F02-BUILD-VERIFICATION.json": {
+      "sha256": "6dec0aea4c818ac6025e2c037f85cdad0e9da6bf3ac9c4d7d506f456436384c3",
+      "size_bytes": 744,
+      "operation": "ADD"
+    },
+    "scaffold/SNE-F02-CHANGELOG.md": {
+      "sha256": "bbfe4b57d76e389e8c916ad72235fa1021ff58bfc2233d81b59b6511441bd62b",
+      "size_bytes": 743,
+      "operation": "ADD"
+    },
+    "scaffold/SNE-F02-MANIFEST.md": {
+      "sha256": "e3036a485708061e3fddb963bd1946d8fcf37c996f32b9e4c379ee4a2974b82b",
+      "size_bytes": 3334,
+      "operation": "ADD"
+    },
+    "templates/SNE-F02-BASELINE-IDENTITY.json": {
+      "sha256": "915243c688ac22fbd00eeb49202ed4a1891a441760af988736f87d00269f37e7",
+      "size_bytes": 828,
+      "operation": "ADD"
+    },
+    "templates/SNE-F02-CASE-RESULT.json": {
+      "sha256": "93d69bff575f02d91a3ac945f84ed971c1445cbf69e4046d03b9a40fbdb21423",
+      "size_bytes": 907,
+      "operation": "ADD"
+    },
+    "templates/SNE-F02-FIXTURE-CONTROL.json": {
+      "sha256": "58bcfbdf0221f9954ff50685ca39ba226d946d547a349e66c39ab283a5bdda0e",
+      "size_bytes": 719,
+      "operation": "ADD"
+    },
+    "templates/SNE-F02-HOST-INVENTORY.json": {
+      "sha256": "1b6421a10f79465945e510c269a7a972490c4ea489e65b3a0ad09cb25f13229e",
+      "size_bytes": 1013,
+      "operation": "ADD"
+    },
+    "templates/SNE-F02-PK3-CHECK.json": {
+      "sha256": "b21e478d2a331962a15a8ea8162e1450525c051e74034f04acd7e4eb96bf64c9",
+      "size_bytes": 931,
+      "operation": "ADD"
+    }
+  }
+}

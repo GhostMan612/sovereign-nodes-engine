@@ -1,0 +1,33 @@
+{
+  "schema": "SNE-F02-PK3-SOURCE-AND-STATIC-v1",
+  "status": "NOT RUN",
+  "approval_id": null,
+  "original_pk3_sha256": null,
+  "packager_source_sha": "44034e97fd22129f919a18cadceb84466ef1bcd3",
+  "archive_root_mapinfo": null,
+  "archive_root_gldefs": null,
+  "sndinfo_expected_in_pinned_builder": false,
+  "sndinfo_actual_presence": null,
+  "zscript_fragments_expected": [
+    "zscript/core.zs",
+    "zscript/sn_handoff.zs",
+    "zscript/hud.zs"
+  ],
+  "zscript_fragments_observed": [],
+  "maps_expected": [
+    "maps/MAP01.wad",
+    "maps/MAP02.wad",
+    "maps/MAP03.wad"
+  ],
+  "maps_observed": [],
+  "map_wad_sha256": {},
+  "png_sprite_member_count": null,
+  "zip_crc_ok": null,
+  "unexpected_game_prefix": null,
+  "validator_discrepancy_resolved": false,
+  "static_only_no_runtime_claim": true,
+  "negative_controls_executed": false,
+  "raw_evidence_private_ref": null,
+  "reviewer_id": null,
+  "operator_acceptance": null
+}

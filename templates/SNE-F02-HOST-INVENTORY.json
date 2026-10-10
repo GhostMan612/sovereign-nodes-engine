@@ -1,0 +1,44 @@
+{
+  "schema": "SNE-F02-HOST-v1",
+  "work_order": "SNE-WO-F02",
+  "status": "NOT RUN",
+  "authorization_category": "AUTH-H",
+  "authorization_id": null,
+  "private_approval_ref": null,
+  "scope_sha256": null,
+  "planning_sha": "725fded39c0d50139ab76182211e32375bc2764e",
+  "captured_utc": null,
+  "host_alias": null,
+  "os": {
+    "edition": null,
+    "build": null,
+    "architecture": null
+  },
+  "cpu": {
+    "name": null,
+    "cores": null,
+    "logical_processors": null
+  },
+  "gpu": {
+    "model": null,
+    "driver_version": null,
+    "driver_date": null,
+    "adapter_memory_note": "UMA driver reporting may be inaccurate"
+  },
+  "memory_gib": null,
+  "tools": {
+    "git": null,
+    "cmake": null,
+    "ninja": null,
+    "python_native": null,
+    "visual_studio": null,
+    "msvc": null,
+    "windows_sdk": null
+  },
+  "method_allowlist": [],
+  "missing_probe_limitations": [],
+  "private_capture_sha256": null,
+  "sanitized_summary_sha256": null,
+  "reviewer_id": null,
+  "operator_acceptance": null
+}

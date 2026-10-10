@@ -1,0 +1,19 @@
+{
+  "schema": "SNE-F02-OVERLAY-VALIDATION-v1",
+  "package_version": "1.1.0",
+  "base_commit": "725fded39c0d50139ab76182211e32375bc2764e",
+  "status": "PACKAGE_GENERATED_NOT_LOCAL_TESTED",
+  "authoritative_runtime_pass": false,
+  "host_inventory_run": false,
+  "fixture_created": false,
+  "independent_review_completed": false,
+  "auth_granted": false,
+  "all_technical_gates": "OPEN",
+  "zip_crc_validated": true,
+  "member_sha256_validated": true,
+  "json_syntax_validated": true,
+  "preimage_git_blob_sha1_compared_to_pinned_source": true,
+  "new_paths_checked_in_local_operator_worktree": false,
+  "operator_staged_diff_checked": false,
+  "notes": "The report documents archive generation checks only; no source-game or target-host test."
+}

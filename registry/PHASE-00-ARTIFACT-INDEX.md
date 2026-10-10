@@ -1,33 +1,29 @@
-# SNE Phase 00 — Work-order registry v1.0.0, F-01 authorization design
+# SNE Phase 00 — Work-order registry v1.1.0 (F-02 blueprint)
 
-| Work order | Last confirmed operator-published commit | State |
+| Work order | Published commit / state | Acceptance and implementation |
 |---|---|---|
-| WO-000A | `369722f` | published source research; acceptance pending |
-| WO-000B | `edc274f` | published upstream audit; acceptance pending |
-| WO-000C | `706db57` | published compatibility specification; no runtime proof |
-| WO-000D | `1f21e4c` | published Windows/UHD protocols; not run |
-| WO-000E | `1644fb8` | published architecture red-team; ADR HOLD |
-| WO-000F | `1c01d2f` | published verification readiness; no approvals granted |
-| F-00 | **`148dc28cdbdf4970c8011d76762b31b8dcafea0b`** | published source review handoff; **external independent signoff pending** |
-| **F-01** | **NOT YET COMMITTED** | v1.0.0 documentation preparation; **authorization records empty/unapproved** |
+| WO-000A | `369722f` PUBLISHED | source acceptance PENDING |
+| WO-000B | `edc274f` PUBLISHED | engine source only |
+| WO-000C | `706db57` PUBLISHED | gameplay C-001..C-015 NOT RUN |
+| WO-000D | `1f21e4c` PUBLISHED | Windows/GPU NOT RUN |
+| WO-000E | `1644fb8` PUBLISHED | ADR-SNE-002 HOLD |
+| WO-000F | `1c01d2f` PUBLISHED | all F execution categories unapproved |
+| F-00 | `148dc28` PUBLISHED | author recheck only, independent PENDING |
+| **F-01** | **`725fded39c0d50139ab76182211e32375bc2764e` PUBLISHED** | operator authorization system, no active grants |
+| **F-02** | v1.1.0 OVERLAY PREPARED / commit unknown | identity/fixture **BLUEPRINT ONLY**, no host/PK3/fixtures tested |
 
-## F-01 new canonical artifacts
+## F-02 canonical artifacts
 
-| Class | File | State |
+| Category | Paths | State |
 |---|---|---|
-| Operator work order | `artifact-chain/work-orders/SNE-WO-F01.md` | proposed, documentation only |
-| Intake | `docs/SNE-F01-START-HERE.md` | usage and hard stops |
-| Scope-freeze design | `blueprints/verification/SNE-F01-SCOPE-FREEZE.md` | protocol, not run |
-| Approval lifecycle | `blueprints/verification/SNE-F01-AUTHORIZATION-LIFECYCLE.md` | proposed permission state machine |
-| Agent handoff | `blueprints/verification/SNE-F01-AGENT-DISPATCH-CONTRACT.md` | no active agent task |
-| Review/authority | `governance/WO-000F-AUTHORIZATION-MATRIX.md` | revised matrix with F-01 categories and all pending |
-| Evidence and acceptance | `artifact-chain/evidence/SNE-EVD-F01.md`; `artifact-chain/acceptance/SNE-ACC-F01.md` | source-review references, acceptance unfilled |
-| Blank operator templates | `templates/SNE-F01-*.json` | unsigned and nonauthorizing |
-| File manifest | `scaffold/SNE-F01-MANIFEST.md`; `scaffold/SNE-F01-SHA256.json` | overlay validation only |
-| Foundation ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | **HOLD / unchanged** |
+| Start and work order | `docs/SNE-F02-START-HERE.md`; `artifact-chain/work-orders/SNE-WO-F02.md` | DOCUMENT PREPARED |
+| Scope, admission | `blueprints/architecture/SNE-F02-BASELINE-CONTRACT.md`; `blueprints/verification/SNE-F02-ADMISSION.md` | FUTURE AUTH-H/F/T |
+| Original archive and map controls | `blueprints/verification/SNE-F02-PK3-STRUCTURE.md`; `SNE-F02-GAPNODE-CONTROL.md`; `SNE-F02-WAD-VALIDATION.md` | STATIC/RUNTIME NOT RUN |
+| Sprite, GLDEFS, JSON handoff | `SNE-F02-SPRITE-ALIAS-MATRIX.md`; `SNE-F02-GLDEFS-MATRIX.md`; `SNE-F02-HANDOFF-BOOLEAN.md` in `blueprints/verification/` | FIXTURES NOT CREATED |
+| Source observations | `evidence/sources/SNE-F02-PRIMARY-SOURCE-NOTES.md` | AUTHOR SOURCE ONLY |
+| Authorization and risks | `governance/SNE-F02-AUTHORIZATION-REQUESTS.md`; `SNE-F02-RISK-REGISTER.md` | SIGNATURES PENDING |
+| Structured records | `templates/SNE-F02-*.json` | BLANK / NOT RUN |
+| Chain and package | `artifact-chain/*/SNE-*-F02.md`; `scaffold/SNE-F02-*` | DOCUMENTARY VALIDATION ONLY |
+| ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | **HOLD / UNMODIFIED** |
 
-## Registry invariants
-
-The observed commit `148dc28cdbdf4970c8011d76762b31b8dcafea0b` is the **pre-extraction** parent only; the F-01 output commit must be recorded in a later revision after the operator's actual push. Avoid inventing Git SHAs, rewriting historical A–F evidence, accepting G7 from author-written forms, or activating a command because this overlay was installed.
-
-**Next:** after package publication, the operator can appoint an independent F-00 reviewer and separately approve a minimally scoped `AUTH-R`, or request a specific `AUTH-H` metadata inventory. Other F-02…F-07 steps remain individually gated.
+This registry records *known past pushed SHAs*, never invents the future F-02 commit. Operator stages/pushes the docs only after exact preimage check. No source-engine/game implementation authorized by publication.

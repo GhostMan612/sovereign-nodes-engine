@@ -1,0 +1,28 @@
+{
+  "schema": "SNE-F02-BASELINE-v1",
+  "status": "NOT RUN",
+  "work_order": "SNE-WO-F02",
+  "approval_id": null,
+  "planning_sha": "725fded39c0d50139ab76182211e32375bc2764e",
+  "game_source_sha": "44034e97fd22129f919a18cadceb84466ef1bcd3",
+  "record_utc": null,
+  "canonical_source_clean": null,
+  "original_pk3_sha256": null,
+  "original_pk3_size_bytes": null,
+  "original_pk3_builder_input_sha256": null,
+  "original_pk3_entry_count": null,
+  "pk3_member_manifest_private_ref": null,
+  "map_wad_sha256": {
+    "MAP01": null,
+    "MAP02": null,
+    "MAP03": null
+  },
+  "resource_rights_private_ref": null,
+  "lawful_iwad_sha256": null,
+  "lawful_iwad_bytes_stored_in_repo": false,
+  "candidate_binary_sha256": null,
+  "source_only": true,
+  "sanitized_observations": [],
+  "reviewer_id": null,
+  "operator_acceptance": null
+}

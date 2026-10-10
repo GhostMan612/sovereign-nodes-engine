@@ -1,19 +1,20 @@
-# Phase 00 — Pinned source and F-00 independent-review preparation index
+# SNE Phase 00 — Source and baseline-identification index v1.1.0
 
-Source ledgers A–F retain historical provenance; new F-00 source recheck does not rewrite published evidence or claim independent acceptance.
+Historical A–F, F-00/F-01 source pins remain immutable records of their original research scope. F-02 is an authored **source-backed inventory plan**, not independent source acceptance or local execution evidence.
 
-| Source family | Scope | Evidence classification |
+| Source/index | What it supports | What it does **not** certify |
 |---|---|---|
-| `SNE-REVISION-LEDGER.md`, `SNE-SRC-*-001.md` | WO-A initial source research | SELECTED SOURCE; independent recheck OPEN |
-| `SNE-SOURCE-PINS-000B.md`, `SNE-SRC-*-002.md` | WO-B engine source audit | SELECTED SOURCE; independent recheck OPEN |
-| `SNE-000C-PIN-LEDGER.md`, `SNE-SRC-*-003.md` | WO-C sprite, GLDEFS, world and handoff risks | SOURCE-OBSERVED + INFERENCE; runtime NOT RUN |
-| `SNE-000D-PIN-LEDGER.md`, `SNE-SRC-*-004.md` | WO-D root build/dependency files | SOURCE-OBSERVED; builds NOT RUN |
-| `SNE-000E-FOUNDATION-PIN-LEDGER.md` | WO-E alternative decision synthesis | AUTHOR REVIEW; ADR HOLD |
-| `SNE-000F-SOURCE-SNAPSHOT.md`, `SNE-SRC-GAME-005.md` | WO-F selected game audit and missing tool path | PINNED SOURCE; independent reviewer pending |
-| `SNE-F00-PIN-LEDGER.md` | WO-F publication base and F-00 selected direct-fetch blob table | AUTHOR SOURCE RECHECK / NO INDEPENDENT G7 |
-| `SNE-F00-GAME-PRIMARY-OBSERVATIONS.md` | original-game data path and runtime hypotheses | SOURCE-ONLY; no game test |
-| `SNE-F00-ENGINE-PRIMARY-OBSERVATIONS.md` | GZDoom/UZDoom/BiasedDoom code and policy | SOURCE-ONLY; no build/legal clearance |
+| A `SNE-REVISION-LEDGER.md`, `SNE-SRC-*-001.md` | early game/engine selected sources | exhaustive gameplay proof |
+| B `SNE-SOURCE-PINS-000B.md` | engine source audit at frozen pins | successful build |
+| C `SNE-000C-PIN-LEDGER.md` | MAPINFO, ZScript, GLDEFS, model and handoff hypotheses | actual C-series runtime PASS |
+| D `SNE-000D-PIN-LEDGER.md` | candidate CMake/version/default option text | Windows compiler found or reproducible binary |
+| E `SNE-000E-FOUNDATION-PIN-LEDGER.md` | alternatives and architecture claims | selected foundation |
+| F `SNE-000F-SOURCE-SNAPSHOT.md`, `SNE-SRC-GAME-005.md` | selected original-game source | original PK3 hash |
+| F-00 `SNE-F00-PIN-LEDGER.md` + primary observations | authored independent-review *packet* | distinct reviewer approval |
+| **F-02 `SNE-F02-PRIMARY-SOURCE-NOTES.md`** | pinned `build_pk3.py` entry rules, SNDINFO omission and cross-reference to handoff code | original file actually present/packaged, no actual static/runtime run |
 
-## Cross-references
+## Current source pin summary
 
-Source claim IDs `F00-C01…F00-C16` in `blueprints/verification/SNE-F00-CLAIM-CATALOG.md`; future independent reviewer record in `templates/SNE-F00-INDEPENDENT-REVIEW.json`. Do not infer validated IWAD rights, compilation, GLDEFS behavior, security or actual GPU FPS from source-only evidence.
+Game `44034e97fd22129f919a18cadceb84466ef1bcd3`; GZDoom `c26ce2e6ca2a0c770f140cb25dde0d30073ca8f7`; UZDoom `dbedcc894fb6866c48520cf27ae773f9957024b9`; BiasedDoom `6147e0670458e48e63d1a40750f36dfc68b00f7f`; planning overlay parent `725fded39c0d50139ab76182211e32375bc2764e`. Use exact source Git URL, blob/path and line for every recheck; do not silently convert prior source assertions to current branch/latest behavior.
+
+Original lawful IWAD bytes, source-game generated PK3 and WADs, actual Windows tool inventory, binary hashes, frame traces, independent reviewer and asset rights signoff are **not supplied**. No commercial IWAD, credentials or private Mantle contents are included in the ZIP.
