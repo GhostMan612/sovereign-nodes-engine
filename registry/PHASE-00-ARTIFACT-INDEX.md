@@ -1,33 +1,27 @@
-# Phase 00 — Artifact registry v0.8.0 (WO-000F)
+# Phase 00 — Work-order registry v0.9.0 (F-00 reviewer handoff)
 
-Source publication and technical acceptance are separate states. This registry is forward-looking: WO-F is authored but its local Git publication is **PENDING** until the operator commits and pushes.
-
-| Work order | Artifact | Git publication | Technical/reviewer acceptance |
+| Work order | Main artifact | Last user-pushed Git checkpoint | Current documentary and technical state |
 |---|---|---|---|
-| A | `artifact-chain/work-orders/SNE-WO-000A.md` | `369722f` | PENDING |
-| B | `artifact-chain/work-orders/SNE-WO-000B.md` | `edc274f` | PENDING |
-| C | `artifact-chain/work-orders/SNE-WO-000C.md` | `706db57` | PENDING; C-001…C-015 NOT RUN |
-| D | `artifact-chain/work-orders/SNE-WO-000D.md` | `1f21e4c` | PENDING; Windows/UHD runs NOT RUN |
-| E | `artifact-chain/work-orders/SNE-WO-000E.md` | `1644fb8` | PENDING; G7 review not completed |
-| F | `artifact-chain/work-orders/SNE-WO-000F.md` | v0.8.0 PREPARED / NOT YET COMMITTED | PREPARED; execution NOT AUTHORIZED |
+| WO-A | `SNE-WO-000A.md` | `369722f` | PUBLISHED; formal acceptance PENDING |
+| WO-B | `SNE-WO-000B.md` | `edc274f` | PUBLISHED; formal acceptance PENDING |
+| WO-C | `SNE-WO-000C.md` | `706db57` | PUBLISHED; C-series NOT RUN |
+| WO-D | `SNE-WO-000D.md` | `1f21e4c` | PUBLISHED; native build/UHD NOT RUN |
+| WO-E | `SNE-WO-000E.md` | `1644fb8` | PUBLISHED; ADR HOLD and G7 OPEN |
+| WO-F | `SNE-WO-000F.md` | `1c01d2ff5bc3a1369210a7d68dd58269ecf6506d` | PUBLISHED; verification readiness, no execution authority |
+| **F-00** | `artifact-chain/work-orders/SNE-WO-F00.md` | **v0.9.0 overlay prepared; Git commit not yet known** | AUTHOR SOURCE RECHECK; independent review PENDING |
 
-## WO-000F documents
+## New F-00 sub-workorder artifacts
 
-| Material | Path | State |
+| Category | Canonical paths | State |
 |---|---|---|
-| Getting started | `docs/WO-000F-START-HERE.md` | AUTHOR PACKAGE |
-| Case-to-gate trace | `blueprints/verification/SNE-000F-CASE-TO-GATE-TRACE.md` | TEST BLUEPRINT |
-| Fixture isolation | `blueprints/verification/SNE-000F-FIXTURE-ISOLATION.md` | TEST BLUEPRINT |
-| Critical sprite/handoff cases | `blueprints/verification/SNE-000F-SPRITE-TESTS.md`; `SNE-000F-HANDOFF-TESTS.md` | UNEXECUTED |
-| Source snapshot | `evidence/sources/SNE-000F-SOURCE-SNAPSHOT.md` | PINNED SOURCE |
-| Evidence and proposed results | `artifact-chain/evidence/SNE-EVD-000F.md`; `blueprints/verification/SNE-000F-RESULT-REGISTER.md` | NO RUNS |
-| Review and authority | `governance/WO-000F-INDEPENDENT-REVIEW-HANDOFF.md`; `WO-000F-AUTHORIZATION-MATRIX.md` | PENDING |
-| Template records | `templates/SNE-000F-*.json` | BLANK |
-| Documentation acceptance | `artifact-chain/acceptance/SNE-ACC-000F.md` | NOT ACCEPTED |
-| ZIP checks | `artifact-chain/verification/SNE-VER-000F.md` | PACKAGE ONLY |
-| Reconciliation | `artifact-chain/reconciliation/SNE-REC-000F.md` | PENDING LOCAL REVIEW |
-| Pending foundation ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | **HOLD** / not modified by WO-F |
+| Start and authority | `docs/SNE-F00-START-HERE.md`; `artifact-chain/work-orders/SNE-WO-F00.md` | DOCUMENTATION PREPARED |
+| Audit source claims | `blueprints/verification/SNE-F00-CLAIM-CATALOG.md` | 16 selected source claims; no reviewer |
+| Discriminating critiques | `SNE-F00-SPRITE-PARSER-REVIEW.md`; `SNE-F00-HANDOFF-PARSER-REVIEW.md`; `SNE-F00-PK3-VALIDATOR-REVIEW.md` in `blueprints/verification/` | AUTHOR HYPOTHESES, NOT RUN |
+| Source ledgers | `evidence/sources/SNE-F00-PIN-LEDGER.md`; `SNE-F00-GAME-PRIMARY-OBSERVATIONS.md` / `SNE-F00-ENGINE-PRIMARY-OBSERVATIONS.md` | PINNED AUTHOR SOURCE |
+| Reviewer governance | `governance/SNE-F00-REVIEW-ASSIGNMENT.md`; `SNE-F00-AUTHOR-FINDINGS.md`; `SNE-F00-RISK-REGISTER.md` | INDEPENDENT PENDING |
+| Review form templates | `templates/SNE-F00-*.json` | BLANK, NO PASS |
+| Evidence and acceptance | `artifact-chain/evidence/SNE-EVD-F00.md`; `artifact-chain/acceptance/SNE-ACC-F00.md` | SOURCE PACKET, NOT ACCEPTED |
+| Archive reproducibility | `scaffold/SNE-F00-MANIFEST.md`; `scaffold/SNE-F00-SHA256.json`; `SNE-F00-INSTALL.md` | PACKAGE VALIDATION ONLY |
+| Foundation ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | **HOLD / UNMODIFIED** |
 
-## Next required change
-
-After operator local commit/push, record actual full SHA in a **future** reconciliation update. Never guess a future Git commit; do not retroactively edit SHA manifests from published overlays.
+**Next:** external independent source review and operator reconciliation, then explicitly scoped **F-01 authorization** and, when separately approved, F-02 synthetic/original parity. No engine source changes are allowed by F-00.

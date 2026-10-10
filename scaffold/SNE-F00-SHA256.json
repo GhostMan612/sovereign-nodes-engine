@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "workOrder": "SNE-WO-F00",
+  "version": "v0.9.0",
+  "requiredGitHead": "1c01d2ff5bc3a1369210a7d68dd58269ecf6506d",
+  "archiveRoot": "sovereign-nodes-engine/",
+  "memberCount": 45,
+  "hashedMemberCount": 44,
+  "excludedSelfPath": "scaffold/SNE-F00-SHA256.json",
+  "expectedActions": {
+    "ADD": 39,
+    "REPLACE": 6
+  },
+  "hashDefinition": "SHA-256 of raw uncompressed UTF-8 member bytes (not CRLF-converted working copies)",
+  "entries": [
+    {
+      "path": "SNE-F00-INSTALL.md",
+      "sha256": "91ce0132a726309db3b02b5d1928e4ff66d1914bec28d4afcb4a4637af724544",
+      "bytes": 5666,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "artifact-chain/acceptance/SNE-ACC-F00.md",
+      "sha256": "61e34950adc2ba8200a8d8769b19584e1c53e537d6acb6566826a041d2a3d231",
+      "bytes": 1390,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "artifact-chain/evidence/SNE-EVD-F00.md",
+      "sha256": "99d0aeb2c84e4591d0863c584f5e81f53a2e070197ad080b7e58c0a642505e82",
+      "bytes": 1425,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "artifact-chain/reconciliation/SNE-REC-F00.md",
+      "sha256": "4e068c1e2bde1f85df7828bbc5738bd53e4ea5f10690850534dfa80e52d51c44",
+      "bytes": 1053,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "artifact-chain/verification/SNE-VER-F00.md",
+      "sha256": "66b8518bfec8d1e7178d0a56b9a70599a1f86218177929b62246f2a490c5ce58",
+      "bytes": 1420,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "artifact-chain/work-orders/SNE-WO-F00.md",
+      "sha256": "86141d9c8f8561178634864c8e3e2262d25d28a0653d64b7988548bbf6be5760",
+      "bytes": 3414,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/architecture/SNE-F00-AUDIT-BOUNDARY.md",
+      "sha256": "41d01388d4e8ee3c83ab37b3411bef585f9050d373c967938b2055aba4c41f9b",
+      "bytes": 1784,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/diagrams/SNE-F00-REVIEW-FLOW.md",
+      "sha256": "b619d05eae2e962dbf0406480f680f896204d21c50609905e360caa36cf17cbd",
+      "bytes": 966,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/phases/PHASE-00-FOUNDATION.md",
+      "sha256": "a33feb38652ec6bd3ee1ad10aaa11278bbc04ab793e59c6a88b8d711b107dd68",
+      "bytes": 3741,
+      "action": "REPLACE",
+      "expectedGitBlobSha1": "d2cfa6828f8a7be92b700042e38f942610647f4a"
+    },
+    {
+      "path": "blueprints/research/RESEARCH-QUEUE.md",
+      "sha256": "29f84c53f2ed5ae2beec5ad696ca4883462c4e5134204665f7c21f573aad4909",
+      "bytes": 3150,
+      "action": "REPLACE",
+      "expectedGitBlobSha1": "14e4187a3320f4d77a70c796584b4be3d8ae0ea2"
+    },
+    {
+      "path": "blueprints/verification/SNE-000F-RESULT-REGISTER.md",
+      "sha256": "a9a0d089b61c527fd53ecc4028892d9bd58736fad5d0c73c702944e171d90d81",
+      "bytes": 2011,
+      "action": "REPLACE",
+      "expectedGitBlobSha1": "66bfa0a4334adaa2ff03d0400f7293af62f39acc"
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-BUILD-CLAIMS-REVIEW.md",
+      "sha256": "3fd35a80d6684831cddc82fa63b209c40e74d9f770066bb9cafa6ceb89b246db",
+      "bytes": 2078,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-CANDIDATE-POLICY-REVIEW.md",
+      "sha256": "074093bc92e437ef806abc06bd05ca907dce6b14657f98dc141b86865940bc5f",
+      "bytes": 1527,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-CLAIM-CATALOG.md",
+      "sha256": "f1f06623c547bfa513c301a121ade0c0830c47e60218ce0f88474c8da2e55eab",
+      "bytes": 5011,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-DISSENT-RESOLUTION.md",
+      "sha256": "51ae0ec15c482c883203d030ec79652843a4e068a214b899fd68afb28e785a3a",
+      "bytes": 1670,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-EVIDENCE-CHAIN.md",
+      "sha256": "ea561433398ba694a637d5bd63960603ef99c5d2a21681edb0fb243b72ce6dd5",
+      "bytes": 1916,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-GATE-IMPACT.md",
+      "sha256": "136ba07f8e48656e9fac0bdde1a11b163fbc2783e355c676afbed8b0911636b3",
+      "bytes": 1584,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-HANDOFF-PARSER-REVIEW.md",
+      "sha256": "c77e49ce26ca19b483d0798b25beba846b3a86ef570a5ef90063cd2b4216afb5",
+      "bytes": 2184,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-NEXT-WORKORDER-ENTRY.md",
+      "sha256": "4016f4273ac7cce6fce37769b4524e1a81847cec1e924bc7a1efb7618d6c3232",
+      "bytes": 1623,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-PIN-AND-BLOB-CHECKS.md",
+      "sha256": "5a3109914e43fbc483f28d157c3e2d31bde0ef3d1719900f5ff048874902412c",
+      "bytes": 1975,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-PK3-VALIDATOR-REVIEW.md",
+      "sha256": "fe0c2050e3e81c6c383ddde380bbd7a929f8ce10195e68b8ec56ac238f530823",
+      "bytes": 2720,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-REVIEW-INTAKE.md",
+      "sha256": "bf543c291dc5b80a1e4f47a546a93b6099cf79f2de4d92e1e1cbf07178db3646",
+      "bytes": 1692,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-REVIEWER-CHECKLIST.md",
+      "sha256": "95941bdb8cc4d01ed35ba80154477da734eea95d60cc07fb9cd1bf9efe461f5a",
+      "bytes": 1696,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-SOURCE-SAMPLING.md",
+      "sha256": "eab81462db03007f10d338553b661252305202f447156c7ba6e264b3e5a9eccb",
+      "bytes": 1839,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "blueprints/verification/SNE-F00-SPRITE-PARSER-REVIEW.md",
+      "sha256": "c62944488cc9a5178ac1e4ac17c714d7494c7f80d6b337ebd08aa28ecfbe3f24",
+      "bytes": 2259,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "docs/SNE-F00-START-HERE.md",
+      "sha256": "8a3be1b401f214d73a56d85bf0500d3d9730566421f905b7e535e369078658d8",
+      "bytes": 1457,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "evidence/sources/SNE-F00-ENGINE-PRIMARY-OBSERVATIONS.md",
+      "sha256": "499aa082f7359023addab13f1b8ebc31248965eec814bd4cc7533a2e553e7dcb",
+      "bytes": 2817,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "evidence/sources/SNE-F00-GAME-PRIMARY-OBSERVATIONS.md",
+      "sha256": "b0e104252d31ecee61178014453131eeab45bef8666ff00f0721c04aa6ad3cd6",
+      "bytes": 2434,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "evidence/sources/SNE-F00-PIN-LEDGER.md",
+      "sha256": "1de83918b679dca1d620d0748ca73883be334ff3b51894c8b5c5db2e156be03b",
+      "bytes": 3203,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "evidence/sources/SOURCE-INDEX.md",
+      "sha256": "17883458c3c7e6d8d3efae47f63139572e68589749901ad8a4da5eb98e8c7ffd",
+      "bytes": 1752,
+      "action": "REPLACE",
+      "expectedGitBlobSha1": "075cb7b54b9569145a5f8b069970bf65629702b1"
+    },
+    {
+      "path": "governance/PHASE-00-REVIEW-GATES.md",
+      "sha256": "32fd2ed89e3e2c897caf1a35ac5161ba354b35fe60e94d0b1a924ab8255e9184",
+      "bytes": 3099,
+      "action": "REPLACE",
+      "expectedGitBlobSha1": "84c299f6db19197bbc5c1f7a38eb39b8121a1d58"
+    },
+    {
+      "path": "governance/SNE-F00-AUTHOR-FINDINGS.md",
+      "sha256": "ccfa032fa56e6e3038bc57c9e114e17bfaf6528634fd859e88c8a505c91cc362",
+      "bytes": 2238,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "governance/SNE-F00-CONFLICT-OF-INTEREST.md",
+      "sha256": "33ebcd7bef23a3f902f7f332b03547b8ab8ed8e6ab477add6bbf369365acea02",
+      "bytes": 1122,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "governance/SNE-F00-REVIEW-ASSIGNMENT.md",
+      "sha256": "7db70d55f406e062c585e65705dc9b1f62ed1774ad6f885b3f0b42bac8818405",
+      "bytes": 1541,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "governance/SNE-F00-RISK-REGISTER.md",
+      "sha256": "2b5281faac71f381be7d51bcc09ea8c9a68b928c1e861339a6e96f97e29a0779",
+      "bytes": 1745,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "registry/PHASE-00-ARTIFACT-INDEX.md",
+      "sha256": "a94e2647b151a5a35b97a911202d9520265b1199a5e08f47d75f52e32b146277",
+      "bytes": 2405,
+      "action": "REPLACE",
+      "expectedGitBlobSha1": "3eb650c1de33397695b6a80febb053903e267b99"
+    },
+    {
+      "path": "scaffold/SNE-F00-BUILD-VERIFICATION.json",
+      "sha256": "20c9c1c841570d19d3d63480ef659fb8080e9cfb5e9048f8cea8deed800bf6cd",
+      "bytes": 1034,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "scaffold/SNE-F00-CHANGELOG.md",
+      "sha256": "51295f9e6d2965e054e0d98dd310ab740e11516a98cdfcaf8f4f267b8e7701bf",
+      "bytes": 938,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "scaffold/SNE-F00-MANIFEST.md",
+      "sha256": "497b4cb82ce19e1e2fe4098a8772e3300b3f67cd599b671dac7536f114b0a0af",
+      "bytes": 4135,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "templates/SNE-F00-CLAIM-REVIEW.json",
+      "sha256": "b3eea6db731238ee6a09f98ce71c6696bb190e25844355f246b3290d33c98d37",
+      "bytes": 646,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "templates/SNE-F00-INDEPENDENT-REVIEW.json",
+      "sha256": "3e11c9f68c6458408452de017b6f75e82c94c5dc34344679547936cac20b596a",
+      "bytes": 842,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "templates/SNE-F00-ISSUE-RECORD.json",
+      "sha256": "4eba24739d422af2a394fcc5d6c6f7035c77eeccfff314be2ef00c430413a53d",
+      "bytes": 576,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "templates/SNE-F00-OPERATOR-DECISION.json",
+      "sha256": "8f3434d84e4598c53737df6645fe117630fcd9fc0e3305f42bf83389fa07ab47",
+      "bytes": 649,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    },
+    {
+      "path": "templates/SNE-F00-README.md",
+      "sha256": "715be5e225cf2c5b35b604695cc3222f5d302293db06be0d8cda8be7760b3bcf",
+      "bytes": 826,
+      "action": "ADD",
+      "expectedGitBlobSha1": null
+    }
+  ],
+  "runtimeAndReviewerDisclaimer": "All game/engine/build/GPU tests NOT RUN. External independent reviewer PENDING. Archive checks only."
+}

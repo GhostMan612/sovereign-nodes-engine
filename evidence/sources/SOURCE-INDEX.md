@@ -1,23 +1,19 @@
-# SNE-P00 — Source index v0.8.0
+# Phase 00 — Pinned source and F-00 independent-review preparation index
 
-All historical WO-A…WO-E source records retain their original pinned scope; no historical checksum or source memo is overwritten by this overlay. Research findings cite source text, not native gameplay success.
+Source ledgers A–F retain historical provenance; new F-00 source recheck does not rewrite published evidence or claim independent acceptance.
 
-| Ledger | Scope | Classification |
+| Source family | Scope | Evidence classification |
 |---|---|---|
-| `SNE-REVISION-LEDGER.md`, `SNE-SRC-*-001.md` | Initial research | SELECTED PINNED TEXT |
-| `SNE-SOURCE-PINS-000B.md`, `SNE-SRC-*-002.md` | Candidate engine code paths | SELECTED PINNED TEXT |
-| `SNE-000C-PIN-LEDGER.md`, `SNE-SRC-*-003.md` | Game sprite, handoff, lighting and model concerns | SOURCE/DOC/INFERENCE SPLIT |
-| `SNE-000D-PIN-LEDGER.md`, `SNE-SRC-*-004.md` | Build and package manifests | SELECTED SOURCE |
-| `SNE-000E-FOUNDATION-PIN-LEDGER.md` | A–D red-team synthesis | SYNTHESIS ONLY |
-| `SNE-000F-SOURCE-SNAPSHOT.md` | Published SNE baseline `1644fb8`, game and upstream source pins | PINNED DOCUMENT AND SOURCE |
-| `SNE-SRC-GAME-005.md` | Game MAPINFO, GLDEFS, handoff, build packaging and validator-path discrepancy | SOURCE CHECK / RUNTIME NOT RUN |
+| `SNE-REVISION-LEDGER.md`, `SNE-SRC-*-001.md` | WO-A initial source research | SELECTED SOURCE; independent recheck OPEN |
+| `SNE-SOURCE-PINS-000B.md`, `SNE-SRC-*-002.md` | WO-B engine source audit | SELECTED SOURCE; independent recheck OPEN |
+| `SNE-000C-PIN-LEDGER.md`, `SNE-SRC-*-003.md` | WO-C sprite, GLDEFS, world and handoff risks | SOURCE-OBSERVED + INFERENCE; runtime NOT RUN |
+| `SNE-000D-PIN-LEDGER.md`, `SNE-SRC-*-004.md` | WO-D root build/dependency files | SOURCE-OBSERVED; builds NOT RUN |
+| `SNE-000E-FOUNDATION-PIN-LEDGER.md` | WO-E alternative decision synthesis | AUTHOR REVIEW; ADR HOLD |
+| `SNE-000F-SOURCE-SNAPSHOT.md`, `SNE-SRC-GAME-005.md` | WO-F selected game audit and missing tool path | PINNED SOURCE; independent reviewer pending |
+| `SNE-F00-PIN-LEDGER.md` | WO-F publication base and F-00 selected direct-fetch blob table | AUTHOR SOURCE RECHECK / NO INDEPENDENT G7 |
+| `SNE-F00-GAME-PRIMARY-OBSERVATIONS.md` | original-game data path and runtime hypotheses | SOURCE-ONLY; no game test |
+| `SNE-F00-ENGINE-PRIMARY-OBSERVATIONS.md` | GZDoom/UZDoom/BiasedDoom code and policy | SOURCE-ONLY; no build/legal clearance |
 
-## Classification discipline
+## Cross-references
 
-- `SOURCE-OBSERVED`: content from immutable commit and path was inspected; does not imply correct behavior.
-- `UPSTREAM-DOC`: claim from upstream documentation; validate before depending on it.
-- `INFERENCE`: source-based risk or hypothesis, test needed.
-- `TEST-SPECIFIED`: precise setup/oracle/negative control, no execution.
-- `RUN`: only separately authorized local run with hashes, real logs/trace and tester signoff.
-
-**No author of WO-F recorded local MSVC setup, engine build, game launch, frame trace, license clearance or independent reviewer approval.** `ADR-SNE-002` remains HOLD.
+Source claim IDs `F00-C01…F00-C16` in `blueprints/verification/SNE-F00-CLAIM-CATALOG.md`; future independent reviewer record in `templates/SNE-F00-INDEPENDENT-REVIEW.json`. Do not infer validated IWAD rights, compilation, GLDEFS behavior, security or actual GPU FPS from source-only evidence.

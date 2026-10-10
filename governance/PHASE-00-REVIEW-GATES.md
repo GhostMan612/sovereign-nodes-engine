@@ -1,38 +1,28 @@
-# PHASE-00 — Independent acceptance, technical and authorization gates
+# Phase 00 — Acceptance and permission gates after WO-F / F-00
 
-A published document is not independently accepted research. A planning ZIP does not confer permission to perform tests or alter any source repository. Operator owns decisions; independent reviewer cannot be the author of the underlying research packet.
+**State:** Published A–F plans; F-00 independent source reviewer packet authored, **not independently reviewed or operator-accepted**. `ADR-SNE-002` HOLD. Signing or installing a Markdown package is not a test outcome.
 
-| Gate | Minimum legitimate evidence | State at WO-000F authoring | Failure / stop |
+| Gate | Required real evidence | Present state | What F-00 contributes |
 |---|---|---|---|
-| P00-G1 Provenance | current immutable source URLs/SHA, blob matches and reviewer-checked high-risk symbols | SELECTED SOURCES PINNED; INDEPENDENT CHECK OPEN | stale source or inferred runtime result |
-| P00-G2 Rights | full code/dependency/brand/resource notice inventory, lawful IWAD provenance, distribution clearance | PARTIAL / NOT CLEARED | owned/third-party rights unknown |
-| P00-G3 Parity | C-001…C-008 unchanged PK3 per production candidate, observed actor/HUD/map markers, negative controls | NOT RUN | vanilla Entryway mistaken for custom GapNode |
-| P00-G4 Build | operator-validated Windows toolchain + one or more candidate builds with flags, paths, hashes, resource package and reproducibility record | NOT RUN | unknown ABI/build provenance |
-| P00-G5 Performance | actual UHD 620 >=3 trace-backed comparable P0 runs per accepted scene, p95/p99/1% low and approved thresholds | NOT RUN | FPS guessed, scene differs, VSync unknown |
-| P00-G6 Security | synthetic handoff true/false, invalid schema, replay/path checks; Python trust and Mantle separation review | NOT TESTED | private Mantle leak, untrusted code executes |
-| P00-G7 Independence | named separate reviewer, primary-source check, dissent, resolution evidence | NOT COMPLETED | author self-certifies |
-| P00-G8 Decision | G1–G7 closure plus scorecard with actual evidence, operator signed engine SHA/rollback and explicit Phase 01 boundary | **HOLD** | implied choice from preferred testing order |
+| P00-G1 Provenance | independent primary-source URL@SHA/blob/line, checked counterclaim and path resolution | SELECTED AUTHOR-SOURCE; INDEPENDENT PENDING | 16-item source claim catalog, pin ledger |
+| P00-G2 Rights | full transitive code/asset/branding/source distribution SBOM, legal review and lawful external IWAD | NOT CLEARED | upstream policy claims and gaps only |
+| P00-G3 Parity | C-001…C-008 on unchanged original game, correct GapNode, actor/GLDEFS/HUD/negative controls | NOT RUN | source-risk falsification, not parity |
+| P00-G4 Build | exact Windows toolchain, dependencies, native binary/config/resource SHA and repeatability | NOT RUN | root CMake claim audit, not compiled |
+| P00-G5 UHD 620 | >=3 valid actual P0 traces per scene and operator-approved thresholds | NOT RUN | no device access or measurements |
+| P00-G6 Security | synthetic JSON truth table/replay/schema/path safety, optional CPython and Mantle separation | NOT TESTED | source parse questions only |
+| P00-G7 Independence | distinct reviewer inspects primary source and tests, retains dissent, operator reconciliation | NOT COMPLETED | appointment and blank reviewer protocol |
+| P00-G8 Foundation | all relevant approved evidence, score and explicit operator engine SHA/rollback | HOLD | no engine adoption or Phase 01 approval |
 
-## Work-category approval (separate from gates)
+## Approval categories remain independent
 
-| Approval category | Defaults | May authorize |
-|---|---|---|
-| Read-only repo research | documentation only | source inspection; no local device work |
-| Local environment inventory | NOT GRANTED | non-invasive metadata capture on approved host only |
-| Disposable synthetic fixture | NOT GRANTED | copies in isolated allowed workspace; original source unchanged |
-| Native engine build | NOT GRANTED | exact engine SHA/flags/dependency location, no system installer |
-| Local runtime / GPU benchmark | NOT GRANTED | exact binary and fixtures, lawful game data, raw trace storage |
-| Source-game / engine implementation | NOT GRANTED | separately scoped Phase 01 or authorized repair WO |
-| Redistribution or upstream submission | NOT GRANTED | independent asset/licensing/policy review; distinct authorization |
+`AUTH-R` reviewer read-only source; `AUTH-H` host inventory; `AUTH-F` disposable fixture; `AUTH-B` build; `AUTH-T` parity runtime; `AUTH-P` GPU measurement; `AUTH-S` rights/security; `AUTH-I` implementation; `AUTH-D` redistribution. All categories that access user's computer, build, test or modify code default **NOT GRANTED** unless user separately signs. The current overlay is document preparation and author source inspection, **not an AUTH-R signoff for a third-party reviewer**.
 
-These categories do not inherit each other's approval. A `PASS` requires a real run artifact, signed scope and independent quality check. `BLOCKED` is different from `FAIL`: missing permission, tool or legal asset means `BLOCKED`, not a negative engine result.
+## Truth/status enforcement
 
-## Legitimate closure workflow
+- Source observed ≠ independent accepted; test specified ≠ passed; absent permission/resource ≠ engine failure.
+- Reviewer must reconstruct evidence; signoff must be dated, scoped and distinct from author; dissent and conflicting evidence preserved.
+- Any claimed runtime PASS requires actual binary and fixture hashes, exact lawful resources, real logs/trace and independent scrutiny.
+- Unresolved validator-path question, sprite naming and `hasParadox` source mismatch remain risks, not known runtime defects.
+- Operator may accept **documentation** without closing any technical gate. Full Phase 00 and Phase 01 remain separate authorizations.
 
-1. Classify evidence as `SOURCE-OBSERVED`, `UPSTREAM-DOC`, `TEST-SPECIFIED`, `NOT RUN`, `BLOCKED`, `PASS`, `FAIL` or `UNVERIFIED` with exact evidence pointers.
-2. Record fixture/control IDs, model/system hashes, operator/tester identity, commands and raw logs retained off-repo; only sanitized summaries and checksums enter the planning repo.
-3. An independent reviewer checks sampling, controls, unexplained variation and any requested waiver; reviewer disagreements remain visible.
-4. Operator accepts or rejects each gate with explicit date and risk rationale. Hard legal/security/core-parity and independence obligations cannot be silently waived.
-5. Only then update ADR-SNE-002 from HOLD and independently request authorization for Phase 01.
-
-See `governance/WO-000F-AUTHORIZATION-MATRIX.md`, `blueprints/verification/SNE-000F-RESULT-SEMANTICS.md` and `templates/SNE-000F-GATE-LEDGER.json`.
+See `governance/SNE-F00-REVIEW-ASSIGNMENT.md`, `SNE-F00-CONFLICT-OF-INTEREST.md`, `blueprints/verification/SNE-F00-GATE-IMPACT.md` and the existing `SNE-000F-*` workstream blueprints.

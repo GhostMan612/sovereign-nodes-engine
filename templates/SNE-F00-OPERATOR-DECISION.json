@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "workOrder": "SNE-WO-F00",
+  "decisionType": "documentary-source-review",
+  "operatorSignoffDate": null,
+  "operatorSignaturePrivateRef": null,
+  "reviewerId": null,
+  "independentReviewerSigned": false,
+  "documentationAccepted": null,
+  "sourceClaimsAccepted": [],
+  "unresolvedIssues": [],
+  "independentG1Result": "OPEN",
+  "independentG7Result": "OPEN",
+  "foundationAdrState": "HOLD",
+  "permissionToRunFixture": false,
+  "permissionToBuildEngine": false,
+  "permissionToBenchmark": false,
+  "permissionToEditSource": false,
+  "permissionToPushRemote": false,
+  "separateF01AuthorizationRef": null,
+  "notes": null
+}

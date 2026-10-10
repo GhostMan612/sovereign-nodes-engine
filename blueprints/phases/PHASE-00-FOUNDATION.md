@@ -1,49 +1,43 @@
-# PHASE-00 — Foundation research, evidence closure, and engine decision
+# PHASE-00 — Foundation research and evidence-gated decision
 
-- ID: `SNE-P00`; status **A–E DOCUMENTATION PUBLISHED / EVIDENCE GATES OPEN**.
-- Research work orders A–E are published and not thereby independently accepted; WO-000F v0.8.0 is a **readiness overlay**, not a technical result.
-- Candidate foundation: **UNDECIDED**; `ADR-SNE-002` **HOLD**; Phase 01 implementation: **NOT AUTHORIZED**.
-- Gate authority: operator, with independent reviewer input. A package author cannot independently certify their own findings.
+**Planning publication:** WO-A through WO-F published, latest WO-F `1c01d2ff5bc3a1369210a7d68dd58269ecf6506d`. **F-00 v0.9.0 prepared as an independent source-review handoff; its actual independent review has NOT occurred.** Documentation publication is not technical acceptance.
 
-## Product contract
+- Foundation choice: **UNDECIDED**; `ADR-SNE-002` **HOLD**.
+- Phase 01 engine implementation: **NOT AUTHORIZED**.
+- Reference laptop: Dell Latitude 5400, Core i5-8365U, 16 GB RAM, Intel UHD 620; actual performance **NOT RUN**.
+- Product contract: original PK3 and MAP01 GapNode→MAP02 Breach→MAP03 Warren; MAPINFO v4.14, three ZScript fragments, GLDEFS lighting, Godot→Doom synthetic handoff; future optional voxels/glTF and logical zones.
 
-Retain existing Sovereign Nodes FPS PK3/WAD, `MAPINFO version "4.14"`, three `addfragments`, ZScript actors and HUD, `GLDEFS` lights, Godot→Doom synthetic handoff, and MAP01→MAP02→MAP03 while evaluating voxels, selective glTF, controlled lighting and persistent logical zones. The reported minimum reference device is Dell Latitude 5400 (i5-8365U, 16 GB RAM, UHD 620). Nothing measured on that device is implied by this document.
+## Published research/work-order chain
 
-## Published documentation chain
-
-| Order | Scope | Git publication checkpoint | Formal acceptance |
+| Work order | Contribution | Git publication | Formal acceptance |
 |---|---|---|---|
-| SNE-WO-000A | Reconnaissance | `369722f` | PENDING |
-| SNE-WO-000B | Engine source audit | `edc274f` | PENDING |
-| SNE-WO-000C | Compatibility and rendering plan | `706db57` | PENDING |
-| SNE-WO-000D | Windows build and UHD 620 protocols | `1f21e4c` | PENDING |
-| SNE-WO-000E | Red-team decision packet | `1644fb8` | PENDING |
-| SNE-WO-000F | Evidence-closure **readiness** and authorization design | v0.8.0 overlay; not yet published | PENDING |
+| A | source reconnaissance | `369722f` | PENDING |
+| B | upstream source audit | `edc274f` | PENDING |
+| C | 15-case compatibility/rendering plan | `706db57` | PENDING; runtime NOT RUN |
+| D | Windows build and UHD 620 protocols | `1f21e4c` | PENDING; build/device NOT RUN |
+| E | red-team conditional foundation decision | `1644fb8` | PENDING; G7 no independent signoff |
+| F | evidence-closure verification readiness | `1c01d2ff5bc3a1369210a7d68dd58269ecf6506d` | PENDING; execution NOT AUTHORIZED |
+| F-00 | external source reviewer handoff | v0.9.0 ZIP PREPARED, publication PENDING | AUTHOR CHECKS ONLY / INDEPENDENT PENDING |
 
-## Eight acceptance gates
+## Strict gate requirements
 
-`P00-G1` provenance; `G2` licensing and asset rights; `G3` C-001…C-008 actual game parity; `G4` reproducible Windows build; `G5` measured UHD 620 frame times; `G6` synthetic handoff and Python/Mantle security; `G7` truly independent review; `G8` operator-selected foundation with rollback. See `governance/PHASE-00-REVIEW-GATES.md`.
+`P00-G1`: source provenance independently checked; `G2`: transitive code/asset legal review; `G3`: unchanged original game C-001…C-008 parity; `G4`: reproducible native Windows build; `G5`: genuine UHD 620 frame traces; `G6`: synthetic handoff and optional Python security; `G7`: **distinct independent reviewer** with dissent; `G8`: signed operator foundation/rollback decision. None is closed by a planning package. See `governance/PHASE-00-REVIEW-GATES.md`.
 
-## Evidence-closure sequence (proposed, not authorized)
+## Workstream order and distinct approvals
 
-1. `F-00`: appoint independent reviewer; confirm exact frozen A–E source pins and identify stale references.
-2. `F-01`: operator explicitly authorizes *only the desired category* of work (read-only inventory, fixture creation, build, or runtime). No category implies the next.
-3. `F-02`: validate official lawful resource identity, actual PK3/WAD provenance, custom MAP01 marker and source-game sprite/handoff hypotheses in **disposable fixtures**.
-4. `F-03`: record Windows/MSVC/SDK/driver before operator-run candidate build. Builds belong to a separate authorized work order and workspace.
-5. `F-04`: run C-001…C-008 on unchanged game, per candidate; classify source-game versus fork regressions with exact logs and hashes.
-6. `F-05`: only parity-qualified candidates advance to controlled UHD 620 P0 and optional graphics experiments; keep off-repo raw traces.
-7. `F-06`: independently complete SBOM/asset/branding review, security threat checks, and maintenance plan.
-8. `F-07`: independent review and operator signoff on each gate; only afterward reopen ADR and separately authorize Phase 01.
+1. **F-00**: distinct reviewer independently validates frozen source claims. Author's `SOURCE-OBSERVED` checks prepare the handoff but do **not** close G7.
+2. **F-01**: explicit operator work-category authorization with paths, identities, network/offline mode, retention and stop conditions.
+3. **F-02**: source-game original PK3/valid lawful IWAD identification, safe disposable sprite and boolean controls, case attribution.
+4. **F-03**: Windows machine inventory and separately authorized GZDoom-first controlled build; then UZDoom comparator and optional BiasedDoom experimental source build.
+5. **F-04**: C-001…C-008 gameplay proof per candidate with unchanged original game and negative controls.
+6. **F-05**: only parity-qualified candidates advance to UHD 620 P0 measurements/optional model-light work.
+7. **F-06**: independent rights/SBOM/maintenance/security evaluation; **F-07**: reviewed G1…G8 and operator ADR.
 
-## Boundary and stop conditions
+## Boundaries
 
-- Documentation ZIPs contain Markdown/JSON only; no new engine code, game edits, installers, binaries, proprietary IWADs, private genealogy, vault exports, secrets, or conversation transcripts.
-- `F-00…F-07` are planning labels, not active task dispatches. Neither reading nor installing this overlay authorizes a build, game run or source modification.
-- A source-identified problem is not a measured failure. An untested feature is `NOT RUN`; an absent test is never `PASS`.
-- Level hubs and serial map changes do not prove simultaneous world streaming or physical seamless rendering.
-- UZDoom's upstream contribution rules are separate from GPL downstream fork rights and trademark/asset rights.
-- If a local Git preimage differs or an added path already exists, **STOP** rather than silently overwrite.
+- No source/engine/game fork, code edit, build, run, driver change, software install, private genealogy, proprietary IWAD, upstream contribution or remote GitHub change follows from this ZIP.
+- GZDoom-first is a test-order hypothesis only, not a chosen engine. ZDaemon is separate and has no assumed feature parity.
+- Modified or repaired fixtures cannot establish unchanged-game parity. No performance conclusions from engine source features.
+- Historic source snapshots and published SHA ledgers are not rewritten; later findings supersede with new IDs.
 
-## Exit
-
-Phase 00 cannot be closed by WO-000F publication. Hold ADR-SNE-002 and require independently checked G1–G8 evidence plus operator acceptance before any foundation decision.
+**Exit:** Phase 00 remains OPEN until real independently reviewed G1–G8 evidence plus signed operator ADR; Phase 01 separately authorized after that.
