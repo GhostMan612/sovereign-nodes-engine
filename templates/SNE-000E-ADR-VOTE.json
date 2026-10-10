@@ -1,0 +1,17 @@
+{
+  "schema": "SNE-WO-000E-operator-decision-v1",
+  "status": "HOLD",
+  "selected_engine": null,
+  "selected_source_sha": null,
+  "candidate_scores": {
+    "GZDoom": null,
+    "UZDoom": null,
+    "BiasedDoom": null
+  },
+  "gates_passed": [],
+  "evidence_ids": [],
+  "unresolved_risks": [],
+  "rollback_target": null,
+  "operator_signoff": null,
+  "phase01_authorized": false
+}

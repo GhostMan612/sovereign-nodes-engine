@@ -1,71 +1,43 @@
-# PHASE-00 — Foundation reconnaissance and upstream decision preparation
+# PHASE-00 — Foundation research and evidence-gated engine selection
 
-**ID:** SNE-P00  
-**Package:** SNE-P00-FOUNDATION-0002  
-**Status:** SCOPED / EVIDENCE SEEDED / NOT ACCEPTED  
-**Research execution authorization:** PENDING OPERATOR APPROVAL  
-**Engine implementation authorization:** NOT GRANTED  
-**Upstream baseline:** UNDECIDED
+- ID: **SNE-P00**; status **RESEARCH PACKETS A–D PUBLISHED / E PREPARED / NOT ACCEPTED**.
+- Research artifacts are documentation; acceptance is separate from Git publication.
+- Candidate foundation **UNDECIDED**. Phase 01 engine implementation authorization **NOT GRANTED**.
 
-## Goal
+## Objective and reference environment
 
-Select, with evidence, a sustainable Doom-derived engine foundation for SNE while preserving existing Sovereign Nodes FPS behavior, designing modular voxel/render/world/Mantle extensions, and respecting the Dell Latitude 5400 (i5-8365U, 16 GB, Intel UHD 620) as a low-end reference.
+Preserve Sovereign Nodes FPS's existing Doom PK3/WAD/ZScript/MAPINFO/GLDEFS behavior while evaluating sustainable voxel/model, lighting and logical-world enhancements under an offline-first boundary. Reference laptop: Dell Latitude 5400, Core i5-8365U, 16 GB RAM, Intel UHD 620; actual metrics **NOT RUN**.
 
-## Definition of research, not implementation
+## Published work-order chain
 
-Phase 00 is read-only analysis of upstream sources, source licensing, existing gameplay contracts and hardware requirements. No fork, engine recompilation, binary experiment, dependency update, remote edit or gameplay refactor is authorized in this phase. Benchmarks are proposed and remain NOT RUN until separately authorized and performed on the target laptop.
-
-## Work order sequence
-
-| Order | Activity | Deliverable | Dependency |
+| Order | Deliverable | Published Git checkpoint | Formal acceptance |
 |---|---|---|---|
-| SNE-WO-000A | Inventory current Sovereign Nodes FPS and interfaces | compatibility inventory, reproducible source evidence | none |
-| SNE-WO-000B | Candidate engine source audit | engine source map, licensing and dependencies | A recommended |
-| SNE-WO-000C | Compatibility + rendering feasibility matrix | feature/test matrix; suspected extension seams | A, B |
-| SNE-WO-000D | Hardware/build reproducibility plan | precise benchmark and build plan (not results) | B, C |
-| SNE-WO-000E | Independent architecture review & foundation ADR proposal | decision packet, red-team review, accepted/rejected options | A–D |
+| WO-000A | game and engine source reconnaissance | `369722f` | PENDING independent/operator review |
+| WO-000B | selected upstream engine source audit | `edc274f` | PENDING independent/operator review |
+| WO-000C | 15-case parity matrix and graphics/continuity blueprint | `706db57` | PENDING independent/operator review |
+| WO-000D | repeatable Windows build and UHD 620 benchmark plan | `1f21e4c` | PENDING independent/operator review |
+| WO-000E | red-team and conditional ADR evidence packet | **v0.7.0 overlay, not yet installed/published** | PENDING |
 
-## Questions to resolve
+## Formal technical gates (P00-G1–G8)
 
-1. Which upstream revision builds reproducibly with the user's Windows/WSL toolchains?
-2. Which upstream preserves `MAPINFO version "4.14"`, `addfragments`, ZScript class behavior, GLDEFS binding, existing sprite frames and three-map flow?
-3. Does the upstream comply with the project's requirement to work with AI-assisted developer-authored contributions and maintainer policies?
-4. How does each candidate load voxels and models, and what is an extension vs renderer rewrite?
-5. What can run smoothly on UHD 620 with discrete performance profiles? Data is currently missing.
-6. What degree of save-game and demo compatibility can be promised? Default answer: none beyond actual tests.
-7. How should local Godot-to-Doom handoff and future Mantle Bridge be isolated from arbitrary/untrusted input?
-8. What licensing notices, code/asset separation and redistribution obligations follow from the selected base?
+G1 pinned provenance; G2 complete license and asset rights; G3 actual Tier-A parity; G4 target build reproducibility; G5 actual UHD 620 results; G6 security and synthetic-only Mantle boundary; G7 independent review/dissent; G8 owner-selected foundation/rollback and Phase 01 scope. See `governance/PHASE-00-REVIEW-GATES.md` for evidence and failure conditions.
 
-## Required evidence packet
+## Sequencing and approvals
 
-- `artifact-chain/intake/SNE-INT-000.md`
-- `artifact-chain/evidence/SNE-EVD-000.md`
-- `evidence/sources/SOURCE-INDEX.md`
-- `blueprints/research/CANDIDATE-MATRIX.md`
-- `blueprints/research/UPSTREAM-CODE-MAP.md`
-- `blueprints/research/SOVEREIGN-NODES-INVENTORY.md`
-- `blueprints/research/DEPENDENCY-LICENSE-MATRIX.md`
-- `blueprints/research/COMPATIBILITY-TEST-MATRIX.md`
-- `blueprints/research/HARDWARE-BENCHMARK-PLAN.md`
-- `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md`
-- `artifact-chain/work-orders/SNE-WO-000A...E.md`
-- review, verification and acceptance records
+1. Author can prepare and publish documentation after local operator Git verification; that is **document publication**, not independent research acceptance.
+2. Independent reviewer checks evidence and flags defects. Never label author self-review as independent.
+3. Operator can separately authorize non-destructive environment capture, synthetic-only fixture creation, engine builds or gameplay tests, each with isolated storage and stop conditions. This **v0.7.0 package grants none**.
+4. Test C-001…C-008 per candidate first; inspect C-009…C-015 and high-risk sprite/boolean cases. Then run comparable hardware traces and dependency/rights analysis.
+5. Only after required evidence and reviewer signoff may operator adopt ADR-SNE-002, designate a pinned engine base, and authorize a Phase 01 work order.
 
-## Acceptance gates (all required)
+## Boundary rules
 
-- **P00-G1:** Every foundation candidate identified by exact repo URL and pinned Git commit or release tag, with retrieved source evidence.
-- **P00-G2:** License inventory includes main license, relevant bundled components, binary/asset license obligations, and notices; any uncertainty explicitly blocks adoption.
-- **P00-G3:** Existing game compatibility requirements traced to exact source paths and test scenarios; no false PASS based solely on a successful boot.
-- **P00-G4:** Build dependency matrix tied to documented upstream revision and target OS; build status accurately identified as NOT RUN until evidence exists.
-- **P00-G5:** UHD 620 renderer feasibility defined as testable acceptance criteria, not claimed benchmark results.
-- **P00-G6:** Security boundary and Mantle data-handling threats reviewed using synthetic-only initial dataset.
-- **P00-G7:** Independent review records defects, assumptions and blocking questions; operator accepts or requests revision.
-- **P00-G8:** Foundation ADR records alternatives, rationale, evidence, risks, rollback and follow-on Phase 01 gate.
+- No upstream/source-game edits or engine binaries in Phase 00 research ZIP overlays.
+- No proprietary IWADs, private genealogy, Mantle event ledger, credentials or chat transcripts in artifacts.
+- GZDoom/UZDoom physical seamless-world streaming is **not established** by the existence of hub/level-change state machinery.
+- UZDoom upstream PR restrictions and GPL downstream license rights must be evaluated distinctly.
+- Candidate rankings without measured evidence are conditional planning hypotheses, never PASS.
 
-## Stop conditions
+## Exit state
 
-No engine selected on feature lists alone. No source modifications without separate approval. No sensitive genealogy data; no proprietary Doom IWADs. Any agent must not mark an unexecuted build, runtime test or licensing review as PASS.
-
-## Next handoff
-
-Complete P00 evidence and review → operator chooses upstream and authorizes Phase 01 upstream-baseline implementation separately.
+**Phase 00 remains OPEN until P00-G1–G8 and operator decision are documented with actual independent source, build, gameplay, performance, security and license evidence.** No auto-transition to implementation.

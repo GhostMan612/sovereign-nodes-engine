@@ -1,26 +1,45 @@
-# SNE-WO-000E — Architecture red-team and candidate decision packet
+# SNE-WO-000E — Red-team architecture review and conditional foundation ADR
 
-- Phase: SNE-P00
-- Status: READY FOR AUTHORIZATION / NOT EXECUTED
-- Mode: READ-ONLY research; no project source or upstream fork mutations
-- Evidence requirements: repo URL, exact commit SHA, file/symbol locations, retrieval date, uncertainty, independently reviewable findings
+- Phase: **SNE-P00**; release: **v0.7.0**; parent Git commit: `1f21e4c99da50c83ac0c90d14b2f14a752ae89f4`.
+- Scope: **research synthesis, adversarial claim audit, alternatives comparison, independent reviewer handoff and conditional ADR**.
+- Status: **AUTHOR REVIEW PREPARED / INDEPENDENT REVIEW PENDING / NO ENGINE CHOSEN**.
+- Execution: **read-only upstream assessment and local documentation overlay**, no build, benchmark, game launch, downstream source edit, or remote push.
+- Operator controls all approvals. Self-review never satisfies P00-G7.
 
-## Mission
+## Mission and objectives
 
-Review independent evidence, challenge overclaims, rank shortlisted upstream options and draft decision.
+1. Consolidate A–D's pinned game/upstream source findings without converting reported features into measured PASS results.
+2. Challenge incorrect inferences: vanilla-map fallback, sprite naming, JSON handoff, ZScript parity, GLDEFS attachments, glTF build flags, physical seamless streaming, Python trust and license provenance.
+3. Define conditional, falsifiable decision rules for **GZDoom**, **UZDoom** and **BiasedDoom**.
+4. Preserve a technically credible no-selection outcome and an explicit test-authorization boundary.
+5. Set up real independent review and operator decision after the remaining acceptance evidence exists.
 
-## Deliverable
+## Out of scope
 
-Reviewed ADR-SNE-002 recommendation with risks, rollback, unresolved blockers.
+- Forking, copying, building or launching any engine; installing software; reproducing proprietary WADs.
+- Editing `GhostMan612/Sovereign-Nodes`, source game ZScript, launchers or the Sovereign Mantle.
+- Claiming frame-time measurements, glTF model test results, license clearance or engine selection.
+- Accepting earlier work orders simply because they were committed and pushed.
 
-## Exit gate
+## Inputs
 
-Independent review + operator authorization required; do not implement.
+- A `369722f`, B `edc274f`, C `706db57`, D `1f21e4c` published documentation; their individual acceptance files still contain open signoffs.
+- Game pin `44034e97fd22129f919a18cadceb84466ef1bcd3`; engine pins and exact source locations in `evidence/sources/SNE-000E-FOUNDATION-PIN-LEDGER.md`.
+- 15 compatibility cases `C-001…C-015` and WO-D build/performance test plans, all runtime NOT RUN.
 
-## Guardrails
+## Deliverables
 
-No implementation, no repository pushes, no copying engine source into SNE scaffold, no unlicensed commercial IWAD, no private genealogy, no claimed runtime PASS without logs. Curated evidence only: no conversation transcripts.
+- Updated `ADR-SNE-002-FOUNDATION-PENDING.md` with HOLD disposition, non-binding conditional lane preference and falsification tests.
+- Candidate/risk/claim audit, gate dependencies, prioritized operator experiments, independent review protocol and four blank evidence forms.
+- Work-order-specific evidence, reconciliation, verification and acceptance records, archive manifest and SHA-256 ledger.
 
-## Handoff
+## Exit criteria (documentation only)
 
-Evidence → `artifact-chain/evidence/SNE-EVD-000.md` and appropriate `evidence/` records; review → `governance/PHASE-00-REVIEW-GATES.md`; acceptance → `artifact-chain/acceptance/SNE-ACC-000.md`.
+- All A–D claim classes distinguished as SOURCE-OBSERVED, DOC-CLAIM, UNVERIFIED or NOT RUN.
+- Non-independent review flagged; independent review required before adoption.
+- Each disqualifying condition has test or evidence, owner role and fallback.
+- Operator may accept this *documentation packet* without accepting a foundation or opening Phase 01.
+
+## Hard stop
+
+**ADR STATUS MUST REMAIN PENDING.** Candidate score fields stay null until valid measurements and reviewer signoff. Phase 00 and implementation authorization remain open, independent decisions.

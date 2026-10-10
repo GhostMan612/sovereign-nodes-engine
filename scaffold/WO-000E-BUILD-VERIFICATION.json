@@ -1,0 +1,29 @@
+{
+  "package": "SNE-WO-000E-v0.7.0",
+  "generated_date": "2026-10-09",
+  "base_repo_commit": "1f21e4c99da50c83ac0c90d14b2f14a752ae89f4",
+  "expected_files": 48,
+  "expected_add": 40,
+  "expected_replace": 8,
+  "checks": {
+    "zip_crc": "PASS_AUTHOR_GENERATOR",
+    "no_traversal_or_duplicate": "PASS_AUTHOR_GENERATOR",
+    "md_json_only": "PASS_AUTHOR_GENERATOR",
+    "utf8_lf_final_newline": "PASS_AUTHOR_GENERATOR",
+    "no_trailing_whitespace": "PASS_AUTHOR_GENERATOR",
+    "json_parse": "PASS_AUTHOR_GENERATOR",
+    "manifest_inventory": "PASS_AUTHOR_GENERATOR",
+    "member_sha256_except_ledger": "PASS_AUTHOR_GENERATOR",
+    "replacements_git_blob_preimage": "MATCHED_PINNED_CONNECTOR_RESPONSE"
+  },
+  "runtime": {
+    "engine_build": "NOT_RUN",
+    "game_compatibility": "NOT_RUN",
+    "device_benchmark": "NOT_RUN",
+    "license_clearance": "NOT_CLEARED",
+    "independent_review": "PENDING",
+    "engine_foundation": "UNDECIDED",
+    "phase01": "NOT_AUTHORIZED"
+  },
+  "note": "Machine-generated package validation only; not independent technical acceptance."
+}

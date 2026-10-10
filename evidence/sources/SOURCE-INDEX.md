@@ -1,17 +1,20 @@
-# Phase 00 source index — v0.6.0
+# Phase 00 — Source and synthesis index v0.7.0
 
-Review states are source-specific and **not build/runtime results**. Earlier WO-A/B/C pin records stay historical, not overwritten by recent document status.
+Previous per-work-order pinned source ledgers remain authoritative; WO-E cites their exact upstream observations and reuses pins without claiming fresh builds. One pinned project SHA is the source of truth for each reviewed version.
 
-| Source ledger or record | Scope | Current classification |
+| Ledger | Description | Source class |
 |---|---|---|
-| `SNE-REVISION-LEDGER.md`, `SNE-SRC-*-001.md` | initial game and engine reconnaissance | PINNED SELECTED SOURCE |
-| `SNE-SOURCE-PINS-000B.md`, `SNE-SRC-*-002.md` | engine architecture, licenses, glTF/voxels | PINNED SELECTED SOURCE |
-| `SNE-000C-PIN-LEDGER.md`, `SNE-SRC-*-003.md` | game compatibility, world and rendering hazards | PINNED SELECTED SOURCE |
-| `SNE-000D-PIN-LEDGER.md` | native Windows root CMake/manifest/README source pins | PINNED SOURCE / READ-ONLY |
-| `SNE-SRC-GZDOOM-004.md` | GZ C++17/vcpkg features and dependencies | SOURCE-OBSERVED |
-| `SNE-SRC-UZDOOM-004.md` | UZ C++20, updater, LTO, build Python | SOURCE-OBSERVED |
-| `SNE-SRC-BIASEDDOOM-004.md` | BD C++17, glTF/fastgltf, optional unsandboxed Python | SOURCE-OBSERVED |
+| `SNE-REVISION-LEDGER.md` and `SNE-SRC-*-001.md` | WO-A initial upstream/game reconnaissance | SELECTED SOURCE |
+| `SNE-SOURCE-PINS-000B.md` and `SNE-SRC-*-002.md` | WO-B model, voxel, scripting, rights | SELECTED SOURCE |
+| `SNE-000C-PIN-LEDGER.md` and `SNE-SRC-*-003.md` | WO-C game frame, handoff, levels and glTF | SOURCE/DOC CLAIMS SEPARATED |
+| `SNE-000D-PIN-LEDGER.md` and `SNE-SRC-*-004.md` | WO-D CMake, dependencies, Windows build | SOURCE-OBSERVED |
+| `SNE-000E-FOUNDATION-PIN-LEDGER.md` | WO-E synthesis and immutable cross-reference | SYNTHESIS, NOT A NEW BUILD |
 
-## Missing evidence
+## Evidence categories
 
-Actual local Windows tool inventory; complete upstream dependency subtree and effective licenses; source binary and resource hashes; valid official IWAD test provenance; C-001…C-008 pass; Intel UHD 620 frame-time traces; independently approved distribution plan and ADR. **No engine candidate recommended as accepted foundation.**
+- `SRC`: path and immutable commit prove the **text** being discussed.
+- `UPSTREAM-DOC`: upstream author describes a feature, but a runtime proof is still necessary.
+- `INFERENCE`: our hypothesis requires falsifiable C-series or device test.
+- `RUN`: only a genuine separately authorized run, with exact binaries, fixture hash, logs/trace and signoff.
+
+**Absent as of this packet:** locally measured frame times; actual compiler/configure/build results; C-001…C-015 runtime outputs; complete asset rights; independent review; operator foundation adoption. Refer to `blueprints/research/SNE-000E-EVIDENCE-GAP-MATRIX.md`.

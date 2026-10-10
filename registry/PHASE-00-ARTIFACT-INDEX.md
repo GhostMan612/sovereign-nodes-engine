@@ -1,22 +1,23 @@
-# Phase 00 — Work order artifact registry v0.6.0
+# Phase 00 — Artifact register v0.7.0
 
-| Artifact | Location | Current state |
+| Item | Location | Publication and acceptance distinction |
 |---|---|---|
-| Foundation root | `blueprints/phases/PHASE-00-FOUNDATION.md` | OPEN, NO IMPLEMENTATION APPROVAL |
-| WO-000A | `artifact-chain/work-orders/SNE-WO-000A.md` | COMMITTED `369722f`; acceptance pending |
-| WO-000B | `artifact-chain/work-orders/SNE-WO-000B.md` | COMMITTED `edc274f`; acceptance pending |
-| WO-000C | `artifact-chain/work-orders/SNE-WO-000C.md` | COMMITTED `706db57`; acceptance pending |
-| WO-000C compatibility tests | `blueprints/research/SNE-000C-TEST-CASE-CATALOG.md` | SPECIFIED, NOT RUN |
-| WO-000D | `artifact-chain/work-orders/SNE-WO-000D.md` | v0.6.0 DOCUMENTATION PREPARED; NOT COMMITTED OR ACCEPTED |
-| Windows build plan | `blueprints/research/SNE-000D-BUILD-LANE-MATRIX.md` | SOURCE BACKED / NOT CONFIGURED |
-| Windows command prototypes | `blueprints/research/SNE-000D-REPRO-BUILD-COMMANDS.md` | GATED PROPOSAL / NOT RUN |
-| UHD benchmark | `blueprints/research/HARDWARE-BENCHMARK-PLAN.md` | PROTOCOL / NO MEASUREMENT |
-| JSON result templates | `templates/SNE-000D-*.json` | EMPTY SYNTHETIC SCHEMAS / NOT RESULTS |
-| Dependency/license review | `blueprints/research/DEPENDENCY-LICENSE-MATRIX.md` | PARTIAL / NOT CLEARED |
-| WO-000D source evidence | `evidence/sources/SNE-000D-PIN-LEDGER.md` | PINNED FILE REVIEWS |
-| WO-000D verification | `artifact-chain/verification/SNE-VER-000D.md` | PACKAGE GATES ONLY |
-| WO-000D acceptance | `artifact-chain/acceptance/SNE-ACC-000D.md` | NOT ACCEPTED |
-| WO-000E | `artifact-chain/work-orders/SNE-WO-000E.md` | NEXT INDEPENDENT ADR REVIEW / NOT EXECUTED |
-| Foundation ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | UNDECIDED |
+| WO-000A | `artifact-chain/work-orders/SNE-WO-000A.md` | published `369722f`; formal acceptance PENDING |
+| WO-000B | `artifact-chain/work-orders/SNE-WO-000B.md` | published `edc274f`; formal acceptance PENDING |
+| WO-000C | `artifact-chain/work-orders/SNE-WO-000C.md` | published `706db57`; formal acceptance PENDING |
+| WO-000D | `artifact-chain/work-orders/SNE-WO-000D.md` | published `1f21e4c`; formal acceptance PENDING |
+| WO-000E | `artifact-chain/work-orders/SNE-WO-000E.md` | v0.7.0 PREPARED, not yet installed/published |
+| Foundation ADR | `blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md` | HOLD; no selected engine |
+| Candidate comparison | `blueprints/research/CANDIDATE-MATRIX.md` | qualitative; no runtime score |
+| Claim and gap audit | `blueprints/research/SNE-000E-CLAIM-AUDIT.md`; `SNE-000E-EVIDENCE-GAP-MATRIX.md` | authored audit; independent audit PENDING |
+| Red-team findings | `governance/WO-000E-RED-TEAM-FINDINGS.md` | AUTHOR RED-TEAM, not independent |
+| Reviewer protocol | `governance/WO-000E-INDEPENDENT-REVIEW-PROTOCOL.md` | prepared, reviewer not appointed |
+| WO-E evidence | `artifact-chain/evidence/SNE-EVD-000E.md` | source only |
+| WO-E acceptance | `artifact-chain/acceptance/SNE-ACC-000E.md` | PENDING |
+| WO-E verification | `artifact-chain/verification/SNE-VER-000E.md` | ZIP/document validation, NOT runtime |
+| WO-E source pins | `evidence/sources/SNE-000E-FOUNDATION-PIN-LEDGER.md` | immutable historical scope |
+| WO-C compatibility suite | `blueprints/research/SNE-000C-TEST-CASE-CATALOG.md` | 15 scenarios, NOT RUN |
+| WO-D Windows and UHD capture | `blueprints/research/SNE-000D-REPRO-BUILD-COMMANDS.md`; `HARDWARE-BENCHMARK-PLAN.md` | gated protocols, NOT RUN |
+| All P00 gates | `governance/PHASE-00-REVIEW-GATES.md` | OPEN |
 
-Update commit IDs only after operator's actual push; do not self-certify test gates based on publishing documentation.
+Publication is not technical proof. Update WO-E publication SHA only after the operator commits and pushes locally.

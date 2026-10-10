@@ -1,0 +1,15 @@
+{
+  "schema": "SNE-WO-000E-review-v1",
+  "status": "PENDING",
+  "input_engine_repo_sha": "1f21e4c99da50c83ac0c90d14b2f14a752ae89f4",
+  "reviewer_name": null,
+  "reviewer_qualification": null,
+  "reviewer_independent_of_author": null,
+  "review_date": null,
+  "source_paths_sampled": [],
+  "critical_findings_verified": [],
+  "dissent": [],
+  "corrections_requested": [],
+  "limitations": [],
+  "signed": false
+}

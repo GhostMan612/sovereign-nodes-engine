@@ -1,0 +1,56 @@
+{
+  "schema": "SNE-WO-000E-phase00-gates-v1",
+  "source_baseline": "1f21e4c99da50c83ac0c90d14b2f14a752ae89f4",
+  "foundation_selected": false,
+  "phase01_authorized": false,
+  "gates": {
+    "P00-G1": {
+      "status": "PENDING",
+      "evidence_ids": [],
+      "independent_review": false,
+      "operator_accepted": false
+    },
+    "P00-G2": {
+      "status": "PENDING",
+      "evidence_ids": [],
+      "independent_review": false,
+      "operator_accepted": false
+    },
+    "P00-G3": {
+      "status": "PENDING",
+      "evidence_ids": [],
+      "independent_review": false,
+      "operator_accepted": false
+    },
+    "P00-G4": {
+      "status": "PENDING",
+      "evidence_ids": [],
+      "independent_review": false,
+      "operator_accepted": false
+    },
+    "P00-G5": {
+      "status": "PENDING",
+      "evidence_ids": [],
+      "independent_review": false,
+      "operator_accepted": false
+    },
+    "P00-G6": {
+      "status": "PENDING",
+      "evidence_ids": [],
+      "independent_review": false,
+      "operator_accepted": false
+    },
+    "P00-G7": {
+      "status": "PENDING",
+      "evidence_ids": [],
+      "independent_review": false,
+      "operator_accepted": false
+    },
+    "P00-G8": {
+      "status": "PENDING",
+      "evidence_ids": [],
+      "independent_review": false,
+      "operator_accepted": false
+    }
+  }
+}

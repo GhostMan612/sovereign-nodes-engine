@@ -1,19 +1,36 @@
-# Phase 00 candidate matrix — v0.4.0 evidence update
+# Foundation candidate matrix — WO-000E adversarial synthesis
 
-**Status:** SOURCE CODE RESEARCH ONLY / foundation DECISION STILL PENDING. No candidate build/benchmark/compatibility PASS.
+**Decision: HOLD. Measurements: NONE. Scores: UNASSIGNED.** These are conditional source-informed hypotheses rather than observed operational rankings.
 
-| Candidate | Source strength | Production suitability hypothesis | Observed risk | Next gate |
+| Criterion | GZDoom | UZDoom | BiasedDoom |
+|---|---|---|---|
+| Source pin | `c26ce2e6ca2a` | `dbedcc894fb6` | `6147e0670458` |
+| Existing ZScript/GLDEFS/voxel/hub source seams | OBSERVED | OBSERVED | inherited/doc claims; exact parity NOT RUN |
+| Toolchain declaration | CMake ≥3.16 / C++17 | CMake ≥3.16 / C++20 | CMake ≥3.16 / C++17 |
+| Modern glTF / skeletal models | native support not proven at pin | native support not proven at pin | conditional fastgltf implementation; runtime NOT RUN |
+| Embedded Python | not established gameplay runtime | Python3 required for build utilities, not gameplay proof | optional, explicitly **not sandboxed** |
+| AI-assisted contributions | verify upstream submission policies if applicable | explicitly prohibited for upstream code/art contributions | project docs encourage disclosed, reviewed AI assistance |
+| P0 game parity C-001–C-008 | NOT RUN | NOT RUN | NOT RUN |
+| UHD 620 frame-time | NOT MEASURED | NOT MEASURED | NOT MEASURED |
+| Complete license/SBOM and assets | NOT CLEARED | NOT CLEARED | NOT CLEARED |
+| Recommended research role | first **test control** | independent production **comparator** | feature **reference** |
+
+## Disqualifying requirements before weighted scoring
+
+- Prove exact custom MAP01, scripts/actors/HUD, GLDEFS, map transitions, synthetic handoff and validated resources using C-001…C-008.
+- Record complete lawful dependency/asset rights and executable provenance.
+- Collect operator-authorized same-scene UHD 620 measurements with raw frame-time traces and environment controls.
+- Obtain independent technical and license review plus operator decision.
+
+## Scorecard (intentional empty values)
+
+| Weight | Dimension | GZDoom | UZDoom | BiasedDoom |
 |---|---|---|---|---|
-| GZDoom | Voxel/GLDEFS/ZScript/hub paths directly inspected; C++17 CMake | First production-baseline candidate | compiler/dependency details, modern glTF extensibility, measured GPU cost | native build + Tier-A pass |
-| UZDoom | Same core systems at inspected revision; C++20, optional LTO | Second production-baseline candidate | upstream AI-code PR prohibition, build system differences, release asset rights | native build + Tier-A pass |
-| BiasedDoom | `model_gltf` and CMake options inspected; fastgltf/optional CPython confirmed | Experimental rendering/model reference | ZScript deprecation intent, conditional codepaths, glTF embed-texture limitations, security/perf | glTF and ZScript runtime proof |
-| Chocolate Doom | Original 2.5D logic and map loader, C99/SDL | Education/reference | no drop-in ZScript/high-end renderer | optional conceptual review |
-| Original Doom | 1990s reference implementation | Education/reference | lacks modern assets/script/render systems | historical only |
+| 30% | Tier-A actual parity | — | — | — |
+| 20% | Build, maintenance and updateability | — | — | — |
+| 15% | Measured low-end performance | — | — | — |
+| 15% | Extensibility without baseline breakage | — | — | — |
+| 10% | Rights, licensing and policy sustainability | — | — | — |
+| 10% | World/handoff feasibility and security | — | — | — |
 
-## Scoring hold
-
-Keep weighted scoring at **NOT SCORED** until operator-authorized Tier-A tests and GPU benchmarks exist. Published features are not benchmark scores. Reference rubric: 30% Tier-A, 20% maintainability/build, 15% low-end performance, 15% extensibility, 10% licensing/policy, 10% world/handoff feasibility.
-
-## Provisional result
-
-**GZDoom / UZDoom shortlist remains intact**; BiasedDoom merits a separate experimental comparison. Revisit after C/D work orders. ADR-SNE-002 is not adopted.
+No weights can overcome a failed hard gate. A source feature is not a runtime score. Detailed alternatives: `SNE-000E-ALTERNATIVES-ANALYSIS.md`.

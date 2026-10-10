@@ -1,0 +1,20 @@
+{
+  "schema": "SNE-WO-000E-compatibility-proof-v1",
+  "status": "NOT_RUN",
+  "case_id": null,
+  "engine_name": null,
+  "engine_source_sha": null,
+  "engine_binary_sha256": null,
+  "game_source_sha": "44034e97fd22129f919a18cadceb84466ef1bcd3",
+  "game_pk3_sha256": null,
+  "lawful_iwad_reference_redacted": null,
+  "hardware_record_ref": null,
+  "run_date": null,
+  "command_redacted": null,
+  "expected_custom_map": null,
+  "observed_map": null,
+  "result": null,
+  "negative_control_evidence_ref": null,
+  "logs_sha256": null,
+  "reviewer": null
+}

@@ -1,0 +1,340 @@
+{
+  "schema": "SNE-overlay-sha256-v1",
+  "release": "v0.7.0",
+  "base_commit": "1f21e4c99da50c83ac0c90d14b2f14a752ae89f4",
+  "self_excluded": "scaffold/WO-000E-FILE-SHA256.json",
+  "count": 48,
+  "added": 40,
+  "replaced": 8,
+  "files": [
+    {
+      "path": "WO-000E-INSTALL.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "62d186d872e43a8b8c3389d77d4a27f95968cb080913f72b533c8836ff1e2a4a",
+      "size_bytes": 4454
+    },
+    {
+      "path": "artifact-chain/acceptance/SNE-ACC-000E.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "55fc4294a75eac397ca665a6fcd0425da2ca4bfe79752b313b0c26cfd288d65f",
+      "size_bytes": 1417
+    },
+    {
+      "path": "artifact-chain/evidence/SNE-EVD-000E.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "ad5b3fd2fc2e7bfa0629fc780a4271689843ce56453d49c45ce6efab4a5d5307",
+      "size_bytes": 1710
+    },
+    {
+      "path": "artifact-chain/reconciliation/SNE-REC-000E.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "98d9143fe3c886ee432a0e70e2a135ea8328dc04b3815c60316feb5faa9927d8",
+      "size_bytes": 1563
+    },
+    {
+      "path": "artifact-chain/verification/SNE-VER-000E.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "b840290e9cc5b2fcd4b6c09c6f60b4d222e4f156faaba0fce441e13c34d5325e",
+      "size_bytes": 1785
+    },
+    {
+      "path": "artifact-chain/work-orders/SNE-WO-000E.md",
+      "action": "REPLACE",
+      "preimage_git_blob_sha1": "7ef2880dec9db83bdd2ff8b73b746e90a50c7947",
+      "sha256": "fe23babf4389fe95e3f446594f14c3d3a27b05ecfd748dece15c61945e6e2e3b",
+      "size_bytes": 3112
+    },
+    {
+      "path": "blueprints/architecture/SNE-000E-BOUNDARY-REVIEW.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "280e330405e07b88616847755d3ba5f1c72e0bdb850bd23cc79cae0f98c5535b",
+      "size_bytes": 2238
+    },
+    {
+      "path": "blueprints/architecture/SNE-000E-DECISION-FLOW.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "59b1643739ff8d031196369cadee2ad1cd9f628d4f3712659822852eaf3fdafe",
+      "size_bytes": 1659
+    },
+    {
+      "path": "blueprints/decisions/ADR-SNE-002-FOUNDATION-PENDING.md",
+      "action": "REPLACE",
+      "preimage_git_blob_sha1": "4a0be9660d11b47d8a661f538bceb33547b81b38",
+      "sha256": "1164ebf9a0df4eae1a2664c111db9362f32ac3ebbe702d9d054a22d1b1b3fee4",
+      "size_bytes": 5953
+    },
+    {
+      "path": "blueprints/diagrams/SNE-000E-GATE-DEPENDENCIES.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "33c2fff8880c139a599926396c8ff85a944e339a5071ef84fcfefaa1285cc732",
+      "size_bytes": 912
+    },
+    {
+      "path": "blueprints/phases/PHASE-00-FOUNDATION.md",
+      "action": "REPLACE",
+      "preimage_git_blob_sha1": "3894c703565f37096f31511b8f548953f4c2934f",
+      "sha256": "c3ec5ee02bc9bce497ae99912d7dac8a6a2eecc6c7e03c06fe97c5d7577441a0",
+      "size_bytes": 3387
+    },
+    {
+      "path": "blueprints/research/CANDIDATE-MATRIX.md",
+      "action": "REPLACE",
+      "preimage_git_blob_sha1": "517a0137a2a32de85216356d05c59838582f4db6",
+      "sha256": "2e3d25616208c1ff0c58f462540915321473eb0172ff70b4c731a6f89148e7d4",
+      "size_bytes": 2506
+    },
+    {
+      "path": "blueprints/research/RESEARCH-QUEUE.md",
+      "action": "REPLACE",
+      "preimage_git_blob_sha1": "f60119e45cc31acf7133285be7717cab81c4db5d",
+      "sha256": "f2a37f892d633eb7c7d1f91307794481ab8944e10af7418c9c5117073c59f5d3",
+      "size_bytes": 2882
+    },
+    {
+      "path": "blueprints/research/SNE-000E-ADAPTER-VS-FORK.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "57346cb8f38319b180cbbd5adc994ed8842739a86cf8ed88e38cbbb79a20caf3",
+      "size_bytes": 1856
+    },
+    {
+      "path": "blueprints/research/SNE-000E-ALTERNATIVES-ANALYSIS.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "b17be70c810d083bd8c21da56de0134193b258d3098bf7233be201f1ddd865da",
+      "size_bytes": 2079
+    },
+    {
+      "path": "blueprints/research/SNE-000E-CANDIDATE-TRADEOFFS.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "edeaca77feaa46681368a9f2ed50ad6aab77766fc6b62df4395f962db6a82a25",
+      "size_bytes": 1674
+    },
+    {
+      "path": "blueprints/research/SNE-000E-CLAIM-AUDIT.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "7a408c31d8c12304ca9428281a06ada770e583182a19b5f99d0c8dac228cc13e",
+      "size_bytes": 3335
+    },
+    {
+      "path": "blueprints/research/SNE-000E-COST-AND-MAINTENANCE.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "115016b195cf9d7dc4294e41aa97a9088b3c288a128bf5dd50d22a41ebeff696",
+      "size_bytes": 1774
+    },
+    {
+      "path": "blueprints/research/SNE-000E-EVIDENCE-GAP-MATRIX.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "4acaea2b6ae4a18ba78636c3596687cd5af464746a4deb99008be2a22ec93728",
+      "size_bytes": 2086
+    },
+    {
+      "path": "blueprints/research/SNE-000E-EXPERIMENT-PRIORITY.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "9c842d312f0dfa1517b2dfd55154d283397038cb86838b897e47349d4945a0a3",
+      "size_bytes": 1897
+    },
+    {
+      "path": "blueprints/research/SNE-000E-FOUNDATION-SCORECARD.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "cc4f1121c41486f272bbf65334ff4550f52cb71e2e33360c34586ec4cad6b8eb",
+      "size_bytes": 1940
+    },
+    {
+      "path": "blueprints/research/SNE-000E-GAME-DEFECT-ISOLATION.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "7abcd3889cfae3639f4ca70ab873aa3234ba6646391f02d91ea73e3eb5670b0d",
+      "size_bytes": 1953
+    },
+    {
+      "path": "blueprints/research/SNE-000E-LEGAL-POLICY-GATES.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "0b19d177f35ce9c6f7060870553628fd3c836adfe09196b0fb70a99f299b7d39",
+      "size_bytes": 1852
+    },
+    {
+      "path": "blueprints/research/SNE-000E-ROLLBACK-PLAN.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "f09fb490d878e08fab1bad3177fe779958ccc7a89d728ddcbbb9f58e5b2427dd",
+      "size_bytes": 1511
+    },
+    {
+      "path": "blueprints/research/SNE-000E-SEAMLESSNESS-REALITY.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "a0d60837004f6db39952813eced5ae67336dad47470e030fc00a7382d01d3332",
+      "size_bytes": 1425
+    },
+    {
+      "path": "blueprints/research/SNE-000E-SECURITY-BOUNDARIES.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "5c51b19e6122915cfd5a143da97e5706d91080309629d568f1e85d62367f2d9f",
+      "size_bytes": 1890
+    },
+    {
+      "path": "blueprints/research/SNE-000E-TOOLCHAIN-BLOCKERS.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "56c4b80e56c3f1fb0fb0b6d62ef549978fb780367948ace09256af92993598c8",
+      "size_bytes": 1585
+    },
+    {
+      "path": "docs/WO-000E-START-HERE.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "078973555c1245d6ac3427be689f94fa5e269e32dc3d28c0344126cd92fedfed",
+      "size_bytes": 1528
+    },
+    {
+      "path": "evidence/sources/SNE-000E-FOUNDATION-PIN-LEDGER.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "990c03668db61d0ef5fd6b0d6a3f36069f92f1ab3a3d0e9ed38abcc979d498de",
+      "size_bytes": 3734
+    },
+    {
+      "path": "evidence/sources/SOURCE-INDEX.md",
+      "action": "REPLACE",
+      "preimage_git_blob_sha1": "bc739d8f0c2db3882cabe8fa5dc4ffebcb59347e",
+      "sha256": "881fed0eea957fae95510e53e8a9ebc43f060334915f19cd2a4029e39d4350a5",
+      "size_bytes": 1563
+    },
+    {
+      "path": "governance/PHASE-00-REVIEW-GATES.md",
+      "action": "REPLACE",
+      "preimage_git_blob_sha1": "0ba5922834b70ed2dc1cf3fe183967a4c3c7abb9",
+      "sha256": "10874038b688418b7e2a4742ab41886bd71359b4c1de3f232d5f97ee43b23827",
+      "size_bytes": 2915
+    },
+    {
+      "path": "governance/WO-000E-DECISION-CONDITIONS.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "f4bbff4db695fcb9d016e4283e59b3aa652116b00875595a9a9d4379ca2153be",
+      "size_bytes": 1692
+    },
+    {
+      "path": "governance/WO-000E-INDEPENDENT-REVIEW-PROTOCOL.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "f5f4d7fbf20c14efea7508fbd857eecd858216c778f496689a597d6962daa542",
+      "size_bytes": 2180
+    },
+    {
+      "path": "governance/WO-000E-INDEPENDENT-REVIEW-READY.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "b1129b49af4a295ede0127a73eb487a9d3a365b27fbaf5107ca196e5d01656bb",
+      "size_bytes": 1262
+    },
+    {
+      "path": "governance/WO-000E-RED-TEAM-FINDINGS.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "87d9b6244074c13a4e052d74ee48981941a31c0dd8f6b1b6833e11caffeb49a1",
+      "size_bytes": 3014
+    },
+    {
+      "path": "governance/WO-000E-REVIEWER-QUESTIONS.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "205db56def628df2a611e76cd180b6818d6028b5770eab9a8f5ccbc03d3eb643",
+      "size_bytes": 2088
+    },
+    {
+      "path": "governance/WO-000E-RISK-REGISTER.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "cbfe285e04c0b66dfd06759a723dff2c331a9f8b9d9085ee5a2ddcfdfb4d751d",
+      "size_bytes": 1921
+    },
+    {
+      "path": "registry/PHASE-00-ARTIFACT-INDEX.md",
+      "action": "REPLACE",
+      "preimage_git_blob_sha1": "dfbf0f2bbe139eda578b51ef32bc17e68e62d9a6",
+      "sha256": "f3b71df9b2fd8269beca2029737040450d228a6da3e9041ecb0c64b5d63cefdb",
+      "size_bytes": 2020
+    },
+    {
+      "path": "scaffold/WO-000E-BUILD-VERIFICATION.json",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "5aef5a230ef28fa72d068ab09b67881237e1adbf605efddf6f751b073671d187",
+      "size_bytes": 1072
+    },
+    {
+      "path": "scaffold/WO-000E-CHANGELOG.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "72c9e5d14e348e7223be669a961b6935d04c286da8fe0e5a9e380b7c9298d8bd",
+      "size_bytes": 864
+    },
+    {
+      "path": "scaffold/WO-000E-MANIFEST.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "cde48a029cd44d2634af641e09e9fc08bc8380c8ea21d0e90f800ad0481d9771",
+      "size_bytes": 4889
+    },
+    {
+      "path": "scaffold/WO-000E-SOURCE-CONFIDENCE.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "371af4263816b8c320cd5186de3f141dfa4716d5b44cd1adf45028c131a909a4",
+      "size_bytes": 957
+    },
+    {
+      "path": "templates/SNE-000E-ADR-VOTE.json",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "42050a938173b7a089b7757c2ba09152a34928c0418acf197abcf41c781f8f9c",
+      "size_bytes": 377
+    },
+    {
+      "path": "templates/SNE-000E-COMPAT-PROOF.json",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "cbecf919ff28559f82887d4a747945ae0711b2f5fad29a0fe8cb70d70598fbd9",
+      "size_bytes": 549
+    },
+    {
+      "path": "templates/SNE-000E-GATE-STATE.json",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "96fe8469d9e5d6e50df7e4d8b68ccd88ac98fd9b96d93d1aeed6fac310e88d50",
+      "size_bytes": 1344
+    },
+    {
+      "path": "templates/SNE-000E-README.md",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "a49affb78accc4021bd8b3713bbdf72eb0280dca91b1ddd2420ab0cea536d1cc",
+      "size_bytes": 804
+    },
+    {
+      "path": "templates/SNE-000E-REVIEW-RECORD.json",
+      "action": "ADD",
+      "preimage_git_blob_sha1": null,
+      "sha256": "55ad8c0351bcf4c27f27fe961c4876872c6a450efc5301761801c879bc365123",
+      "size_bytes": 412
+    }
+  ]
+}
