@@ -1,0 +1,82 @@
+{
+  "schema_id": "SNE-F03-AUTHORIZATION-v1",
+  "work_order_id": "SNE-WO-F03",
+  "authorization_id": null,
+  "request_state": "PROPOSED",
+  "category": "AUTH-H",
+  "scope": {
+    "task_id": "AUTH-H-SNE-F03-001",
+    "purpose": "Read-only Windows host/toolchain inventory for the P00-G4 native build preflight. No installs, no builds, no game launch, no network.",
+    "actor_private_id": null,
+    "device_private_id": null,
+    "planning_repository_commit": "ef32a03d5b1d7bf70818404af9d7f27481e4a11e",
+    "source_revisions": [],
+    "allowed_read_paths": [
+      "C:\\sovereign-nodes-engine",
+      "C:\\Users\\612co\\.sne-private\\auth-h\\"
+    ],
+    "allowed_write_paths": [
+      "C:\\Users\\612co\\.sne-private\\auth-h\\"
+    ],
+    "allowed_operations": [
+      "Get-CimInstance Win32_OperatingSystem (Caption, BuildNumber, OSArchitecture)",
+      "Get-CimInstance Win32_Processor (Name, NumberOfCores, NumberOfLogicalProcessors)",
+      "Get-CimInstance Win32_VideoController (Name, DriverVersion, DriverDate, AdapterRAM)",
+      "Get-CimInstance Win32_ComputerSystem (TotalPhysicalMemory only)",
+      "Get-Command cmake|ninja|git|python|vswhere",
+      "cmake --version",
+      "ninja --version",
+      "git --version",
+      "python --version",
+      "vswhere -products * -property installationVersion,installationPath (method approval required)",
+      "git -C C:\\sovereign-nodes-engine rev-parse HEAD",
+      "stdout capture to the private raw evidence root only"
+    ],
+    "forbidden_operations": [
+      "source-game edits",
+      "unapproved installs",
+      "driver updates",
+      "environment mutation",
+      "registry writes",
+      "unapproved network",
+      "vcpkg bootstrap",
+      "dependency downloads",
+      "private Mantle data",
+      "public IWAD redistribution",
+      "GitHub mutation",
+      "engine/game launch",
+      "GPU load",
+      "WSL distro install"
+    ],
+    "network_access_allowed": false,
+    "dependency_downloads_allowed": false,
+    "licensed_external_resource_private_refs": [],
+    "private_raw_evidence_root": "C:\\Users\\612co\\.sne-private\\auth-h\\raw\\",
+    "public_redacted_summary_path": "verification/SNE-F03-HOST-INVENTORY-REDACTED.md",
+    "max_duration_minutes": 20,
+    "max_output_bytes": 262144,
+    "retention_policy": "Private raw capture retained at most 14 days then deleted; redacted public summary retained in the chain; revocation deletes raw immediately.",
+    "stop_conditions": [
+      "any command attempts a write outside the private raw evidence root",
+      "any network access is required or attempted",
+      "any install/update prompt appears",
+      "tool absence is recorded as NOT DETECTED BY METHOD and only that query stops",
+      "operator revokes the request"
+    ],
+    "rollback_plan": "Delete the private capture tree and any partial outputs. Commands are read-only by design, so no system state change is expected; revoke the record and destroy raw captures."
+  },
+  "scope_sha256": null,
+  "scope_digest_method": "SHA256(sorted-key compact UTF-8 JSON of scope object; digest and signature excluded)",
+  "operator_signature_private_ref": null,
+  "operator_approved_at": null,
+  "valid_from": null,
+  "expires_at": null,
+  "independent_reviewer_private_id": null,
+  "revoked": false,
+  "revocation_id": null,
+  "operator_authentication_verified_by_executor": false,
+  "dispatch_admission": "BLOCKED",
+  "execution_attempted": false,
+  "execution_status": "NOT RUN",
+  "notes": "UNSIGNED DRAFT REQUEST - presence in Git is not consent. Signing stays with the operator privately; execution starts only from a dated, operator-authenticated record with the scope digest filled in."
+}
