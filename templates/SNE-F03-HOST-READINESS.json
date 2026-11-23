@@ -1,18 +1,18 @@
 {
   "schema": "SNE-F03-HOST-READINESS-v1",
   "work_order_id": "SNE-WO-F03",
-  "authorization_id": null,
-  "scope_sha256": null,
-  "state": "NOT RUN",
-  "captured_at_utc": null,
+  "authorization_id": "AUTH-H-SNE-F03-001 (granted via operator instruction 2026-11-21; chat-channel deviation recorded privately)",
+  "scope_sha256": "1fc8fec09a9a7f622c3952487d742212e0e7847ad1436457188710f1293ed8c6",
+  "state": "PARTIAL - COMPILER LANE NOT CAPTURED",
+  "captured_at_utc": "2026-11-22T21:11:53Z/2026-11-22T21:12:01Z",
   "actor_private_ref": null,
-  "device_alias": null,
-  "os_build": null,
-  "os_arch": null,
-  "cpu": null,
-  "gpu": null,
-  "gpu_driver": null,
-  "ram_bytes": null,
+  "device_alias": "SNE-REF-LAPTOP",
+  "os_build": "26300",
+  "os_arch": "x64",
+  "cpu": "Intel Core i5-8365U @ 1.60GHz (4 cores / 8 logical)",
+  "gpu": "Intel UHD Graphics 620",
+  "gpu_driver": "31.0.101.2137 (2025-08-27); AdapterRAM 1 GiB driver-reported, UMA caveat",
+  "ram_bytes": 16981467136,
   "compiler": {
     "vs_instance": null,
     "msvc_version": null,
@@ -20,16 +20,24 @@
     "windows_sdk": null
   },
   "tools": {
-    "cmake_version": null,
+    "cmake_version": "4.4.4 (user-scope WinGet shim)",
     "cmake_generator": null,
     "ninja_version": null,
-    "git_version": null,
-    "python_native_version": null,
+    "git_version": "2.53.0.windows.3",
+    "python_native_version": "3.14.9 (agent-managed virtualenv)",
     "vcpkg_commit": null
   },
-  "approved_read_methods": [],
-  "raw_capture_private_ref": null,
-  "redacted_summary_sha256": null,
+  "approved_read_methods": [
+    "Get-CimInstance Win32_OperatingSystem",
+    "Get-CimInstance Win32_Processor",
+    "Get-CimInstance Win32_VideoController",
+    "Get-CimInstance Win32_ComputerSystem",
+    "Get-Command cmake|ninja|git|python|vswhere",
+    "--version probes for present tools",
+    "git -C <planning repo> rev-parse HEAD"
+  ],
+  "raw_capture_private_ref": "~/.sne-private/auth-h/ (private; exact location and SHA-256 ledger held off-repo)",
+  "redacted_summary_sha256": "3855beaac3f54687dce6da569297002cd0310a0c1775c74c0554eb85adb7385c",
   "reviewer_ref": null,
-  "notes": "Reported reference laptop is not actual inventory evidence."
+  "notes": "First real capture of this chain. No benchmark, no build, no gate result. Compiler lane open pending an approved VS/MSVC/SDK read method."
 }
